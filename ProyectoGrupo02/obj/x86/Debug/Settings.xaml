@@ -6,10 +6,15 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="DarkRed" d:DesignWidth="952.229">
 
     <Grid>
+        <StackPanel>
 
+        </StackPanel>
+        <Button x:ConnectionId='2' x:Name="Return"                      Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Background="DarkRed" FontSize="64" FontWeight="Bold" Margin="0,830,0,0">
+            <SymbolIcon Width="25" Height="25" Symbol="Back"></SymbolIcon>
+        </Button>
     </Grid>
 </Page>
 

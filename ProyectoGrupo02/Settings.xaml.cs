@@ -26,5 +26,11 @@ namespace ProyectoGrupo02
         {
             this.InitializeComponent();
         }
+
+        private void Return_Click(object sender, RoutedEventArgs e)
+        {
+            if (Frame.CanGoBack)
+                Frame.GoBack();
+        }
     }
 }
