@@ -9,6 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel Width="529" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,566,0,0" Height="311" >
+            <Button x:ConnectionId='2' x:Name="Play"                     Height="75" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50">
+                <SymbolIcon Symbol="Play" />
+            </Button>
+            <Button x:ConnectionId='3' x:Name="Settings"                           Height="75" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <SymbolIcon Symbol="Setting" />
+            </Button>
+        </StackPanel>
 
     </Grid>
 </Page>

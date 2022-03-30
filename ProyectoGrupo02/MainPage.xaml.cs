@@ -26,5 +26,15 @@ namespace ProyectoGrupo02
         {
             this.InitializeComponent();
         }
+
+        private void Play_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(InGame));
+        }
+       
+        private void Settings_OnClick(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Settings));
+        }
     }
 }
