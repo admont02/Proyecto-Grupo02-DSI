@@ -20,15 +20,21 @@ namespace ProyectoGrupo02
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class InGame : Page
+    public sealed partial class Pause : Page
     {
-        public InGame()
+        public Pause()
         {
             this.InitializeComponent();
         }
-        private void Click_Pause(object sender, RoutedEventArgs e)
+
+        private void Return_Click_Pause(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Pause));
+            if (Frame.CanGoBack)
+                Frame.GoBack();
+        }
+        private void Return_Menu(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
         }
     }
 }

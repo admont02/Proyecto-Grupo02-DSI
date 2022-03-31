@@ -9,7 +9,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Button x:ConnectionId='2' x:Name="Pause" Width="70" Height="70" VerticalAlignment="Top"                     Margin="20" Background="Transparent">
+            <SymbolIcon Width="25"  Symbol="Pause"/>
+        </Button>
     </Grid>
 </Page>
 
