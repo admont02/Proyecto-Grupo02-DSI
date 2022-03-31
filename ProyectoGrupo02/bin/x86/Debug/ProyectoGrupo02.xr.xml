@@ -34,7 +34,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
       <RootProperty Name="Symbol" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="ProyectoGrupo02.MainPage" />
     <RootType FullName="ProyectoGrupo02.Settings" />

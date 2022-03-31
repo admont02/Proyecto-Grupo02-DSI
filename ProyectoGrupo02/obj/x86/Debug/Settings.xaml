@@ -13,7 +13,7 @@
 
         </StackPanel>
         <Button x:ConnectionId='2' x:Name="Return"                      Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Background="DarkRed" FontSize="64" FontWeight="Bold" Margin="0,830,0,0">
-            <SymbolIcon Width="25" Height="25" Symbol="Back"></SymbolIcon>
+            <SymbolIcon Width="25"  Symbol="Back"/>
         </Button>
     </Grid>
 </Page>
