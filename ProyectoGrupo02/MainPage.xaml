@@ -9,7 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel Width="529" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,566,0,0" Height="311" >
+        <TextBlock Text="Bloodsucker" FontSize="130" HorizontalAlignment="Center" VerticalAlignment="Top" 
+                   FontFamily="Times New Roman" FontWeight="Black" Foreground="DarkRed" Margin="60"/>
+
+        <StackPanel Width="500" VerticalAlignment="Center" HorizontalAlignment="Center" Height="300" Margin=" 0,100,0,0">
             <Button x:Name="Play" Click="Play_Click"  Height="75" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50">
                 <SymbolIcon Symbol="Play" />
             </Button>

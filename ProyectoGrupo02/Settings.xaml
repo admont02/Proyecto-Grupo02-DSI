@@ -9,11 +9,33 @@
     Background="DarkRed" d:DesignWidth="952.229">
 
     <Grid>
-        <StackPanel>
-
-        </StackPanel>
-        <Button x:Name="Return" Click="Return_Click" Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Background="DarkRed" FontSize="64" FontWeight="Bold" Margin="0,830,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Bloodsucker" FontSize="130" HorizontalAlignment="Center" VerticalAlignment="Top" 
+                   FontFamily="Times New Roman" FontWeight="Black" Foreground="Black" Margin="60"/>
+        <Slider x:Name="SecondNumberSlider" Minimum="-10" Maximum="10" StepFrequency="0.01" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Grid.Row="1"
+                Background="Black" Foreground="White">
+            <Slider.Resources>
+                <SolidColorBrush x:Key="SliderSelectionBackground" Color="Black" />
+                <SolidColorBrush x:Key="SliderSelectionBorder" Color="Black" />
+                <SolidColorBrush x:Key="SliderThumbBackground" Color="Black" />
+                <SolidColorBrush x:Key="SliderThumbBackgroundDisabled" Color="Black" />
+                <SolidColorBrush x:Key="SliderThumbBackgroundDragging" Color="Black" />
+                <SolidColorBrush x:Key="SliderThumbBackgroundHover" Color="Black" />
+                <SolidColorBrush x:Key="SliderThumbBorder" Color="Black" />
+                <SolidColorBrush x:Key="SliderThumbBorderDisabled" Color="Black" />
+                <SolidColorBrush x:Key="SliderThumbBorderDragging" Color="Black" />
+                <SolidColorBrush x:Key="SliderThumbBorderHover" Color="Black" />
+            </Slider.Resources>
+        </Slider>
+            <Button x:Name="Return" Click="Return_Click" Width="100" Height="100" 
+                HorizontalAlignment="Center" Background="Black" Margin="100" Grid.Row="2">
             <SymbolIcon Width="25"  Symbol="Back"/>
         </Button>
+
     </Grid>
 </Page>
