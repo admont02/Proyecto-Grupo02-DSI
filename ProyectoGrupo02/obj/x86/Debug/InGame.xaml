@@ -11,12 +11,14 @@
 
         <Grid Background="Gray" Width="979" Height="653" >
             <!--Pausa-->
-            <Button x:ConnectionId='2' x:Name="Pause" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left"                     Margin="20" Background="Black">
-                <SymbolIcon Width="25"  Symbol="Pause"/>
+            <Button x:ConnectionId='2' x:Name="Pause" Width="70" Height="70" VerticalAlignment="Top" HorizontalAlignment="Left"                     Margin="20" Background="Black">
+                <Viewbox MaxHeight="200" MaxWidth="200">
+                    <SymbolIcon  Symbol="Pause"/>
+                </Viewbox>
             </Button>
 
             <!--Dinero-->
-            <TextBlock x:ConnectionId='3' x:Name="Money" Text="0" Margin="100, 30" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20"/>
+            <TextBlock x:ConnectionId='3' x:Name="Money" Text="0" Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS"/>
 
             <!--Clicker-->
             <Button x:ConnectionId='4'  Width="100" Height="100" Content="Click me!"                       HorizontalAlignment="Right" VerticalAlignment="Top" Margin="50">
@@ -32,7 +34,7 @@
 
             <!--Compras-->
             <Ellipse Fill="Silver" Width="200" Height="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="130"/>
-            <Ellipse Fill="Silver" Width="100" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,110,195,0"/>
+            <Ellipse Fill="Silver" Width="100" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,195,0"/>
 
             <!--Caminos-->
             <Rectangle Width="100" Height="200" Fill="Bisque" VerticalAlignment="Top" Margin="129"/>

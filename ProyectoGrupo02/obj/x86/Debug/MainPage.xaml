@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Background="DarkGray">
-        <TextBlock Text="Bloodsucker" FontSize="140" HorizontalAlignment="Center" VerticalAlignment="Top" 
+        <TextBlock Text="Bloodsucker" FontSize="110" HorizontalAlignment="Center" VerticalAlignment="Top" 
                    FontFamily="Times New Roman" FontWeight="Black" Foreground="DarkRed" Margin="60"/>
         <!--Murciélagos-->
         <Image x:ConnectionId='2' x:Name="bats1" Source="Assets/Bats.png" HorizontalAlignment="Right" VerticalAlignment="Center" 
@@ -22,12 +22,18 @@
             </Image.RenderTransform>
         </Image>
 
-        <StackPanel Width="500" VerticalAlignment="Center" HorizontalAlignment="Center" Height="300" Margin=" 0,100,0,0">
-            <Button x:ConnectionId='4' x:Name="Play"                     Height="75" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50">
-                <SymbolIcon Symbol="Play" />
+        <StackPanel Width="500" VerticalAlignment="Center" HorizontalAlignment="Center" Height="500" Margin=" 0,100,0,0">
+            <Button x:ConnectionId='4' x:Name="Play"                     Height="150" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0">
+                <Viewbox MaxHeight="200" MaxWidth="200">
+                    <SymbolIcon Symbol="Play" />
+                </Viewbox>
+
             </Button>
-            <Button x:ConnectionId='5' x:Name="Settings"                           Height="75" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" >
-                <SymbolIcon Symbol="Setting" />
+            <Button x:ConnectionId='5' x:Name="Settings"                           Height="150" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="40">
+                <Viewbox MaxHeight="200" MaxWidth="200">
+                    <SymbolIcon Symbol="Setting" />
+
+                </Viewbox>
             </Button>
         </StackPanel>
     </Grid>
