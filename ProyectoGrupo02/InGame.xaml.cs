@@ -26,9 +26,14 @@ namespace ProyectoGrupo02
         {
             this.InitializeComponent();
         }
+
         private void Click_Pause(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Pause));
+        }
+        private void Coin_Clicker(object sender, RoutedEventArgs e)
+        {
+            Money.Text = (Int64.Parse(Money.Text) + 1).ToString();
         }
     }
 }

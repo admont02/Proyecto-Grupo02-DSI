@@ -12,5 +12,17 @@
         <Button x:Name="Pause" Width="70" Height="70" VerticalAlignment="Top" Click="Click_Pause" Margin="20" Background="Black">
             <SymbolIcon Width="25"  Symbol="Pause"/>
         </Button>
+        <TextBlock x:Name="Money" Text="0" Margin="120, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20"/>
+        <Button  Width="200" Height="200" Content="Click me!" Click="Coin_Clicker"  HorizontalAlignment="Right" VerticalAlignment="Top" Margin="50">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="Gold"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        
     </Grid>
 </Page>
