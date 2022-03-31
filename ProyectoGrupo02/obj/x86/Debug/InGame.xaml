@@ -12,7 +12,7 @@
         <Button x:ConnectionId='2' x:Name="Pause" Width="70" Height="70" VerticalAlignment="Top"                     Margin="20" Background="Black">
             <SymbolIcon Width="25"  Symbol="Pause"/>
         </Button>
-        <TextBlock x:ConnectionId='3' x:Name="Money" Text="0" Margin="120, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:ConnectionId='3' x:Name="Money" Text="0" Margin="200, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20"/>
         <Button x:ConnectionId='4'  Width="200" Height="200" Content="Click me!"                       HorizontalAlignment="Right" VerticalAlignment="Top" Margin="50">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -23,6 +23,8 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+               Width="500" Height="500" />
         
     </Grid>
 </Page>
