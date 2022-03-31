@@ -9,10 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Background="Gray">
+        <!--Pausa-->
         <Button x:ConnectionId='2' x:Name="Pause" Width="70" Height="70" VerticalAlignment="Top"                     Margin="20" Background="Black">
             <SymbolIcon Width="25"  Symbol="Pause"/>
         </Button>
+
+        <!--Dinero-->
         <TextBlock x:ConnectionId='3' x:Name="Money" Text="0" Margin="200, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20"/>
+
+        <!--Clicker-->
         <Button x:ConnectionId='4'  Width="200" Height="200" Content="Click me!"                       HorizontalAlignment="Right" VerticalAlignment="Top" Margin="50">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -23,9 +28,21 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+
+        <!--Compras-->
+        <Ellipse Fill="Silver" Width="400" Height="400" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="130"/>
+        <Ellipse Fill="Silver" Width="300" Height="350" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,255,195,0"/>
+
+        <!--Caminos-->
+        <Rectangle Width="200" Height="380" Fill="Bisque" VerticalAlignment="Top" Margin="129"/>
+        <Rectangle Width="400" Height="200" Fill="Bisque" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="90"/>
+        <Rectangle Width="400" Height="200" Fill="Bisque" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="90"/>
+
+        <!--Tierra-->
         <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
                Width="500" Height="500" />
         
+
     </Grid>
 </Page>
 

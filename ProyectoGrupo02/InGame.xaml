@@ -41,6 +41,7 @@
         <!--Tierra-->
         <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
                Width="500" Height="500" />
+        
 
     </Grid>
 </Page>
