@@ -11,7 +11,7 @@
 
         <Grid Background="Gray" Width="979" Height="653" >
             <!--Pausa-->
-            <Button x:ConnectionId='2' x:Name="Pause" Width="50" Height="50" VerticalAlignment="Top"                     Margin="20" Background="Black">
+            <Button x:ConnectionId='2' x:Name="Pause" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left"                     Margin="20" Background="Black">
                 <SymbolIcon Width="25"  Symbol="Pause"/>
             </Button>
 
