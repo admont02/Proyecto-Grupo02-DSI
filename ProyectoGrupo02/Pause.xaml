@@ -16,22 +16,25 @@
         </Grid.RowDefinitions>
         <TextBlock Text="Bloodsucker" FontSize="130" HorizontalAlignment="Center" VerticalAlignment="Top" 
                    FontFamily="Times New Roman" FontWeight="Black" Foreground="Black" Margin="60"/>
-        <Slider x:Name="SecondNumberSlider" Minimum="-10" Maximum="10" StepFrequency="0.01" 
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <SymbolIcon Width="25"  Symbol="Volume" Grid.Row="1" Margin="10"/>
+            <Slider x:Name="SecondNumberSlider" Minimum="-10" Maximum="10" StepFrequency="0.01" 
                 HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Grid.Row="1"
-                Background="Black" Foreground="White">
-            <Slider.Resources>
-                <SolidColorBrush x:Key="SliderSelectionBackground" Color="Black" />
-                <SolidColorBrush x:Key="SliderSelectionBorder" Color="Black" />
-                <SolidColorBrush x:Key="SliderThumbBackground" Color="Black" />
-                <SolidColorBrush x:Key="SliderThumbBackgroundDisabled" Color="Black" />
-                <SolidColorBrush x:Key="SliderThumbBackgroundDragging" Color="Black" />
-                <SolidColorBrush x:Key="SliderThumbBackgroundHover" Color="Black" />
-                <SolidColorBrush x:Key="SliderThumbBorder" Color="Black" />
-                <SolidColorBrush x:Key="SliderThumbBorderDisabled" Color="Black" />
-                <SolidColorBrush x:Key="SliderThumbBorderDragging" Color="Black" />
-                <SolidColorBrush x:Key="SliderThumbBorderHover" Color="Black" />
-            </Slider.Resources>
-        </Slider>
+                Background="Black" Foreground="White" Margin="10">
+                <Slider.Resources>
+                    <SolidColorBrush x:Key="SliderSelectionBackground" Color="Black" />
+                    <SolidColorBrush x:Key="SliderSelectionBorder" Color="Black" />
+                    <SolidColorBrush x:Key="SliderThumbBackground" Color="Black" />
+                    <SolidColorBrush x:Key="SliderThumbBackgroundDisabled" Color="Black" />
+                    <SolidColorBrush x:Key="SliderThumbBackgroundDragging" Color="Black" />
+                    <SolidColorBrush x:Key="SliderThumbBackgroundHover" Color="Black" />
+                    <SolidColorBrush x:Key="SliderThumbBorder" Color="Black" />
+                    <SolidColorBrush x:Key="SliderThumbBorderDisabled" Color="Black" />
+                    <SolidColorBrush x:Key="SliderThumbBorderDragging" Color="Black" />
+                    <SolidColorBrush x:Key="SliderThumbBorderHover" Color="Black" />
+                </Slider.Resources>
+            </Slider>
+        </StackPanel>
         <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
             <Button x:Name="Resume" Click="Return_Click_Pause" Width="100" Height="100"
                         Background="Black" Margin="20" >
