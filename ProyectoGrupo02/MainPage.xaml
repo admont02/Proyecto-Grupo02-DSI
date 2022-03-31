@@ -8,9 +8,19 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock Text="Bloodsucker" FontSize="130" HorizontalAlignment="Center" VerticalAlignment="Top" 
+    <Grid Background="DarkGray">
+        <TextBlock Text="Bloodsucker" FontSize="140" HorizontalAlignment="Center" VerticalAlignment="Top" 
                    FontFamily="Times New Roman" FontWeight="Black" Foreground="DarkRed" Margin="60"/>
+        <!--Murciélagos-->
+        <Image x:Name="bats1" Source="Assets/Bats.png" HorizontalAlignment="Right" VerticalAlignment="Center" 
+               Width="500" Height="500"  />
+
+        <Image x:Name="bats2" Source="Assets/Bats.png" HorizontalAlignment="Left" VerticalAlignment="Center" 
+               Width="500" Height="500" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <ScaleTransform ScaleX="-1"/>
+            </Image.RenderTransform>
+        </Image>
 
         <StackPanel Width="500" VerticalAlignment="Center" HorizontalAlignment="Center" Height="300" Margin=" 0,100,0,0">
             <Button x:Name="Play" Click="Play_Click"  Height="75" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50">
@@ -20,6 +30,5 @@
                 <SymbolIcon Symbol="Setting" />
             </Button>
         </StackPanel>
-
     </Grid>
 </Page>
