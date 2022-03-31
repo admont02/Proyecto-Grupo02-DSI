@@ -32,13 +32,13 @@
                 <SolidColorBrush x:Key="SliderThumbBorderHover" Color="Black" />
             </Slider.Resources>
         </Slider>
-        <StackPanel Grid.Row="2" VerticalAlignment="Center">
+        <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
             <Button x:Name="Resume" Click="Return_Click_Pause" Width="100" Height="100"
-                        Background="Black" HorizontalAlignment="Left" >
+                        Background="Black" Margin="20" >
                     <SymbolIcon Width="25"  Symbol="Play"/>
                 </Button>
             <Button x:Name="Return" Click="Return_Menu" Width="100" Height="100" 
-                        Background="Black" HorizontalAlignment="Right">
+                        Background="Black" HorizontalAlignment="Right" Margin="20">
                 <SymbolIcon Width="25"  Symbol="Back"/>
             </Button>
         </StackPanel>
