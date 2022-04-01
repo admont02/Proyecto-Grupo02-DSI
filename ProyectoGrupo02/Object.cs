@@ -16,6 +16,7 @@ namespace ProyectoGrupo02
         //public Image Img;
         public string Explicacion { get; set; }
         public estados Estado { get; set; }
+        public int Precio { get; set; }
         public int X { get; set; }
         public int Y { get; set; }
         public int RX;
@@ -32,10 +33,11 @@ namespace ProyectoGrupo02
             new Object()
             {
                 Id = 0,
-                //Nombre = "Dron1",
+                Nombre = "Sol",
                 //Imagen = "Assets\\Samples\\1.jpg",
-                //Explicacion = @"Explicación Dron1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
-                //Estado = Dron.estados.Aterrizado,
+                //Explicacion = @"Explicación Dron1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id fa",
+                Estado = Object.estados.Tienda,
+                Precio=2000,
                 //X = 10,
                 //Y = 10,
                 //RX =100,
@@ -44,10 +46,11 @@ namespace ProyectoGrupo02
             new Object()
             {
                 Id = 1,
-                //Nombre = "Dron2",
+                Nombre = "Pocion",
                 //Imagen = "Assets\\Samples\\2.jpg",
                 //Explicacion = @"Explicación Dron2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
-                //Estado = Dron.estados.Aterrizado,
+                Estado = Object.estados.Tienda,
+                Precio=700,
                 //X = 50,
                 //Y = 50,
                 //RX =150,
@@ -56,10 +59,11 @@ namespace ProyectoGrupo02
             new Object()
             {
                 Id = 2,
-                //Nombre = "Dron3",
+                Nombre = "Guillotina",
                 //Imagen = "Assets\\Samples\\3.jpg",
                 //Explicacion = @"Explicación Dron3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
-                //Estado = Dron.estados.Aterrizado,
+                Estado = Object.estados.Tienda,
+                Precio=300,
                 //X = 100,
                 //Y = 100,
                 //RX =50,
@@ -68,10 +72,11 @@ namespace ProyectoGrupo02
             new Object()
             {
                 Id = 3,
-                //Nombre = "Dron4",
+                Nombre = "Agua",
                 //Imagen = "Assets\\Samples\\4.jpg",
                 //Explicacion = @"Explicación Dron4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
-                //Estado = Dron.estados.Aterrizado,
+                Estado = Object.estados.Tienda,
+                Precio=250,
                 //X = 150,
                 //Y = 150,
                 //RX =200,
@@ -80,10 +85,11 @@ namespace ProyectoGrupo02
             new Object()
             {
                 Id = 4,
-                //Nombre = "Dron5",
+                Nombre = "Arroz",
                 //Imagen = "Assets\\Samples\\5.jpg",
                 //Explicacion = @"Explicación Dron5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
-                //Estado = Dron.estados.Aterrizado,
+                Estado = Object.estados.Tienda,
+                Precio=150,
                 //X = 200,
                 //Y = 200,
                 //RX =100,
@@ -92,10 +98,11 @@ namespace ProyectoGrupo02
             new Object()
             {
                 Id = 5,
-                //Nombre = "Dron6",
+                Nombre = "Canyon",
                 //Imagen = "Assets\\Samples\\6.jpg",
                 //Explicacion = @"Explicación Dron6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
-                //Estado = Dron.estados.Aterrizado,
+                Estado = Object.estados.Tienda,
+                Precio=100,
                 //X = 250,
                 //Y = 250,
                 //RX =30,
@@ -104,28 +111,16 @@ namespace ProyectoGrupo02
             new Object()
             {
                 Id = 6,
-                //Nombre = "Dron7",
+                Nombre = "Ajo",
                 //Imagen = "Assets\\Samples\\7.jpg",
                 //Explicacion = @"Explicación Dron7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
-                //Estado = Dron.estados.Aterrizado,
+                Estado = Object.estados.Tienda,
+                Precio=50,
                 //X = 300,
                 //Y = 300,
                 //RX =250,
                 //RY =200,
              },
-            new Object()
-            {
-                Id = 7,
-                //Nombre = "Dron8",
-                //Imagen = "Assets\\Samples\\8.jpg",
-                //Explicacion = @"Explicación Dron8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
-                //Estado = Dron.estados.Aterrizado,
-                //X = 350,
-                //Y = 350,
-                //RX =140,
-                //RY =60,
-             }
-            
           };
 
 

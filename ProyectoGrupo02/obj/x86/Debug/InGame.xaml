@@ -16,7 +16,7 @@
                     <SymbolIcon  Symbol="Pause"/>
                 </Viewbox>
             </Button>
-
+            
             <!--Dinero-->
             <TextBlock x:ConnectionId='3' x:Name="Money" Text="0" Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS"/>
 
