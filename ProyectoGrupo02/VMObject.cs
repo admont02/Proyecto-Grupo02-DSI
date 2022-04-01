@@ -7,7 +7,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace ProyectoGrupo02
 {
-    class VMObject : Object
+    public class VMObject : Object
     {
         public Image Img;
         public ContentControl CCImg;

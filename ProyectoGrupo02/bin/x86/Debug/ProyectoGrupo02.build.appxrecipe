@@ -34,11 +34,32 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Agua.png">
+      <PackagePath>Assets\Agua.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Ajo.png">
+      <PackagePath>Assets\Ajo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Arroz.png">
+      <PackagePath>Assets\Arroz.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Bats.png">
       <PackagePath>Assets\Bats.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Canyon.png">
+      <PackagePath>Assets\Canyon.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Earth.png">
       <PackagePath>Assets\Earth.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Guillotina.png">
+      <PackagePath>Assets\Guillotina.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Pocion.png">
+      <PackagePath>Assets\Pocion.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Sol.png">
+      <PackagePath>Assets\Sol.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>

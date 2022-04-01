@@ -10,13 +10,28 @@
     <Viewbox Stretch="Uniform">
 
         <Grid Background="Gray" Width="979" Height="653" >
+            <!--Objetos-->
+            <ListView  ItemsSource="{x:Bind Objects}" Grid.Column="1"                     
+                   HorizontalAlignment="Left" VerticalAlignment="Center"
+                   IsItemClickEnabled="True"
+                   ItemClick=" ChangeImage">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="local:VMObject">
+                        <StackPanel Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+                            <TextBlock Text="{x:Bind Id}" FontSize="30"/>
+                            <Image Source="{x:Bind Imagen}" Height="50" />
+                            <!--<TextBlock Text="{x:Bind Nombre}" FontSize="30"/>-->
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
             <!--Pausa-->
             <Button x:Name="Pause" Width="70" Height="70" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Click_Pause" Margin="20" Background="Black">
                 <Viewbox MaxHeight="200" MaxWidth="200">
                     <SymbolIcon  Symbol="Pause"/>
                 </Viewbox>
             </Button>
-            
+
             <!--Dinero-->
             <TextBlock x:Name="Money" Text="0" Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS"/>
 
@@ -33,7 +48,11 @@
             </Button>
 
             <!--Compras-->
-            <Ellipse Fill="Silver" Width="200" Height="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="130"/>
+            <Ellipse Fill="Silver" Width="200" Height="200" 
+                     HorizontalAlignment="Left" VerticalAlignment="Top" 
+                     Margin="130"
+                     
+                     />
             <Ellipse Fill="Silver" Width="100" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,195,0"/>
 
             <!--Caminos-->
