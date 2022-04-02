@@ -14,7 +14,9 @@
             <ListView  ItemsSource="{x:Bind Objects}" Grid.Column="1"                     
                    HorizontalAlignment="Left" VerticalAlignment="Center"
                    IsItemClickEnabled="True"
-                   ItemClick=" ChangeImage">
+                   ItemClick=" ChangeImage"
+                   CanDragItems="True"
+                       DragItemsStarting="ListView_DragItemsStarting">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:VMObject">
                         <StackPanel Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
@@ -50,15 +52,23 @@
             <!--Compras-->
             <Ellipse Fill="Silver" Width="200" Height="200" 
                      HorizontalAlignment="Left" VerticalAlignment="Top" 
-                     Margin="130"
+                     Margin="130" 
                      
                      />
             <Ellipse Fill="Silver" Width="100" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,195,0"/>
 
             <!--Caminos-->
-            <Rectangle Width="100" Height="200" Fill="Bisque" VerticalAlignment="Top" Margin="129"/>
-            <Rectangle Width="200" Height="100" Fill="Bisque" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="90"/>
-            <Rectangle Width="200" Height="100" Fill="Bisque" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="90"/>
+            <Rectangle Width="100" Height="200" 
+                       Fill="Bisque" VerticalAlignment="Top" Margin="129"
+                      AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" />
+            <Rectangle Width="200" Height="100"
+                       Fill="Bisque" VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Right" Margin="90"
+                       AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
+            <Rectangle Width="200" Height="100" 
+                       Fill="Bisque" VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Left" Margin="90"
+                       AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
 
             <!--Tierra-->
             <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 

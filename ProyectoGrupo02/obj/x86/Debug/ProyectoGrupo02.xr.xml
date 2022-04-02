@@ -69,8 +69,10 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="CanDragItems" />
       <RootProperty Name="ItemTemplate" />
       <RootEvent Name="ItemClick" />
+      <RootEvent Name="DragItemsStarting" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
       <RootProperty Name="Fill" />
@@ -86,7 +88,10 @@
       <RootProperty Name="Fill" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="AllowDrop" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootEvent Name="Drop" />
+      <RootEvent Name="DragOver" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />

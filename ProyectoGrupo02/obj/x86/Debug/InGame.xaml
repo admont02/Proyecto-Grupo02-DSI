@@ -14,12 +14,14 @@
             <ListView x:ConnectionId='2'                                 Grid.Column="1"                     
                    HorizontalAlignment="Left" VerticalAlignment="Center"
                    IsItemClickEnabled="True"
-                                           >
+                                           
+                   CanDragItems="True"
+                                                                     >
                 <ListView.ItemTemplate>
                     <DataTemplate                            >
-                        <StackPanel x:ConnectionId='9' Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
-                            <TextBlock x:ConnectionId='10'                    FontSize="30"/>
-                            <Image x:ConnectionId='11'                          Height="50" />
+                        <StackPanel x:ConnectionId='12' Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+                            <TextBlock x:ConnectionId='13'                    FontSize="30"/>
+                            <Image x:ConnectionId='14'                          Height="50" />
                             <!--<TextBlock Text="{x:Bind Nombre}" FontSize="30"/>-->
                         </StackPanel>
                     </DataTemplate>
@@ -50,15 +52,23 @@
             <!--Compras-->
             <Ellipse Fill="Silver" Width="200" Height="200" 
                      HorizontalAlignment="Left" VerticalAlignment="Top" 
-                     Margin="130"
+                     Margin="130" 
                      
                      />
             <Ellipse Fill="Silver" Width="100" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,195,0"/>
 
             <!--Caminos-->
-            <Rectangle Width="100" Height="200" Fill="Bisque" VerticalAlignment="Top" Margin="129"/>
-            <Rectangle Width="200" Height="100" Fill="Bisque" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="90"/>
-            <Rectangle Width="200" Height="100" Fill="Bisque" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="90"/>
+            <Rectangle x:ConnectionId='6' Width="100" Height="200" 
+                       Fill="Bisque" VerticalAlignment="Top" Margin="129"
+                      AllowDrop="True"                                                 />
+            <Rectangle x:ConnectionId='7' Width="200" Height="100"
+                       Fill="Bisque" VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Right" Margin="90"
+                       AllowDrop="True"                                                />
+            <Rectangle x:ConnectionId='8' Width="200" Height="100" 
+                       Fill="Bisque" VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Left" Margin="90"
+                       AllowDrop="True"                                                />
 
             <!--Tierra-->
             <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 

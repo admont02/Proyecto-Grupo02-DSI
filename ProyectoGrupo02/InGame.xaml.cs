@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -24,6 +25,7 @@ namespace ProyectoGrupo02
     public sealed partial class InGame : Page
     {
         public ObservableCollection<VMObject> Objects { get; } = new ObservableCollection<VMObject>();
+        int Sel = -1;
         public void ChangeImage(object sender, ItemClickEventArgs e)
         {
             VMObject selected = e.ClickedItem as VMObject;
@@ -54,6 +56,39 @@ namespace ProyectoGrupo02
                 }
             }
             base.OnNavigatedTo(e);
+        }
+
+        private void ListView_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
+        {
+            VMObject Item = e.Items[0] as VMObject;
+            string id = Item.Id.ToString();
+            e.Data.SetText(id);
+            e.Data.RequestedOperation = DataPackageOperation.Copy;
+        }
+
+        private async void Ellipse_Drop(object sender, DragEventArgs e)
+        {
+            //var id = await e.DataView.GetTextAsync();
+            //Point PD = e.GetPosition(MiCanvas);
+            //Sel = int.Parse(id);
+            //var number = int.Parse(id);
+            //MiDron.Source = ListaDrones[Sel].Img.Source;
+            //ListaDrones[Sel].X = (int)PD.X;
+            //ListaDrones[Sel].X = (int)PD.Y;
+
+            //ListaDrones[Sel].Transformacion.Rotation = ListaDrones[Sel].Angulo;
+            //// VOY POR AQUI ListaDrones[Sel].Transformacion.TranslateX
+            //ListaDrones[Sel].Transformacion.CenterX = 20;
+            //ListaDrones[Sel].Transformacion.CenterY = 15;
+
+
+            //MiImagen.Source = ListaDrones[number].Img.Source;
+            //Texto.Text = ListaDrones[number].Explicacion;
+        }
+
+        private void Ellipse_DragOver(object sender, DragEventArgs e)
+        {
+            e.AcceptedOperation = DataPackageOperation.Copy;
         }
     }
 }
