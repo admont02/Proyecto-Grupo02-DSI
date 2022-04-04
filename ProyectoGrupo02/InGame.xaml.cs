@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
@@ -25,10 +26,12 @@ namespace ProyectoGrupo02
     public sealed partial class InGame : Page
     {
         public ObservableCollection<VMObject> Objects { get; } = new ObservableCollection<VMObject>();
-        int Sel = -1;
+        private TranslateTransform dragTranslation;
+        
         public void ChangeImage(object sender, ItemClickEventArgs e)
         {
             VMObject selected = e.ClickedItem as VMObject;
+            
             //perfil.Source = selected.Img.Source;
             ////perfil.Margin = (selected.RX,selected.RY,0,0);
             //perfil.Translation = new System.Numerics.Vector3(selected.RX, selected.RY, 0);
@@ -36,6 +39,7 @@ namespace ProyectoGrupo02
         public InGame()
         {
             this.InitializeComponent();
+            dragTranslation = new TranslateTransform();
         }
 
         private void Click_Pause(object sender, RoutedEventArgs e)
@@ -68,11 +72,23 @@ namespace ProyectoGrupo02
 
         private async void Ellipse_Drop(object sender, DragEventArgs e)
         {
-            //var id = await e.DataView.GetTextAsync();
+            var id = e.DataView.GetTextAsync();
+            int n = int.Parse(await id);
+            Point pos = e.GetPosition(TopRectangle);
+            BitmapImage url = new BitmapImage(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\"+ n.ToString() + ".png"));
+            Image objeto = new Image();
+            objeto.Source = url;
+            objeto.Width = url.PixelWidth;
+            objeto.Height = url.PixelHeight;
+            Canvas.SetLeft(objeto, pos.X);
+            Canvas.SetTop(objeto, pos.Y);
+            //objeto.SetValue(Canvas.LeftProperty, pos.X - 25);
+            //objeto.SetValue(Canvas.TopProperty, pos.Y - 15);
+            CanvasTop.Children.Add(objeto);
             //Point PD = e.GetPosition(MiCanvas);
-            //Sel = int.Parse(id);
+
             //var number = int.Parse(id);
-            //MiDron.Source = ListaDrones[Sel].Img.Source;
+
             //ListaDrones[Sel].X = (int)PD.X;
             //ListaDrones[Sel].X = (int)PD.Y;
 

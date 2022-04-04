@@ -34,7 +34,7 @@ namespace ProyectoGrupo02
             {
                 Id = 0,
                 Nombre = "Sol",
-                Imagen = "Assets\\Sol.png",
+                Imagen = "Assets\\0.png",
                 //Explicacion = @"Explicación Dron1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id fa",
                 Estado = Object.estados.Tienda,
                 Precio=2000,
@@ -47,7 +47,7 @@ namespace ProyectoGrupo02
             {
                 Id = 1,
                 Nombre = "Pocion",
-                Imagen = "Assets\\Pocion.png",
+                Imagen = "Assets\\1.png",
                 //Explicacion = @"Explicación Dron2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
                 Estado = Object.estados.Tienda,
                 Precio=700,
@@ -60,7 +60,7 @@ namespace ProyectoGrupo02
             {
                 Id = 2,
                 Nombre = "Guillotina",
-                Imagen = "Assets\\Guillotina.png",
+                Imagen = "Assets\\2.png",
                 //Explicacion = @"Explicación Dron3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
                 Estado = Object.estados.Tienda,
                 Precio=300,
@@ -73,7 +73,7 @@ namespace ProyectoGrupo02
             {
                 Id = 3,
                 Nombre = "Agua",
-                Imagen = "Assets\\Agua.png",
+                Imagen = "Assets\\3.png",
                 //Explicacion = @"Explicación Dron4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
                 Estado = Object.estados.Tienda,
                 Precio=250,
@@ -86,7 +86,7 @@ namespace ProyectoGrupo02
             {
                 Id = 4,
                 Nombre = "Arroz",
-                Imagen = "Assets\\Arroz.png",
+                Imagen = "Assets\\4.png",
                 //Explicacion = @"Explicación Dron5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
                 Estado = Object.estados.Tienda,
                 Precio=150,
@@ -99,7 +99,7 @@ namespace ProyectoGrupo02
             {
                 Id = 5,
                 Nombre = "Canyon",
-                Imagen = "Assets\\Canyon.png",
+                Imagen = "Assets\\5.png",
                 //Explicacion = @"Explicación Dron6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
                 Estado = Object.estados.Tienda,
                 Precio=100,
@@ -112,7 +112,7 @@ namespace ProyectoGrupo02
             {
                 Id = 6,
                 Nombre = "Ajo",
-                Imagen = "Assets\\Ajo.png",
+                Imagen = "Assets\\6.png",
                 //Explicacion = @"Explicación Dron7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
                 Estado = Object.estados.Tienda,
                 Precio=50,

@@ -144,15 +144,15 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Agua.png" />
-    <Content Include="Assets\Ajo.png" />
-    <Content Include="Assets\Arroz.png" />
+    <Content Include="Assets\0.png" />
+    <Content Include="Assets\1.png" />
+    <Content Include="Assets\2.png" />
+    <Content Include="Assets\3.png" />
+    <Content Include="Assets\4.png" />
+    <Content Include="Assets\5.png" />
+    <Content Include="Assets\6.png" />
     <Content Include="Assets\Bats.png" />
-    <Content Include="Assets\Canyon.png" />
     <Content Include="Assets\Earth.png" />
-    <Content Include="Assets\Guillotina.png" />
-    <Content Include="Assets\Pocion.png" />
-    <Content Include="Assets\Sol.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
