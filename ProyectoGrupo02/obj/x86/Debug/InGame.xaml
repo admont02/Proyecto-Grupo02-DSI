@@ -10,7 +10,7 @@
     <Viewbox Stretch="Uniform">
         <Grid Background="Gray" Width="979" Height="653" >
             <!--Objetos-->
-            <ListView x:ConnectionId='2'                                 Grid.Column="1"                     
+            <ListView x:ConnectionId='2'                                                    
                    HorizontalAlignment="Left" VerticalAlignment="Center"
                    IsItemClickEnabled="True"
                                            
@@ -26,7 +26,23 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <!--Pausa-->
+            <!--pontenciadores de click-->
+            <!--<ListView  ItemsSource="{x:Bind Booster}"                
+                   HorizontalAlignment="Right" VerticalAlignment="Center"
+                   IsItemClickEnabled="True"
+                   ItemClick=" ChangeImage"
+                   CanDragItems="True"
+                   DragItemsStarting="ListView_DragItemsStarting">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="local:VMObject">
+                        <StackPanel Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+                            <TextBlock Text="{x:Bind Id}" FontSize="30"/>
+                            <Image Source="{x:Bind Imagen}" Height="50" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+            <!--pausa-->
             <Button x:ConnectionId='3' x:Name="Pause" Width="70" Height="70" VerticalAlignment="Top" HorizontalAlignment="Left"                     Margin="20" Background="Black">
                 <Viewbox MaxHeight="200" MaxWidth="200">
                     <SymbolIcon  Symbol="Pause"/>

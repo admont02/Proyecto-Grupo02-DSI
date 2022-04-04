@@ -15,7 +15,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <TextBlock Text="Bloodsucker" FontSize="100" HorizontalAlignment="Center" VerticalAlignment="Top" 
-                   FontFamily="Times New Roman" FontWeight="Black" Foreground="Black" Margin="60"/>
+                   FontFamily="Monserrat" FontWeight="Black" Foreground="Black" Margin="60"/>
             <!--slider-->
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
                 <SymbolIcon Width="25"  Symbol="Volume" Grid.Row="1" Margin="10"/>
