@@ -36,5 +36,9 @@ namespace ProyectoGrupo02
         {
             Frame.Navigate(typeof(Settings));
         }
+        private void Exit_OnClick(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Exit();
+        }
     }
 }

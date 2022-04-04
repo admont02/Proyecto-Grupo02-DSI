@@ -22,16 +22,22 @@
             </Image.RenderTransform>
         </Image>
 
-        <StackPanel Width="500" VerticalAlignment="Center" HorizontalAlignment="Center" Height="500" Margin=" 0,100,0,0">
-            <Button x:ConnectionId='4' x:Name="Play"                     Height="150" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0">
-                <Viewbox MaxHeight="200" MaxWidth="200">
+        <StackPanel Width="500" Height="600" VerticalAlignment="Center" HorizontalAlignment="Center" Margin=" 0,150,0,0">
+            <Button x:ConnectionId='4' x:Name="Play"                     Height="150" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
+                <Viewbox MaxHeight="100" MaxWidth="100">
                     <SymbolIcon Symbol="Play" />
                 </Viewbox>
 
             </Button>
-            <Button x:ConnectionId='5' x:Name="Settings"                           Height="150" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="40">
-                <Viewbox MaxHeight="200" MaxWidth="200">
+            <Button x:ConnectionId='5' x:Name="Settings"                           Height="150" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="30">
+                <Viewbox MaxHeight="100" MaxWidth="100">
                     <SymbolIcon Symbol="Setting" />
+
+                </Viewbox>
+            </Button>
+            <Button x:ConnectionId='6' x:Name="Exit"                       Height="150" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
+                <Viewbox MaxHeight="100" MaxWidth="100">
+                    <SymbolIcon Symbol="Back" />
 
                 </Viewbox>
             </Button>
