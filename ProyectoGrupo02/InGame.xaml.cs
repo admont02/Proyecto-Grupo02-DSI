@@ -7,6 +7,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Gaming.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,11 +28,19 @@ namespace ProyectoGrupo02
     {
         public ObservableCollection<VMObject> Objects { get; } = new ObservableCollection<VMObject>();
         private TranslateTransform dragTranslation;
-        
+        private readonly object myLock = new object();
+        private List<Gamepad> myGamepads = new List<Gamepad>();
+        private Gamepad mainGamepad = null;
+
+        private GamepadReading reading, prereading;
+        private GamepadVibration vibration;
+
+        DispatcherTimer GamePadTimer;
+
         public void ChangeImage(object sender, ItemClickEventArgs e)
         {
             VMObject selected = e.ClickedItem as VMObject;
-            
+
             //perfil.Source = selected.Img.Source;
             ////perfil.Margin = (selected.RX,selected.RY,0,0);
             //perfil.Translation = new System.Numerics.Vector3(selected.RX, selected.RY, 0);
@@ -72,19 +81,19 @@ namespace ProyectoGrupo02
 
         private async void Ellipse_Drop(object sender, DragEventArgs e)
         {
-            var id = e.DataView.GetTextAsync();
-            int n = int.Parse(await id);
-            Point pos = e.GetPosition(TopRectangle);
-            BitmapImage url = new BitmapImage(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\"+ n.ToString() + ".png"));
-            Image objeto = new Image();
-            objeto.Source = url;
-            objeto.Width = url.PixelWidth;
-            objeto.Height = url.PixelHeight;
-            Canvas.SetLeft(objeto, pos.X);
-            Canvas.SetTop(objeto, pos.Y);
-            //objeto.SetValue(Canvas.LeftProperty, pos.X - 25);
-            //objeto.SetValue(Canvas.TopProperty, pos.Y - 15);
-            CanvasTop.Children.Add(objeto);
+            //var id = e.DataView.GetTextAsync();
+            //int n = int.Parse(await id);
+            //Point pos = e.GetPosition(TopRectangle);
+            //BitmapImage url = new BitmapImage(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\" + n.ToString() + ".png"));
+            //Image objeto = new Image();
+            //objeto.Source = url;
+            //objeto.Width = url.PixelWidth;
+            //objeto.Height = url.PixelHeight;
+            //Canvas.SetLeft(objeto, pos.X);
+            //Canvas.SetTop(objeto, pos.Y);
+            ////objeto.SetValue(Canvas.LeftProperty, pos.X - 25);
+            ////objeto.SetValue(Canvas.TopProperty, pos.Y - 15);
+            //CanvasTop.Children.Add(objeto);
             //Point PD = e.GetPosition(MiCanvas);
 
             //var number = int.Parse(id);
@@ -105,6 +114,31 @@ namespace ProyectoGrupo02
         private void Ellipse_DragOver(object sender, DragEventArgs e)
         {
             e.AcceptedOperation = DataPackageOperation.Copy;
+            e.DragUIOverride.IsCaptionVisible = true;
+            e.DragUIOverride.IsContentVisible = true;
+            e.DragUIOverride.IsGlyphVisible = true;
+        }
+        private void LeeMando()
+        {
+            if (mainGamepad != null)
+            {
+                prereading = reading;
+                reading = mainGamepad.GetCurrentReading();
+            }
+        }
+        private void ZMMando()
+        {
+            //zona muerta joystick derecho
+            if (reading.RightThumbstickX < -0.1) reading.RightThumbstickX += 0.1;
+            else if (reading.RightThumbstickX > 0.1) reading.RightThumbstickX -= 0.1;
+
+            else reading.RightThumbstickX = 0;
+
+
+            if (reading.RightThumbstickY < -0.1) reading.RightThumbstickY += 0.1;
+            else if (reading.RightThumbstickY > 0.1) reading.RightThumbstickY -= 0.1;
+
+            else reading.RightThumbstickY = 0;
         }
     }
 }

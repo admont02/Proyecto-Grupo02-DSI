@@ -184,3 +184,14 @@ C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Gr
 C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112570540000000.json
 C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
 C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112570540000000.json
+C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Levels.xbf
+C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Pause.xbf
+C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\Levels.g.i.cs
+C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\Levels.g.cs
+C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\Pause.g.i.cs
+C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\Pause.g.cs
+C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\Levels.xaml
+C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\Pause.xaml
+C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\Levels.xbf
+C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\Pause.xbf
+C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112570540000000.json
