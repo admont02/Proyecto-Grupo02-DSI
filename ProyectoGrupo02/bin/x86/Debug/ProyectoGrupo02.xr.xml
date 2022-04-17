@@ -68,6 +68,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="CanDragItems" />
+      <RootProperty Name="AllowDrop" />
       <RootProperty Name="ItemTemplate" />
       <RootEvent Name="ItemClick" />
       <RootEvent Name="DragItemsStarting" />
@@ -85,6 +86,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
+      <RootEvent Name="Drop" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="Width" />
@@ -94,7 +96,6 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="AllowDrop" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootEvent Name="Drop" />
       <RootEvent Name="DragOver" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">

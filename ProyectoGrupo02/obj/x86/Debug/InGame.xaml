@@ -15,7 +15,9 @@
                    IsItemClickEnabled="True"
                                            
                    CanDragItems="True"
-                                                                     >
+                                                                     
+                       AllowDrop="True"
+                       >
                 <ListView.ItemTemplate>
                     <DataTemplate                            >
                         <StackPanel x:ConnectionId='13' Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
@@ -73,23 +75,25 @@
             <Ellipse Fill="Silver" Width="100" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,195,0"/>
             
             <!--Caminos-->
-            <Canvas x:ConnectionId='6' x:Name="CanvasTop" Width="100" Height="200" Margin="129" VerticalAlignment="Top">
+            <Canvas x:ConnectionId='6' x:Name="CanvasTop" Width="100" Height="200" Margin="129" VerticalAlignment="Top"                     >
+                
             </Canvas>
             <Rectangle x:ConnectionId='7' x:Name="TopRectangle" Width="100" Height="200" 
                        Fill="Bisque" VerticalAlignment="Top" Margin="129"
-                      AllowDrop="True"                                                />
+                      AllowDrop="True"                             />
             <!--<Canvas x:Name="CanvasRight" Width="200" Height="100" Margin="90" VerticalAlignment="Bottom" HorizontalAlignment="Right">-->
             <!--</Canvas>-->
             <Rectangle x:ConnectionId='8' x:Name="RightRectangle" Width="200" Height="100"
                        Fill="Bisque" VerticalAlignment="Bottom" 
                        HorizontalAlignment="Right" Margin="90"
-                       AllowDrop="True"                                                />
+                       AllowDrop="True"                             
+                       />
             <!--<Canvas x:Name="CanvasLeft" Width="200" Height="100" Margin="90" VerticalAlignment="Bottom" HorizontalAlignment="Left">-->
             <!--</Canvas>-->
             <Rectangle x:ConnectionId='9' x:Name="LeftRectangle" Width="200" Height="100" 
                        Fill="Bisque" VerticalAlignment="Bottom" 
                        HorizontalAlignment="Left" Margin="90"
-                       AllowDrop="True"                                                />
+                       AllowDrop="True"                             />
             
             <!--Tierra-->
             <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 

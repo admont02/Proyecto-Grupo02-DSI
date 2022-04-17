@@ -8,6 +8,7 @@ using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Gaming.Input;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -109,6 +110,18 @@ namespace ProyectoGrupo02
 
             //MiImagen.Source = ListaDrones[number].Img.Source;
             //Texto.Text = ListaDrones[number].Explicacion;
+
+            if (e.DataView.Contains(StandardDataFormats.StorageItems))
+            {
+                var images = await e.DataView.GetStorageItemsAsync();
+                if (images.Any())
+                {
+                    var storageFile = images[0] as StorageFile;
+                    var bImage = new BitmapImage();
+                    bImage.SetSource(await storageFile.OpenAsync(FileAccessMode.Read));
+
+                }
+            }
         }
 
         private void Ellipse_DragOver(object sender, DragEventArgs e)

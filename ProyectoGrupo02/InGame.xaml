@@ -15,7 +15,9 @@
                    IsItemClickEnabled="True"
                    ItemClick=" ChangeImage"
                    CanDragItems="True"
-                       DragItemsStarting="ListView_DragItemsStarting">
+                       DragItemsStarting="ListView_DragItemsStarting"
+                       AllowDrop="True"
+                       >
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:VMObject">
                         <StackPanel Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
@@ -73,23 +75,25 @@
             <Ellipse Fill="Silver" Width="100" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,195,0"/>
             
             <!--Caminos-->
-            <Canvas x:Name="CanvasTop" Width="100" Height="200" Margin="129" VerticalAlignment="Top">
+            <Canvas x:Name="CanvasTop" Width="100" Height="200" Margin="129" VerticalAlignment="Top" Drop="Ellipse_Drop" >
+                
             </Canvas>
             <Rectangle x:Name="TopRectangle" Width="100" Height="200" 
                        Fill="Bisque" VerticalAlignment="Top" Margin="129"
-                      AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
+                      AllowDrop="True"  DragOver="Ellipse_DragOver"/>
             <!--<Canvas x:Name="CanvasRight" Width="200" Height="100" Margin="90" VerticalAlignment="Bottom" HorizontalAlignment="Right">-->
             <!--</Canvas>-->
             <Rectangle x:Name="RightRectangle" Width="200" Height="100"
                        Fill="Bisque" VerticalAlignment="Bottom" 
                        HorizontalAlignment="Right" Margin="90"
-                       AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
+                       AllowDrop="True"  DragOver="Ellipse_DragOver"
+                       />
             <!--<Canvas x:Name="CanvasLeft" Width="200" Height="100" Margin="90" VerticalAlignment="Bottom" HorizontalAlignment="Left">-->
             <!--</Canvas>-->
             <Rectangle x:Name="LeftRectangle" Width="200" Height="100" 
                        Fill="Bisque" VerticalAlignment="Bottom" 
                        HorizontalAlignment="Left" Margin="90"
-                       AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
+                       AllowDrop="True"  DragOver="Ellipse_DragOver"/>
             
             <!--Tierra-->
             <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
