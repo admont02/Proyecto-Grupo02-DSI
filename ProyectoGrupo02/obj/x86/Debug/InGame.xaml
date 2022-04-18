@@ -78,11 +78,12 @@
             <Canvas x:ConnectionId='6' x:Name="CanvasTop" Width="100" Height="200" Margin="129" VerticalAlignment="Top" >
                 <Rectangle x:ConnectionId='7' x:Name="TopRectangle" Width="100" Height="200" 
                        Fill="Bisque" Margin="129"
-                                                    Canvas.Left="-125" Canvas.Top="-131"/>
+                                            CanDrag="True"                             AllowDrop="True" Canvas.Left="-125" Canvas.Top="-131"/>
                 <Image x:ConnectionId='8' x:Name="Prueba" Source="Assets/0.png" Height="60" Canvas.Top="130" Width="50" Canvas.Left="10" 
                                            CanDrag="True"                             AllowDrop="True"
-                       /> <!--Visibility="Collapsed"-->
+                       Visibility="Collapsed"/> 
             </Canvas>
+           
 
 
             <!--Tierra-->

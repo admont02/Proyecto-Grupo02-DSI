@@ -50,6 +50,37 @@ namespace ProyectoGrupo02
         {
             this.InitializeComponent();
             dragTranslation = new TranslateTransform();
+
+            Gamepad.GamepadAdded += (object sender, Gamepad e) =>
+            {
+                lock (myLock)
+                {
+                    bool gamepadInList = myGamepads.Contains(e);
+
+                    if (!gamepadInList)
+                    {
+                        myGamepads.Add(e);
+                        mainGamepad = myGamepads[0];
+                    }
+                }
+            };
+            Gamepad.GamepadRemoved += (object sender, Gamepad e) =>
+            {
+                lock (myLock)
+                {
+                    int indexRemoved = myGamepads.IndexOf(e);
+
+                    if (indexRemoved > -1)
+                    {
+                        if (mainGamepad == myGamepads[indexRemoved])
+                        {
+                            mainGamepad = null;
+                        }
+
+                        myGamepads.RemoveAt(indexRemoved);
+                    }
+                }
+            };
         }
 
         private void Click_Pause(object sender, RoutedEventArgs e)
@@ -121,5 +152,12 @@ namespace ProyectoGrupo02
 
             else reading.RightThumbstickY = 0;
         }
+        //public void GamepadTimerSetUp()
+        //{
+        //    GamePadTimer = new DispatcherTimer();
+        //    GamePadTimer.Tick += GamePad_Tick;
+        //    GamePadTimer.Interval = new TimeSpan(100000);
+        //    GamePadTimer.Start();
+        //}
     }
 }

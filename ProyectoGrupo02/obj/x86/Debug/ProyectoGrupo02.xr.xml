@@ -101,6 +101,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="CanDrag" />
       <RootProperty Name="AllowDrop" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="Margin" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="RenderTransform" />
@@ -112,6 +113,9 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Fill" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="CanDrag" />
+      <RootProperty Name="AllowDrop" />
+      <RootEvent Name="Drop" />
       <RootEvent Name="DragOver" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">

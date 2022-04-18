@@ -78,11 +78,12 @@
             <Canvas x:Name="CanvasTop" Width="100" Height="200" Margin="129" VerticalAlignment="Top" >
                 <Rectangle x:Name="TopRectangle" Width="100" Height="200" 
                        Fill="Bisque" Margin="129"
-                        DragOver="Ellipse_DragOver" Canvas.Left="-125" Canvas.Top="-131"/>
+                        Drop="Ellipse_Drop" CanDrag="True" DragOver="Ellipse_DragOver" AllowDrop="True" Canvas.Left="-125" Canvas.Top="-131"/>
                 <Image x:Name="Prueba" Source="Assets/0.png" Height="60" Canvas.Top="130" Width="50" Canvas.Left="10" 
                        Drop="Ellipse_Drop" CanDrag="True" DragOver="Ellipse_DragOver" AllowDrop="True"
-                       /> <!--Visibility="Collapsed"-->
+                       Visibility="Collapsed"/> 
             </Canvas>
+           
 
 
             <!--Tierra-->
