@@ -82,47 +82,15 @@ namespace ProyectoGrupo02
 
         private async void Ellipse_Drop(object sender, DragEventArgs e)
         {
-            //var id = e.DataView.GetTextAsync();
-            //int n = int.Parse(await id);
-            //Point pos = e.GetPosition(TopRectangle);
-            //BitmapImage url = new BitmapImage(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\" + n.ToString() + ".png"));
-            //Image objeto = new Image();
-            //objeto.Source = url;
-            //objeto.Width = url.PixelWidth;
-            //objeto.Height = url.PixelHeight;
-            //Canvas.SetLeft(objeto, pos.X);
-            //Canvas.SetTop(objeto, pos.Y);
-            ////objeto.SetValue(Canvas.LeftProperty, pos.X - 25);
-            ////objeto.SetValue(Canvas.TopProperty, pos.Y - 15);
-            //CanvasTop.Children.Add(objeto);
-            //Point PD = e.GetPosition(MiCanvas);
-
-            //var number = int.Parse(id);
-
-            //ListaDrones[Sel].X = (int)PD.X;
-            //ListaDrones[Sel].X = (int)PD.Y;
-
-            //ListaDrones[Sel].Transformacion.Rotation = ListaDrones[Sel].Angulo;
-            //// VOY POR AQUI ListaDrones[Sel].Transformacion.TranslateX
-            //ListaDrones[Sel].Transformacion.CenterX = 20;
-            //ListaDrones[Sel].Transformacion.CenterY = 15;
+            var id = await e.DataView.GetTextAsync();
+            var number = int.Parse(id);
 
 
-            //MiImagen.Source = ListaDrones[number].Img.Source;
-            //Texto.Text = ListaDrones[number].Explicacion;
+            Prueba.Source = Objects[number].Img.Source; ;
+            Prueba.Visibility = Visibility.Visible;
 
-            if (e.DataView.Contains(StandardDataFormats.StorageItems))
-            {
-                var images = await e.DataView.GetStorageItemsAsync();
-                if (images.Any())
-                {
-                    var storageFile = images[0] as StorageFile;
-                    var bImage = new BitmapImage();
-                    bImage.SetSource(await storageFile.OpenAsync(FileAccessMode.Read));
-
-                }
-            }
         }
+
 
         private void Ellipse_DragOver(object sender, DragEventArgs e)
         {
