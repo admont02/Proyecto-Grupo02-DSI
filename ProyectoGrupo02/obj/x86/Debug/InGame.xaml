@@ -20,9 +20,9 @@
                        >
                 <ListView.ItemTemplate>
                     <DataTemplate                            >
-                        <StackPanel x:ConnectionId='38' Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
-                            <TextBlock x:ConnectionId='39'                    FontSize="30"/>
-                            <Image x:ConnectionId='40'                          Height="50" />
+                        <StackPanel x:ConnectionId='41' Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+                            <TextBlock x:ConnectionId='42'                    FontSize="30"/>
+                            <Image x:ConnectionId='43'                          Height="50" />
 
                         </StackPanel>
                     </DataTemplate>
@@ -76,7 +76,9 @@
 
             <!--Caminos-->
             <Canvas x:ConnectionId='6' x:Name="CanvasTop" Width="100" Height="200" Margin="129" VerticalAlignment="Top" >
-                <Grid x:ConnectionId='25'                             >
+                <Image x:ConnectionId='27' x:Name="MiddleBackground" Source="Assets/casillaTopFondo.png"
+                           Height="200" Width="100" />
+                <Grid x:ConnectionId='28'                             >
                     <Grid.RowDefinitions>
                         <RowDefinition Height="50"/>
                         <RowDefinition Height="50"/>
@@ -88,40 +90,42 @@
                         <ColumnDefinition Width="50"/>
                     </Grid.ColumnDefinitions>
                     <!--Casillas-->
-                    <Image x:ConnectionId='27' x:Name="middleLeft0" Source="Assets/casilla.png" Stretch="Fill" 
+                    <Image x:ConnectionId='30' x:Name="middleLeft0" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="0"
                            AllowDrop="True"                                                />
-                    <Image x:ConnectionId='28' x:Name="middleLeft1" Source="Assets/casilla.png" Stretch="Fill" 
+                    <Image x:ConnectionId='31' x:Name="middleLeft1" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="1"
                            AllowDrop="True"                                                />
-                    <Image x:ConnectionId='29' x:Name="middleLeft2" Source="Assets/casilla.png" Stretch="Fill" 
+                    <Image x:ConnectionId='32' x:Name="middleLeft2" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="2"
-                           AllowDrop="True"                    />
-                    <Image x:ConnectionId='30' x:Name="middleLeft3" Source="Assets/casilla.png" Stretch="Fill" 
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='33' x:Name="middleLeft3" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="3"
-                           AllowDrop="True"                    />
+                           AllowDrop="True"                                                />
 
-                    <Image x:ConnectionId='31' x:Name="middleRight0" Source="Assets/casilla.png" Stretch="Fill" 
+                    <Image x:ConnectionId='34' x:Name="middleRight0" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="0"
-                           AllowDrop="True"                    />
-                    <Image x:ConnectionId='32' x:Name="middleRight1" Source="Assets/casilla.png" Stretch="Fill" 
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='35' x:Name="middleRight1" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="1"
-                           AllowDrop="True"                    />
-                    <Image x:ConnectionId='33' x:Name="middleRight2" Source="Assets/casilla.png" Stretch="Fill" 
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='36' x:Name="middleRight2" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="2"
-                           AllowDrop="True"                    />
-                    <Image x:ConnectionId='34' x:Name="middleRight3" Source="Assets/casilla.png" Stretch="Fill" 
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='37' x:Name="middleRight3" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="3"
-                           AllowDrop="True"                    />
+                           AllowDrop="True"                                                />
                     
                 </Grid>
                 
-                <Image x:ConnectionId='26' x:Name="Prueba" Source="Assets/0.png" Height="60" Canvas.Top="130"
+                <Image x:ConnectionId='29' x:Name="Prueba" Source="Assets/0.png" Height="60" Canvas.Top="130"
                        Width="50" Canvas.Left="10"                     CanDrag="True" 
                                                    AllowDrop="True"
                        Visibility="Collapsed"/>
             </Canvas>
             <Canvas x:ConnectionId='7' x:Name="CanvasLeft" Width="200" Height="100" Margin="-550, 450, 0, 0" VerticalAlignment="Top" >
+                <Image x:ConnectionId='18' x:Name="LeftBackground" Source="Assets/casillaTumbao.png"
+                           Height="100" Width="200" />
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="50"/>
@@ -135,23 +139,31 @@
                         <ColumnDefinition Width="50"/>
                     </Grid.ColumnDefinitions>
                     <!--Casillas-->
-                    <Image x:ConnectionId='17' x:Name="leftUp0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="0"/>
-                    <Image x:ConnectionId='18' x:Name="leftUp1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="0"/>
-                    <Image x:ConnectionId='19' x:Name="leftUp2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="2" Grid.Row="0"/>
-                    <Image x:ConnectionId='20' x:Name="leftUp3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="3" Grid.Row="0"/>
+                    <Image x:ConnectionId='19' x:Name="leftUp0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="0" Grid.Row="0"
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='20' x:Name="leftUp1" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="1" Grid.Row="0"
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='21' x:Name="leftUp2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="2" Grid.Row="0"
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='22' x:Name="leftUp3" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="3" Grid.Row="0"
+                           AllowDrop="True"                                                />
 
-                    <Image x:ConnectionId='21' x:Name="leftDown0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="1"/>
-                    <Image x:ConnectionId='22' x:Name="leftDown1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="1"/>
-                    <Image x:ConnectionId='23' x:Name="leftDown2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="2" Grid.Row="1"/>
-                    <Image x:ConnectionId='24' x:Name="leftDown3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="3" Grid.Row="1"/>
+                    <Image x:ConnectionId='23' x:Name="leftDown0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="0" Grid.Row="1"
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='24' x:Name="leftDown1" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="1" Grid.Row="1"
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='25' x:Name="leftDown2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="2" Grid.Row="1"
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='26' x:Name="leftDown3" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="3" Grid.Row="1"
+                           AllowDrop="True"                                                />
 
                 </Grid>
                 <!--<Image x:Name="Prueba2" Source="Assets/0.png" Height="60" Canvas.Top="130"
@@ -160,6 +172,8 @@
                        Visibility="Collapsed"/>-->
             </Canvas>
             <Canvas x:ConnectionId='8' x:Name="CanvasRight" Width="200" Height="100" Margin="550, 450, 0, 0" VerticalAlignment="Top" >
+                <Image x:ConnectionId='9' x:Name="RightBackground" Source="Assets/casillaTumbao.png"
+                           Height="100" Width="200" />
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="50"/>
@@ -173,23 +187,32 @@
                         <ColumnDefinition Width="50"/>
                     </Grid.ColumnDefinitions>
                     <!--Casillas-->
-                    <Image x:ConnectionId='9' x:Name="RightUp0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="0"/>
-                    <Image x:ConnectionId='10' x:Name="RightUp1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="0"/>
-                    <Image x:ConnectionId='11' x:Name="RightUp2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="2" Grid.Row="0"/>
-                    <Image x:ConnectionId='12' x:Name="RightUp3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="3" Grid.Row="0"/>
+                    
+                    <Image x:ConnectionId='10' x:Name="RightUp0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="0" Grid.Row="0"
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='11' x:Name="RightUp1" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="1" Grid.Row="0"
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='12' x:Name="RightUp2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="2" Grid.Row="0"
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='13' x:Name="RightUp3" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="3" Grid.Row="0"
+                           AllowDrop="True"                                                />
 
-                    <Image x:ConnectionId='13' x:Name="RightDown0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="1"/>
-                    <Image x:ConnectionId='14' x:Name="RightDown1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="1"/>
-                    <Image x:ConnectionId='15' x:Name="RightDown2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="2" Grid.Row="1"/>
-                    <Image x:ConnectionId='16' x:Name="RightDown3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="3" Grid.Row="1"/>
+                    <Image x:ConnectionId='14' x:Name="RightDown0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="0" Grid.Row="1"
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='15' x:Name="RightDown1" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="1" Grid.Row="1"
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='16' x:Name="RightDown2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="2" Grid.Row="1"
+                           AllowDrop="True"                                                />
+                    <Image x:ConnectionId='17' x:Name="RightDown3" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="3" Grid.Row="1"
+                           AllowDrop="True"                                                />
 
                 </Grid>
                 <!--<Image x:Name="Prueba3" Source="Assets/0.png" Height="60" Canvas.Top="130" Width="50" Canvas.Left="10" 
