@@ -78,17 +78,37 @@
             <Canvas x:Name="CanvasTop" Width="100" Height="200" Margin="129" VerticalAlignment="Top" >
                 <Rectangle x:Name="TopRectangle" Width="100" Height="200" 
                        Fill="Bisque" Margin="129"
-                        Drop="Ellipse_Drop" CanDrag="True" DragOver="Ellipse_DragOver" AllowDrop="True" Canvas.Left="-125" Canvas.Top="-131"/>
-                <Image x:Name="Prueba" Source="Assets/0.png" Height="60" Canvas.Top="130" Width="50" Canvas.Left="10" 
-                       Drop="Ellipse_Drop" CanDrag="True" DragOver="Ellipse_DragOver" AllowDrop="True"
-                       Visibility="Collapsed"/> 
+                        Drop="Ellipse_Drop" CanDrag="True" DragOver="Ellipse_DragOver"
+                           AllowDrop="True" Canvas.Left="-125" Canvas.Top="-131"/>
+                <Image x:Name="Prueba" Source="Assets/0.png" Height="60" Canvas.Top="130"
+                       Width="50" Canvas.Left="10" Drop="Ellipse_Drop" CanDrag="True" 
+                       DragOver="Ellipse_DragOver" AllowDrop="True"
+                       Visibility="Collapsed"/>
             </Canvas>
-           
+            <Canvas x:Name="CanvasLeft" Width="200" Height="100" Margin="129" VerticalAlignment="Top" >
+                <Image x:Name="Prueba2" Source="Assets/0.png" Height="60" Canvas.Top="130"
+                       Width="50" Canvas.Left="10" Drop="Ellipse_Drop" CanDrag="True" 
+                       DragOver="Ellipse_DragOver" AllowDrop="True"
+                       Visibility="Collapsed"/>
+            </Canvas>
+            <Canvas x:Name="CanvasRight" Width="200" Height="100" Margin="129" VerticalAlignment="Top" >
+                <Image x:Name="Prueba3" Source="Assets/0.png" Height="60" Canvas.Top="130" Width="50" Canvas.Left="10" 
+                       Drop="Ellipse_Drop" CanDrag="True" DragOver="Ellipse_DragOver" AllowDrop="True"
+                       Visibility="Collapsed"/>
+            </Canvas>
+
 
 
             <!--Tierra-->
             <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
                Width="300" Height="300" />
+            <Rectangle x:Name="RightRectangle" 
+                       Fill="Bisque" Margin="729,456,50,97"
+                        Drop="Ellipse_Drop" CanDrag="True" DragOver="Ellipse_DragOver" AllowDrop="True"/>
+            <Rectangle x:Name="LeftRectangle" 
+                       Fill="Bisque" Margin="55,456,724,97"
+                        Drop="Ellipse_Drop" CanDrag="True" DragOver="Ellipse_DragOver" 
+                           AllowDrop="True"/>
         </Grid>
     </Viewbox>
 </Page>
