@@ -166,10 +166,7 @@
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
 
                 </Grid>
-                <!--<Image x:Name="Prueba2" Source="Assets/0.png" Height="60" Canvas.Top="130"
-                       Width="50" Canvas.Left="10" Drop="Ellipse_Drop" CanDrag="True" 
-                       DragOver="Ellipse_DragOver" AllowDrop="True"
-                       Visibility="Collapsed"/>-->
+                
             </Canvas>
             <Canvas x:Name="CanvasRight" Width="200" Height="100" Margin="550, 450, 0, 0" VerticalAlignment="Top" >
                 <Image x:Name="RightBackground" Source="Assets/casillaTumbao.png"
@@ -187,7 +184,7 @@
                         <ColumnDefinition Width="50"/>
                     </Grid.ColumnDefinitions>
                     <!--Casillas-->
-                    
+
                     <Image x:Name="RightUp0" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="0"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
@@ -215,9 +212,6 @@
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
 
                 </Grid>
-                <!--<Image x:Name="Prueba3" Source="Assets/0.png" Height="60" Canvas.Top="130" Width="50" Canvas.Left="10" 
-                       Drop="Ellipse_Drop" CanDrag="True" DragOver="Ellipse_DragOver" AllowDrop="True"
-                       Visibility="Collapsed"/>-->
             </Canvas>
 
 
@@ -225,14 +219,6 @@
             <!--Tierra-->
             <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
                Width="300" Height="300" />
-            <!--<Rectangle x:Name="RightRectangle" 
-                       Fill="Bisque" Margin="729,456,50,97"
-                        Drop="Ellipse_Drop" CanDrag="True" DragOver="Ellipse_DragOver"
-                       AllowDrop="True"/>
-            <Rectangle x:Name="LeftRectangle" 
-                       Fill="Bisque" Margin="55,456,724,97"
-                        Drop="Ellipse_Drop" CanDrag="True" DragOver="Ellipse_DragOver" 
-                           AllowDrop="True"/>-->
         </Grid>
     </Viewbox>
 </Page>
