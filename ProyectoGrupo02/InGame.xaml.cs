@@ -117,8 +117,10 @@ namespace ProyectoGrupo02
             var number = int.Parse(id);
 
 
-            Prueba.Source = Objects[number].Img.Source; ;
-            Prueba.Visibility = Visibility.Visible;
+            Image r = sender as Image;
+
+            r.Source = Objects[number].Img.Source; 
+            r.Visibility = Visibility.Visible;
 
         }
 

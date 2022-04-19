@@ -21,6 +21,7 @@
       <RootProperty Name="Children" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="ColumnDefinitions" />
+      <RootEvent Name="DragOver" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
@@ -108,14 +109,6 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="RenderTransform" />
-      <RootEvent Name="Drop" />
-      <RootEvent Name="DragOver" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
-      <RootProperty Name="Fill" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="CanDrag" />
-      <RootProperty Name="AllowDrop" />
       <RootEvent Name="Drop" />
       <RootEvent Name="DragOver" />
     </RootType>

@@ -76,7 +76,7 @@
 
             <!--Caminos-->
             <Canvas x:Name="CanvasTop" Width="100" Height="200" Margin="129" VerticalAlignment="Top" >
-                <Grid>
+                <Grid  DragOver="Ellipse_DragOver">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="50"/>
                         <RowDefinition Height="50"/>
@@ -89,22 +89,30 @@
                     </Grid.ColumnDefinitions>
                     <!--Casillas-->
                     <Image x:Name="middleLeft0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="0"/>
+                           Height="50" Width="50" Grid.Column="0" Grid.Row="0"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
                     <Image x:Name="middleLeft1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="1"/>
+                           Height="50" Width="50" Grid.Column="0" Grid.Row="1"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
                     <Image x:Name="middleLeft2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="2"/>
+                           Height="50" Width="50" Grid.Column="0" Grid.Row="2"
+                           AllowDrop="True" Drop="Ellipse_Drop"/>
                     <Image x:Name="middleLeft3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="3"/>
+                           Height="50" Width="50" Grid.Column="0" Grid.Row="3"
+                           AllowDrop="True" Drop="Ellipse_Drop"/>
 
                     <Image x:Name="middleRight0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="0"/>
+                           Height="50" Width="50" Grid.Column="1" Grid.Row="0"
+                           AllowDrop="True" Drop="Ellipse_Drop"/>
                     <Image x:Name="middleRight1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="1"/>
+                           Height="50" Width="50" Grid.Column="1" Grid.Row="1"
+                           AllowDrop="True" Drop="Ellipse_Drop"/>
                     <Image x:Name="middleRight2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="2"/>
+                           Height="50" Width="50" Grid.Column="1" Grid.Row="2"
+                           AllowDrop="True" Drop="Ellipse_Drop"/>
                     <Image x:Name="middleRight3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="3"/>
+                           Height="50" Width="50" Grid.Column="1" Grid.Row="3"
+                           AllowDrop="True" Drop="Ellipse_Drop"/>
                     
                 </Grid>
                 
