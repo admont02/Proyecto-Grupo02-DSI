@@ -155,6 +155,7 @@
     <Content Include="Assets\BatRotado.png" />
     <Content Include="Assets\Bats.png" />
     <Content Include="Assets\8.png" />
+    <Content Include="Assets\casilla.png" />
     <Content Include="Assets\Earth.png" />
     <Content Include="Assets\7.png" />
     <Content Include="Assets\vampiro.png" />

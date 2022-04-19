@@ -67,6 +67,9 @@
     <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\8.png">
       <PackagePath>Assets\8.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\casilla.png">
+      <PackagePath>Assets\casilla.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Earth.png">
       <PackagePath>Assets\Earth.png</PackagePath>
     </AppxPackagedFile>

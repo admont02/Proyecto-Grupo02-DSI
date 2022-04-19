@@ -20,6 +20,9 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Children" />
       <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
     </RootType>
@@ -113,10 +116,14 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="CanDrag" />
       <RootProperty Name="AllowDrop" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
       <RootEvent Name="Drop" />
       <RootEvent Name="DragOver" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
       <RootProperty Name="TargetType" />
@@ -135,7 +142,6 @@
       <RootProperty Name="ScaleX" />
     </RootType>
     <RootType FullName="ProyectoGrupo02.MainPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition" />
     <RootType FullName="Windows.UI.Xaml.Controls.Slider">
       <RootProperty Name="Minimum" />
       <RootProperty Name="Maximum" />
