@@ -19,6 +19,7 @@ namespace ProyectoGrupo02
             Imagen = obj.Imagen;
             Explicacion = obj.Explicacion;
             Estado = obj.Estado;
+            Precio = obj.Precio;
             X = obj.X;
             Y = obj.Y;
             RX = obj.RX;
