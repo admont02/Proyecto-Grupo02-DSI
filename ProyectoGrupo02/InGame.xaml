@@ -21,7 +21,6 @@
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:VMObject">
                         <StackPanel Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
-                            <TextBlock Text="{x:Bind Id}" FontSize="30"/>
                             <Image Source="{x:Bind Imagen}" Height="50" />
 
                         </StackPanel>

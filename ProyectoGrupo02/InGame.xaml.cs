@@ -115,13 +115,16 @@ namespace ProyectoGrupo02
         {
             var id = await e.DataView.GetTextAsync();
             var number = int.Parse(id);
+            var precio = Objects[number].Precio;
+            if ( precio<= (int.Parse(Money.Text)))
+            {
+                Image r = sender as Image;
 
+                r.Source = Objects[number].Img.Source;
+                r.Visibility = Visibility.Visible;
 
-            Image r = sender as Image;
-
-            r.Source = Objects[number].Img.Source; 
-            r.Visibility = Visibility.Visible;
-
+                Money.Text = (Int64.Parse(Money.Text) - precio).ToString();
+            }
         }
 
 
