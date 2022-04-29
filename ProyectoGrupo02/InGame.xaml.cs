@@ -143,6 +143,19 @@ namespace ProyectoGrupo02
                 reading = mainGamepad.GetCurrentReading();
             }
         }
+
+        private async void Papelera_Drop(object sender, DragEventArgs e)
+        {
+            var id = await e.DataView.GetTextAsync();
+            ContentControl o = FindName(id) as ContentControl;
+            //MiCanvas.Children.Remove(o);
+        }
+
+        private void RightUp0_DragStarting(UIElement sender, DragStartingEventArgs args)
+        {
+
+        }
+
         private void ZMMando()
         {
             //zona muerta joystick derecho
