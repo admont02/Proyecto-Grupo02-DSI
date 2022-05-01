@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Media.Core;
+using Windows.Media.Playback;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,9 +24,13 @@ namespace ProyectoGrupo02
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        MediaPlayer musica;
+        MediaPlayer click;
         public MainPage()
         {
             this.InitializeComponent();
+            musica = new MediaPlayer();
+            click = new MediaPlayer();
         }
 
         private void Play_Click(object sender, RoutedEventArgs e)
@@ -39,6 +45,20 @@ namespace ProyectoGrupo02
         private void Exit_OnClick(object sender, RoutedEventArgs e)
         {
             Application.Current.Exit();
+        }
+        private async void PlayMusic()
+        {
+           // played = true;
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Music");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("menumusic.mp3");
+            musica.Source = MediaSource.CreateFromStorageFile(file);
+            musica.IsLoopingEnabled = true;
+            musica.Volume = 0.05;
+            musica.Play();
+        }
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        {
+            PlayMusic();
         }
     }
 }

@@ -15,6 +15,7 @@ Assets\casilla.png
 Assets\casillaTopFondo.png
 Assets\casillaTumbao.png
 Assets\Earth.png
+Assets\fondomenu.png
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -31,4 +32,5 @@ MainPage.xbf
 Pause.xbf
 ProyectoGrupo02.xr.xml
 Settings.xbf
+Music\menumusic.mp3
 Properties\Default.rd.xml

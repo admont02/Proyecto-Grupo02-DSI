@@ -1,1 +1,1 @@
-C:\Users\adrim\OneDrive\Escritorio\2ºCARRERA\ASIG.SEGUNDO\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\ProyectoGrupo02.csproj;x86
+C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\ProyectoGrupo02.csproj;x86

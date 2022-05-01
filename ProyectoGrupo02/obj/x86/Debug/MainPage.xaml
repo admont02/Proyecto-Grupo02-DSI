@@ -6,12 +6,14 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="DarkGray">
+    >
 
     <Viewbox Stretch="Uniform">
-        <Grid Background="DarkGray" Width="979" Height="653" >
+        <Grid  >
+            <Image Source="Assets/fondomenu.png" Stretch="Fill"/>
+
             <TextBlock Text="Bloodsucker" FontSize="100" HorizontalAlignment="Center" VerticalAlignment="Top" 
-                   FontFamily="Monserrat" FontWeight="Black" Foreground="Purple" Margin="60"/>
+                   FontFamily="Monserrat" FontWeight="Black" Foreground="Black" Margin="60"/>
             <!--Murciélagos-->
             <Image x:ConnectionId='2' x:Name="bats1" Source="Assets/BatRotado.png" HorizontalAlignment="Left" VerticalAlignment="Center"
                Width="200" Height="200" Margin="20"/>
