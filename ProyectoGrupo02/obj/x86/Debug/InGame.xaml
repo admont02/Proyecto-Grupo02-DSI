@@ -6,10 +6,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="Gray">
+    >
     <Viewbox Stretch="Uniform">
         <Grid Background="Gray" Width="979" Height="653" >
-
+            <Image Source="Assets/inGameFondo.jpg" Stretch="Fill"></Image>
             <!--Compras-->
             <Ellipse Fill="Silver" Width="220" Height="220" 
                      HorizontalAlignment="Left" VerticalAlignment="Top" 
@@ -296,14 +296,14 @@
                     <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
                 <StackPanel Orientation="Vertical" >
-                    <Image x:ConnectionId='14' x:Name="PT0" Width="40" Height="40" Source="/Assets/0.png" 
+                    <Image x:ConnectionId='14' x:Name="PT0" Width="40" Height="40" Source="/Assets/7.png" 
                     CanDrag="True"
                                                  
                     ></Image>
                     
                 </StackPanel >
                 <StackPanel Orientation="Vertical" Grid.Row="1" >
-                    <Image x:ConnectionId='13' x:Name="PT1" Width="40" Height="40"  Source="/Assets/1.png"></Image>
+                    <Image x:ConnectionId='13' x:Name="PT1" Width="40" Height="40"  Source="/Assets/8.png"></Image>
                     
                 </StackPanel>
             </Grid>

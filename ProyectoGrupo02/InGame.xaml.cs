@@ -8,6 +8,8 @@ using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Gaming.Input;
+using Windows.Media.Core;
+using Windows.Media.Playback;
 using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -37,6 +39,8 @@ namespace ProyectoGrupo02
         private GamepadVibration vibration;
 
         DispatcherTimer GamePadTimer;
+        MediaPlayer musica;
+        MediaPlayer click;
 
         public void ChangeImage(object sender, ItemClickEventArgs e)
         {
@@ -50,6 +54,8 @@ namespace ProyectoGrupo02
         {
             this.InitializeComponent();
             dragTranslation = new TranslateTransform();
+            musica = new MediaPlayer();
+            click = new MediaPlayer();
 
             Gamepad.GamepadAdded += (object sender, Gamepad e) =>
             {
@@ -85,6 +91,8 @@ namespace ProyectoGrupo02
 
         private void Click_Pause(object sender, RoutedEventArgs e)
         {
+            PlayClick();
+            musica.Pause();
             Frame.Navigate(typeof(Pause));
         }
         private void Coin_Clicker(object sender, RoutedEventArgs e)
@@ -93,6 +101,7 @@ namespace ProyectoGrupo02
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            //this.NavigationCacheMode = NavigationCacheMode.Required;
             if (Objects != null) // Carga la lista de ModelView
             {
                 foreach (Object obj in Model.GetAllObjects())
@@ -100,6 +109,7 @@ namespace ProyectoGrupo02
                     VMObject VMitem = new VMObject(obj); Objects.Add(VMitem);
                 }
             }
+            PlayMusic();
             base.OnNavigatedTo(e);
         }
 
@@ -264,5 +274,25 @@ namespace ProyectoGrupo02
         //    GamePadTimer.Interval = new TimeSpan(100000);
         //    GamePadTimer.Start();
         //}
+        private async void PlayMusic()
+        {
+            // played = true;
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Music");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("mainmusic.mp3");
+            musica.Source = MediaSource.CreateFromStorageFile(file);
+            musica.IsLoopingEnabled = true;
+            musica.Volume = 0.05;
+            musica.Play();
+            click.Play();
+        }
+        private async void PlayClick()
+        {
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Music");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("clicked.mp3");
+            click.Source = MediaSource.CreateFromStorageFile(file);
+
+            click.Volume = 1;
+            click.Play();
+        }
     }
 }
