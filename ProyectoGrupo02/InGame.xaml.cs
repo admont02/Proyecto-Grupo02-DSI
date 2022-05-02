@@ -111,23 +111,77 @@ namespace ProyectoGrupo02
             e.Data.RequestedOperation = DataPackageOperation.Copy;
         }
 
+        private void a_DragStarting(object sender, DragStartingEventArgs e)
+        {
+            Image Item = sender as Image;
+            string id = Item.Name;
+            e.Data.SetText(id);
+            e.Data.RequestedOperation = DataPackageOperation.Copy;
+        }
+
         private async void Ellipse_Drop(object sender, DragEventArgs e)
         {
             var id = await e.DataView.GetTextAsync();
-            var number = int.Parse(id);
-            var precio = Objects[number].Precio;
-            if ( precio<= (int.Parse(Money.Text)))
+            Image o = FindName(id) as Image;
+            int num = 999999999;
+            switch (o.Name)
+            {
+                case "O0":
+                    num = Objects[0].Precio;
+                    break;
+                case "O1":
+                    num = Objects[1].Precio;
+                    break;
+                case "O2":
+                    num = Objects[2].Precio;
+                    break;
+                case "O3":
+                    num = Objects[3].Precio;
+                    break;
+                case "O4":
+                    num = Objects[4].Precio;
+                    break;
+                case "O5":
+                    num = Objects[5].Precio;
+                    break;
+                case "O6":
+                    num = Objects[6].Precio;
+                    break;
+            }
+            if ( num <= (int.Parse(Money.Text)))
             {
                 Image r = sender as Image;
-
-                r.Source = Objects[number].Img.Source;
+                int x = -1;
+                switch (o.Name)
+                {
+                    case "O0":
+                        x = 0;
+                        break;
+                    case "O1":
+                        x = 1;
+                        break;
+                    case "O2":
+                        x = 2;
+                        break;
+                    case "O3":
+                        x = 3;
+                        break;
+                    case "O4":
+                        x = 4;
+                        break;
+                    case "O5":
+                        x = 5;
+                        break;
+                    case "O6":
+                        x = 6;
+                        break;
+                }
+                r.Source = Objects[x].Img.Source;
                 r.Visibility = Visibility.Visible;
 
-                Money.Text = (Int64.Parse(Money.Text) - precio).ToString();
+                Money.Text = (int.Parse(Money.Text) - num).ToString();
             }
         }
-
-
         private void Ellipse_DragOver(object sender, DragEventArgs e)
         {
             e.AcceptedOperation = DataPackageOperation.Copy;
@@ -147,13 +201,46 @@ namespace ProyectoGrupo02
         private async void Papelera_Drop(object sender, DragEventArgs e)
         {
             var id = await e.DataView.GetTextAsync();
-            ContentControl o = FindName(id) as ContentControl;
-            //MiCanvas.Children.Remove(o);
+            Image o = FindName(id) as Image;
+            int x = -1;
+            switch (o.Name)
+            {
+                case "O0":
+                    x = 0;
+                    break;
+                case "O1":
+                    x = 1;
+                    break;
+                case "O2":
+                    x = 2;
+                    break;
+                case "O3":
+                    x = 3;
+                    break;
+                case "O4":
+                    x = 4;
+                    break;
+                case "O5":
+                    x = 5;
+                    break;
+                case "O6":
+                    x = 6;
+                    break;
+            }
+            //o.Source = "Assets/casilla.png";
+            o.Visibility = Visibility.Visible;
+        }
+        private void Papelera_DragOver(object sender, DragEventArgs e)
+        {
+            e.AcceptedOperation = DataPackageOperation.Move;
         }
 
-        private void RightUp0_DragStarting(UIElement sender, DragStartingEventArgs args)
+        private void RightUp0_DragStarting(object sender, DragStartingEventArgs e)
         {
-
+            Image Item = sender as Image;
+            string id = Item.Name;
+            e.Data.SetText(id);
+            e.Data.RequestedOperation = DataPackageOperation.Copy;
         }
 
         private void ZMMando()

@@ -19,8 +19,11 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Children" />
-      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="RowDefinitions" />
       <RootEvent Name="DragOver" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
@@ -67,6 +70,9 @@
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalTextAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Orientation" />
@@ -74,7 +80,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
-      <RootProperty Name="Spacing" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
     </RootType>
@@ -84,17 +89,6 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="ProyectoGrupo02.Levels" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="IsItemClickEnabled" />
-      <RootProperty Name="CanDragItems" />
-      <RootProperty Name="AllowDrop" />
-      <RootProperty Name="ItemTemplate" />
-      <RootEvent Name="ItemClick" />
-      <RootEvent Name="DragItemsStarting" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
       <RootProperty Name="Fill" />
       <RootProperty Name="Width" />
@@ -127,10 +121,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
-    <RootType FullName="Windows.UI.Xaml.DataTemplate">
-      <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="ProyectoGrupo02.InGame" />
     <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform">
