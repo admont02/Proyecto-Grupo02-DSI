@@ -98,21 +98,7 @@
                 </StackPanel>
             </Grid>
             <!--pontenciadores de click-->
-            <!--<ListView  ItemsSource="{x:Bind Booster}"                
-                   HorizontalAlignment="Right" VerticalAlignment="Center"
-                   IsItemClickEnabled="True"
-                   ItemClick=" ChangeImage"
-                   CanDragItems="True"
-                   DragItemsStarting="ListView_DragItemsStarting">
-                <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="local:VMObject">
-                        <StackPanel Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
-                            <TextBlock Text="{x:Bind Id}" FontSize="30"/>
-                            <Image Source="{x:Bind Imagen}" Height="50" />
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>-->
+
             <!--pausa-->
             <Button x:ConnectionId='5' x:Name="Pause" Width="70" Height="70" VerticalAlignment="Top" HorizontalAlignment="Left"                     Margin="20" Background="Black">
                 <Viewbox MaxHeight="200" MaxWidth="200">
@@ -124,11 +110,12 @@
             <TextBlock x:ConnectionId='6' x:Name="Money" Text="0" Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS"/>
 
             <!--Clicker-->
-            <Button x:ConnectionId='7'  Width="100" Height="100" Content="Click me!"                       HorizontalAlignment="Right" VerticalAlignment="Top" Margin="50">
+            <Button x:ConnectionId='7'  Width="100" Height="110"                        HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,40,50,0">
+
                 <Button.Template>
-                    <ControlTemplate TargetType="Button">
+                    <ControlTemplate TargetType="Button" >
                         <Grid>
-                            <Ellipse Fill="Gold"/>
+                            <Image Source="Assets/monedaV.png"></Image>
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Grid>
                     </ControlTemplate>
@@ -295,16 +282,17 @@
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
+
                 <StackPanel Orientation="Vertical" >
                     <Image x:ConnectionId='14' x:Name="PT0" Width="40" Height="40" Source="/Assets/7.png" 
                     CanDrag="True"
-                                                 
+                                                  
                     ></Image>
-                    
+
                 </StackPanel >
                 <StackPanel Orientation="Vertical" Grid.Row="1" >
                     <Image x:ConnectionId='13' x:Name="PT1" Width="40" Height="40"  Source="/Assets/8.png"></Image>
-                    
+
                 </StackPanel>
             </Grid>
 

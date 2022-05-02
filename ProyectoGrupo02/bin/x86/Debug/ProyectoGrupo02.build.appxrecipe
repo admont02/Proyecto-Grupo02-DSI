@@ -76,6 +76,9 @@
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\casillaTumbao.png">
       <PackagePath>Assets\casillaTumbao.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\cursor.png">
+      <PackagePath>Assets\cursor.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Earth.png">
       <PackagePath>Assets\Earth.png</PackagePath>
     </AppxPackagedFile>
@@ -84,6 +87,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\fondomenu.png">
       <PackagePath>Assets\fondomenu.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\monedaV.png">
+      <PackagePath>Assets\monedaV.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\trash.png">
       <PackagePath>Assets\trash.png</PackagePath>

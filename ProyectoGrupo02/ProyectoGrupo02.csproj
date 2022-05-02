@@ -158,10 +158,12 @@
     <Content Include="Assets\casilla.png" />
     <Content Include="Assets\casillaTopFondo.png" />
     <Content Include="Assets\casillaTumbao.png" />
+    <Content Include="Assets\cursor.png" />
     <Content Include="Assets\Earth.png" />
     <Content Include="Assets\7.png" />
     <Content Include="Assets\fondomenu.png" />
     <Content Include="Assets\inGameFondo.jpg" />
+    <Content Include="Assets\monedaV.png" />
     <Content Include="Assets\trash.png" />
     <Content Include="Assets\vampiro.png" />
     <Content Include="Assets\vampiroFondo.jpg" />
