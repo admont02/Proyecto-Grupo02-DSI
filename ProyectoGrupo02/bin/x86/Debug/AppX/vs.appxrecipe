@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-RVE9DBN</Machine>
-    <WindowsUser>Simona</WindowsUser>
+    <Machine>DESKTOP-LEEVLF9</Machine>
+    <WindowsUser>ADRIAN</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>5f142a70-acf8-429b-bf2d-79be7fbcf689</PackageIdentityName>
     <PackageIdentityPublisher>CN=ADRIAN</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>354BA0E08E3FCE2B2DBCC46EECD1F94340448FCB0E72556CEBE68B3FC148CFAF</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>C1894C16A57171FADC37B7B3FAD300A9F9C3C1D73701149D2A41CC8819DB6DFE</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>5f142a70-acf8-429b-bf2d-79be7fbcf689_1.0.0.0_x86__dkcekemraf28j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>5f142a70-acf8-429b-bf2d-79be7fbcf689_dkcekemraf28j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>5f142a70-acf8-429b-bf2d-79be7fbcf689</RegisteredPackageID>
@@ -27,186 +27,190 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-05-02T13:34:13.359</Modified>
+      <Modified>2022-05-02T15:40:00.992</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\ProyectoGrupo02.exe">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\ProyectoGrupo02.exe">
       <PackagePath>entrypoint\ProyectoGrupo02.exe</PackagePath>
-      <Modified>2022-05-02T13:34:13.014</Modified>
+      <Modified>2022-05-02T15:40:00.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2021-02-05T00:15:46.000</Modified>
+      <Modified>2021-02-04T23:15:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-02T02:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\0.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\0.png">
       <PackagePath>Assets\0.png</PackagePath>
-      <Modified>2022-04-04T20:53:44.637</Modified>
+      <Modified>2022-04-04T22:31:06.396</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\1.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\1.png">
       <PackagePath>Assets\1.png</PackagePath>
-      <Modified>2022-04-04T21:17:42.836</Modified>
+      <Modified>2022-04-04T22:31:06.401</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\2.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\2.png">
       <PackagePath>Assets\2.png</PackagePath>
-      <Modified>2022-04-04T21:18:21.352</Modified>
+      <Modified>2022-04-04T22:31:06.415</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\3.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\3.png">
       <PackagePath>Assets\3.png</PackagePath>
-      <Modified>2022-04-04T21:18:53.143</Modified>
+      <Modified>2022-04-04T22:31:06.418</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\4.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\4.png">
       <PackagePath>Assets\4.png</PackagePath>
-      <Modified>2022-04-04T20:54:18.636</Modified>
+      <Modified>2022-04-04T22:31:06.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\5.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\5.png">
       <PackagePath>Assets\5.png</PackagePath>
-      <Modified>2022-04-19T16:16:14.509</Modified>
+      <Modified>2022-04-19T19:46:44.906</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\6.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\6.png">
       <PackagePath>Assets\6.png</PackagePath>
-      <Modified>2022-04-01T17:35:15.297</Modified>
+      <Modified>2022-04-04T19:29:39.280</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Batface.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Batface.png">
       <PackagePath>Assets\Batface.png</PackagePath>
-      <Modified>2022-04-04T21:20:00.144</Modified>
+      <Modified>2022-04-04T22:31:06.442</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\BatRotado.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\BatRotado.png">
       <PackagePath>Assets\BatRotado.png</PackagePath>
-      <Modified>2022-04-04T21:20:24.882</Modified>
+      <Modified>2022-04-04T22:31:06.437</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Bats.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Bats.png">
       <PackagePath>Assets\Bats.png</PackagePath>
-      <Modified>2022-04-04T21:20:48.178</Modified>
+      <Modified>2022-04-04T22:31:06.444</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\8.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\8.png">
       <PackagePath>Assets\8.png</PackagePath>
-      <Modified>2022-04-04T21:21:12.538</Modified>
+      <Modified>2022-04-04T22:31:06.434</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\casilla.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\casilla.png">
       <PackagePath>Assets\casilla.png</PackagePath>
-      <Modified>2022-04-19T15:21:38.745</Modified>
+      <Modified>2022-04-19T19:46:44.906</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\casillaTopFondo.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\casillaTopFondo.png">
       <PackagePath>Assets\casillaTopFondo.png</PackagePath>
-      <Modified>2022-04-19T16:03:02.740</Modified>
+      <Modified>2022-04-19T19:46:44.906</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\casillaTumbao.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\casillaTumbao.png">
       <PackagePath>Assets\casillaTumbao.png</PackagePath>
-      <Modified>2022-04-19T16:03:02.741</Modified>
+      <Modified>2022-04-19T19:46:44.907</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Earth.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Earth.png">
       <PackagePath>Assets\Earth.png</PackagePath>
-      <Modified>2022-04-04T21:21:37.583</Modified>
+      <Modified>2022-04-04T22:31:06.449</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\7.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\7.png">
       <PackagePath>Assets\7.png</PackagePath>
-      <Modified>2022-04-04T21:22:12.156</Modified>
+      <Modified>2022-04-04T22:31:06.430</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\fondomenu.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\fondomenu.png">
       <PackagePath>Assets\fondomenu.png</PackagePath>
-      <Modified>2022-05-02T10:36:43.720</Modified>
+      <Modified>2022-05-01T19:50:44.021</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\trash.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\trash.png">
       <PackagePath>Assets\trash.png</PackagePath>
-      <Modified>2022-05-02T10:36:43.720</Modified>
+      <Modified>2022-05-01T19:47:35.653</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\vampiro.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\vampiro.png">
       <PackagePath>Assets\vampiro.png</PackagePath>
-      <Modified>2022-04-04T21:22:42.117</Modified>
+      <Modified>2022-04-04T22:31:06.453</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2022-04-04T21:22:42.117</Modified>
+      <Modified>2022-04-04T22:31:06.453</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-03-31T16:51:16.338</Modified>
+      <Modified>2022-04-04T19:29:39.290</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-03-31T14:00:45.274</Modified>
+      <Modified>2021-10-22T22:05:56.965</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-03-31T14:00:45.275</Modified>
+      <Modified>2021-10-22T22:05:56.966</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-03-31T14:00:45.276</Modified>
+      <Modified>2021-10-22T22:05:56.966</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-03-31T14:00:45.276</Modified>
+      <Modified>2021-10-22T22:05:56.966</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-03-31T14:00:45.277</Modified>
+      <Modified>2021-10-22T22:05:56.966</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\vampiroFondo.jpg">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\vampiroFondo.jpg">
       <PackagePath>Assets\vampiroFondo.jpg</PackagePath>
-      <Modified>2022-05-02T10:36:43.724</Modified>
+      <Modified>2022-05-02T09:56:22.151</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Music\menumusic.mp3">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Music\clicked.mp3">
+      <PackagePath>Music\clicked.mp3</PackagePath>
+      <Modified>2022-05-02T14:26:53.410</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Music\menumusic.mp3">
       <PackagePath>Music\menumusic.mp3</PackagePath>
-      <Modified>2022-05-02T10:36:43.737</Modified>
+      <Modified>2022-05-01T21:54:44.631</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2022-03-31T14:00:45.285</Modified>
+      <Modified>2022-03-30T20:44:29.101</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\ProyectoGrupo02.xr.xml">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\ProyectoGrupo02.xr.xml">
       <PackagePath>ProyectoGrupo02.xr.xml</PackagePath>
-      <Modified>2022-05-02T12:50:13.298</Modified>
+      <Modified>2022-05-02T15:35:30.460</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-05-02T13:30:55.675</Modified>
+      <Modified>2022-05-02T15:40:00.602</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Levels.xbf">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Levels.xbf">
       <PackagePath>Levels.xbf</PackagePath>
-      <Modified>2022-05-02T13:30:55.676</Modified>
+      <Modified>2022-05-02T15:40:00.602</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\InGame.xbf">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\InGame.xbf">
       <PackagePath>InGame.xbf</PackagePath>
-      <Modified>2022-05-02T13:30:55.672</Modified>
+      <Modified>2022-05-02T15:40:00.598</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-05-02T13:30:55.676</Modified>
+      <Modified>2022-05-02T15:40:00.602</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Pause.xbf">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Pause.xbf">
       <PackagePath>Pause.xbf</PackagePath>
-      <Modified>2022-05-02T13:30:55.676</Modified>
+      <Modified>2022-05-02T15:40:00.602</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Settings.xbf">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Settings.xbf">
       <PackagePath>Settings.xbf</PackagePath>
-      <Modified>2022-05-02T13:30:55.676</Modified>
+      <Modified>2022-05-02T15:40:00.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2020-12-02T00:52:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-05-02T10:37:37.992</Modified>
+      <Modified>2022-05-02T14:27:44.805</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simona\Desktop\2ndo Carrera\2ºCuatri\DSI\XAML PROYECTO FINAL\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Core\ProyectoGrupo02.exe">
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Core\ProyectoGrupo02.exe">
       <PackagePath>ProyectoGrupo02.exe</PackagePath>
-      <Modified>2022-05-02T13:34:13.355</Modified>
+      <Modified>2022-05-02T15:40:00.989</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

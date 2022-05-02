@@ -31,34 +31,49 @@ namespace ProyectoGrupo02
             this.InitializeComponent();
             musica = new MediaPlayer();
             click = new MediaPlayer();
+            this.NavigationCacheMode = NavigationCacheMode.Enabled;
         }
 
         private void Play_Click(object sender, RoutedEventArgs e)
         {
+            PlayClick();
             Frame.Navigate(typeof(Levels));
             musica.Pause();
         }
-       
+
         private void Settings_OnClick(object sender, RoutedEventArgs e)
         {
+            PlayClick();
             Frame.Navigate(typeof(Settings));
         }
         private void Exit_OnClick(object sender, RoutedEventArgs e)
         {
+            PlayClick();
             Application.Current.Exit();
         }
         private async void PlayMusic()
         {
-           // played = true;
+            // played = true;
             Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Music");
             Windows.Storage.StorageFile file = await folder.GetFileAsync("menumusic.mp3");
             musica.Source = MediaSource.CreateFromStorageFile(file);
             musica.IsLoopingEnabled = true;
             musica.Volume = 0.05;
             musica.Play();
+            click.Play();
+        }
+        private async void PlayClick()
+        {
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Music");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("clicked.mp3");
+            click.Source = MediaSource.CreateFromStorageFile(file);
+            
+            click.Volume = 1;
+            click.Play();
         }
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
+
             PlayMusic();
         }
     }
