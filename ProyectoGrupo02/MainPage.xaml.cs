@@ -36,6 +36,7 @@ namespace ProyectoGrupo02
         private void Play_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Levels));
+            musica.Pause();
         }
        
         private void Settings_OnClick(object sender, RoutedEventArgs e)
