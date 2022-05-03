@@ -247,8 +247,6 @@
                 </Grid>
             </Canvas>
 
-
-
             <!--Tierra-->
             <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
                Width="300" Height="300" />
@@ -261,26 +259,39 @@
                    DragOver="Papelera_DragOver"/>
 
             <Image HorizontalAlignment="Left" Height="100" Margin="1175,500,0,0" VerticalAlignment="Top" Width="100"/>
-            <Grid x:Name="Pot1" Width="119" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,195,0" >
+            <Grid x:Name="Pot1" Width="40" Height="100" HorizontalAlignment="Right" VerticalAlignment="Center"
+                  Margin="0,-230,235,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
 
                 <StackPanel Orientation="Vertical" >
-                    <Image x:Name="PT0" Width="40" Height="40" Source="/Assets/7.png" 
-                    CanDrag="True"
-                    DragStarting="a_DragStarting" 
-                    ></Image>
-
+                    <Button  Width="40" Height="40"  Click="Lab_Click" >
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button" >
+                                <Grid>
+                                    <Image x:Name="PT0" Width="40" Height="40" Source="/Assets/7.png"></Image>
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    
+                    <TextBlock Text="700" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel >
                 <StackPanel Orientation="Vertical" Grid.Row="1" >
-                    <Image x:Name="PT1" Width="40" Height="40"  Source="/Assets/8.png"></Image>
-
+                    <Button  Width="40" Height="40"  Click="add_Click" >
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button" >
+                                <Grid>
+                                    <Image x:Name="PT1" Width="40" Height="40"  Source="/Assets/8.png"></Image>
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock Text="50" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
             </Grid>
-
-
         </Grid>
     </Viewbox>
 </Page>

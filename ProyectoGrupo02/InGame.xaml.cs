@@ -34,13 +34,18 @@ namespace ProyectoGrupo02
         private readonly object myLock = new object();
         private List<Gamepad> myGamepads = new List<Gamepad>();
         private Gamepad mainGamepad = null;
-
         private GamepadReading reading, prereading;
         private GamepadVibration vibration;
+        
+        private DispatcherTimer timer;
+        int initialTime = 0;
+        int clicks = 1, labclicks = 0;
 
         DispatcherTimer GamePadTimer;
         MediaPlayer musica;
         MediaPlayer click;
+
+        
 
         public void ChangeImage(object sender, ItemClickEventArgs e)
         {
@@ -52,11 +57,15 @@ namespace ProyectoGrupo02
         }
         public InGame()
         {
+            
             this.InitializeComponent();
             dragTranslation = new TranslateTransform();
             musica = new MediaPlayer();
             click = new MediaPlayer();
 
+            timer = new DispatcherTimer();
+            timer.Tick += timer_Tick;
+            timer.Interval = new TimeSpan(0, 0, 1);
             Gamepad.GamepadAdded += (object sender, Gamepad e) =>
             {
                 lock (myLock)
@@ -88,7 +97,11 @@ namespace ProyectoGrupo02
                 }
             };
         }
-
+        void timer_Tick(object sender, object e)
+        {
+            initialTime++;
+            Money.Text = (Int64.Parse(Money.Text) + labclicks).ToString();
+        }
         private void Click_Pause(object sender, RoutedEventArgs e)
         {
             PlayClick();
@@ -97,10 +110,29 @@ namespace ProyectoGrupo02
         }
         private void Coin_Clicker(object sender, RoutedEventArgs e)
         {
-            Money.Text = (Int64.Parse(Money.Text) + 1).ToString();
+            Money.Text = (Int64.Parse(Money.Text) + clicks).ToString();
+        }
+        private void Lab_Click(object sender, RoutedEventArgs e)
+        {
+            int num = Objects[7].Precio;
+            if (num <= (int.Parse(Money.Text)))
+            {
+                labclicks++;
+                Money.Text = (int.Parse(Money.Text) - num).ToString();
+            }
+        }
+        private void add_Click(object sender, RoutedEventArgs e)
+        {
+            int num = Objects[8].Precio;
+            if (num <= (int.Parse(Money.Text)))
+            {
+                clicks++;
+                Money.Text = (int.Parse(Money.Text) - num).ToString();
+            }
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            timer.Start();
             //this.NavigationCacheMode = NavigationCacheMode.Required;
             if (Objects != null) // Carga la lista de ModelView
             {
@@ -158,7 +190,7 @@ namespace ProyectoGrupo02
                     num = Objects[6].Precio;
                     break;
             }
-            if ( num <= (int.Parse(Money.Text)))
+            if (num <= (int.Parse(Money.Text)))
             {
                 Image r = sender as Image;
                 int x = -1;

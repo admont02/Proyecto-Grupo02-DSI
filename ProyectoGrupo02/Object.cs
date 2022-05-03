@@ -8,7 +8,7 @@ namespace ProyectoGrupo02
 {
     public class Object
     {
-        public enum estados { Colocado,Tienda, Vendido };
+        public enum estados { Colocado, Tienda, Vendido };
 
         public int Id { get; set; }
         public string Nombre { get; set; }
@@ -120,6 +120,32 @@ namespace ProyectoGrupo02
                 //Y = 300,
                 //RX =250,
                 //RY =200,
+             },
+            new Object()
+            {
+                Id = 7,
+                Nombre = "Laboratorio",
+                Imagen = "Assets\\7.png",
+                //Explicacion = @"Explicación Dron6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
+                Estado = Object.estados.Tienda,
+                Precio=700,
+                //X = 250,
+                //Y = 250,
+                //RX =30,
+                //RY =50,
+             },
+            new Object()
+            {
+                Id = 7,
+                Nombre = "Click",
+                Imagen = "Assets\\8.png",
+                //Explicacion = @"Explicación Dron6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id facilisis lectus. Cras nec convallis ante, quis pulvinar tellus. Integer dictum accumsan pulvinar. Pellentesque eget enim sodales sapien vestibulum consequat. Maecenas eu sapien ac urna aliquam dictum. Nullam eget mattis metus. Donec pharetra, tellus in mattis tincidunt, magna ipsum gravida nibh, vitae lobortis ante odio vel quam.",
+                Estado = Object.estados.Tienda,
+                Precio=50,
+                //X = 250,
+                //Y = 250,
+                //RX =30,
+                //RY =50,
              },
           };
 
