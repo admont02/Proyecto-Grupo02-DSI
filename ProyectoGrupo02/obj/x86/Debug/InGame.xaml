@@ -23,11 +23,12 @@
                     <ColumnDefinition Width="40"/>
                     <ColumnDefinition Width="40"/>
                 </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Vertical" >
                     <Image x:ConnectionId='58' x:Name="O0" Width="40" Height="40" Source="/Assets/0.png"
                     CanDrag="True"
                                                  
-                    AllowDrop="True"></Image>
+                    AllowDrop="True"
+                    ></Image>
                     <TextBlock Text="2000" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Grid.Column="1">

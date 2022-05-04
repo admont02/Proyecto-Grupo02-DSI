@@ -8,8 +8,8 @@
     mc:Ignorable="d"
     >
 
-    <Viewbox Stretch="Uniform">
-        <Grid  >
+    
+        <Grid>
             <Image Source="Assets/fondomenu.png" Stretch="Fill"/>
 
             <TextBlock Text="Bloodsucker" FontSize="100" HorizontalAlignment="Center" VerticalAlignment="Top" 
@@ -51,6 +51,6 @@
                 </Button>
             </StackPanel>
         </Grid>
-    </Viewbox>
+    
 </Page>
 

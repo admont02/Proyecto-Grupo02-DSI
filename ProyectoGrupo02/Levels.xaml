@@ -7,34 +7,32 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="Gray">
-    <Viewbox Stretch="Uniform">
-        
-        <Grid Background="Gray" Width="979" Height="653" >
-            <Image Source="Assets/vampiroFondo.jpg" Stretch="Fill"></Image>
-            <!--Back-->
-            <Button x:Name="Back" Width="70" Height="70" VerticalAlignment="Top" Click="Click_Back" Margin="20" Background="Black">
-                <Viewbox MaxHeight="200" MaxWidth="200">
-                    <SymbolIcon Width="25"  Symbol="Back"/>
-                </Viewbox>
-            </Button>
-            <!--Título-->
-            <TextBlock Text="Bloodsucker" FontSize="100" HorizontalAlignment="Center" VerticalAlignment="Top" 
+
+    <Grid Background="Gray">
+        <Image Source="Assets/vampiroFondo.jpg" Stretch="Fill"></Image>
+        <!--Back-->
+        <Button x:Name="Back" Width="70" Height="70" VerticalAlignment="Top" Click="Click_Back" Margin="20" Background="Black">
+            <Viewbox MaxHeight="200" MaxWidth="200">
+                <SymbolIcon Width="25"  Symbol="Back"/>
+            </Viewbox>
+        </Button>
+        <!--Título-->
+        <TextBlock Text="Bloodsucker" FontSize="100" HorizontalAlignment="Center" VerticalAlignment="Top" 
                    FontFamily="Monserrat" FontWeight="Black" Foreground="DarkRed" Margin="60"/>
-            <!--Levels-->
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center"  HorizontalAlignment="Center" Margin="0,60,0,0">
-                <Button x:Name="one" Width="100" Height="100" Click="Click_Level" Margin="20" Background="DarkRed" Content="1" FontFamily="Times New Roman" FontSize="64">
-                </Button>
-                <Button x:Name="two" Width="100" Height="100" Click="Click_Level" Margin="20" Background="DarkRed" Content="2" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
-                </Button>
-                <Button x:Name="three" Width="100" Height="100" Click="Click_Level" Margin="20" Background="DarkRed" Content="3" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
-                </Button>
-                <Button x:Name="four" Width="100" Height="100" Click="Click_Level" Margin="20" Background="DarkRed" Content="4" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
-                </Button>
-                <Button x:Name="five" Width="100" Height="100" Click="Click_Level" Margin="20" Background="DarkRed" Content="5" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
-                </Button>
-                <Button x:Name="six" Width="100" Height="100" Click="Click_Level" Margin="20" Background="DarkRed" Content="6" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
-                </Button>
-            </StackPanel>
-        </Grid>
-    </Viewbox>
+        <!--Levels-->
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center"  HorizontalAlignment="Center" Margin="0,60,0,0">
+            <Button x:Name="one" Width="100" Height="100" Click="Click_Level" Margin="20" Background="DarkRed" Content="1" FontFamily="Times New Roman" FontSize="64">
+            </Button>
+            <Button x:Name="two" Width="100" Height="100" Click="Click_Level" Margin="20" Background="DarkRed" Content="2" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
+            </Button>
+            <Button x:Name="three" Width="100" Height="100" Click="Click_Level" Margin="20" Background="DarkRed" Content="3" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
+            </Button>
+            <Button x:Name="four" Width="100" Height="100" Click="Click_Level" Margin="20" Background="DarkRed" Content="4" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
+            </Button>
+            <Button x:Name="five" Width="100" Height="100" Click="Click_Level" Margin="20" Background="DarkRed" Content="5" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
+            </Button>
+            <Button x:Name="six" Width="100" Height="100" Click="Click_Level" Margin="20" Background="DarkRed" Content="6" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
+            </Button>
+        </StackPanel>
+    </Grid>
 </Page>
