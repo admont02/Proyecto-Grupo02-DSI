@@ -215,7 +215,6 @@ namespace ProyectoGrupo02
                         x = 6;
                         break;
                 }
-                r.Name = "O" + x;
                 r.Source = Objects[x].Img.Source;
                 r.Visibility = Visibility.Visible;
 
@@ -242,34 +241,9 @@ namespace ProyectoGrupo02
         {
             var id = await e.DataView.GetTextAsync();
             Image o = FindName(id) as Image;
-            int x = -1;
-            switch (o.Name)
-            {
-                case "O0":
-                    x = 0;
-                    break;
-                case "O1":
-                    x = 1;
-                    break;
-                case "O2":
-                    x = 2;
-                    break;
-                case "O3":
-                    x = 3;
-                    break;
-                case "O4":
-                    x = 4;
-                    break;
-                case "O5":
-                    x = 5;
-                    break;
-                case "O6":
-                    x = 6;
-                    break;
-            }
             o.Source = casilla.Source;
             o.Visibility = Visibility.Visible;
-            int num = Objects[x].Precio / 4; ;
+            int num = 20;
             Money.Text = (int.Parse(Money.Text) + num).ToString();
         }
         private void Papelera_DragOver(object sender, DragEventArgs e)
