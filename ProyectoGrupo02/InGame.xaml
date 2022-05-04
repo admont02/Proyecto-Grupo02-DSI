@@ -8,12 +8,9 @@
     mc:Ignorable="d"
     >
 
-    <Grid Background="Gray" Width="979" Height="653" >
+    <Grid>
         <Image Source="Assets/inGameFondo.jpg" Stretch="Fill"></Image>
-        <!--Compras-->
-        <Ellipse Fill="Silver" Width="220" Height="220" 
-                     HorizontalAlignment="Left" VerticalAlignment="Top" 
-                     Margin="105,167,0,0" />
+        
         <Ellipse Fill="Silver" Width="119" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,195,0"/>
         <!--Objetos-->
         <Grid x:Name="Grid1" Height="50" HorizontalAlignment="Left" 
@@ -37,7 +34,10 @@
             </StackPanel>
 
         </Grid>
-
+        <!--Compras-->
+        <Ellipse Fill="Silver" Width="220" Height="220" 
+                     HorizontalAlignment="Left" VerticalAlignment="Center" Margin="200" 
+                     />
         <Grid x:Name="Grid2" Height="50" 
                   HorizontalAlignment="Left" 
                   VerticalAlignment="Center" 
@@ -47,6 +47,8 @@
                 <ColumnDefinition Width="40"/>
                 <ColumnDefinition Width="40"/>
             </Grid.ColumnDefinitions>
+            
+            
             <StackPanel Orientation="Vertical">
                 <Image x:Name="O2" Width="40" Height="40" Source="/Assets/2.png"></Image>
                 <TextBlock Text="300" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
@@ -157,7 +159,7 @@
                        DragOver="Ellipse_DragOver" AllowDrop="True"
                        Visibility="Collapsed"/>
         </Canvas>
-        <Canvas x:Name="CanvasLeft" Width="200" Height="100" Margin="-550, 450, 0, 0" VerticalAlignment="Top" >
+        <Canvas x:Name="CanvasLeft" Width="200" Height="100" Margin="400, 0, 0, 90" VerticalAlignment="Bottom" HorizontalAlignment="Left">
             <Image x:Name="LeftBackground" Source="Assets/casillaTumbao.png"
                            Height="100" Width="200" />
             <Grid>
@@ -202,7 +204,7 @@
             </Grid>
 
         </Canvas>
-        <Canvas x:Name="CanvasRight" Width="200" Height="100" Margin="550, 450, 0, 0" VerticalAlignment="Top" >
+        <Canvas x:Name="CanvasRight" Width="200" Height="100" Margin="550, 0, 0, 0" VerticalAlignment="Bottom" >
             <Image x:Name="RightBackground" Source="Assets/casillaTumbao.png"
                            Height="100" Width="200" />
             <Grid>
