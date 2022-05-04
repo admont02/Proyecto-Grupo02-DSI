@@ -36,7 +36,7 @@ namespace ProyectoGrupo02
         private Gamepad mainGamepad = null;
         private GamepadReading reading, prereading;
         private GamepadVibration vibration;
-        
+
         private DispatcherTimer timer;
         int initialTime = 0;
         int clicks = 1, labclicks = 0;
@@ -45,7 +45,7 @@ namespace ProyectoGrupo02
         MediaPlayer musica;
         MediaPlayer click;
 
-        
+        Image casilla;
 
         public void ChangeImage(object sender, ItemClickEventArgs e)
         {
@@ -57,11 +57,15 @@ namespace ProyectoGrupo02
         }
         public InGame()
         {
-            
             this.InitializeComponent();
             dragTranslation = new TranslateTransform();
             musica = new MediaPlayer();
             click = new MediaPlayer();
+
+            casilla = new Image();
+            casilla.Width = 50;
+            casilla.Height = 50;
+            casilla.Source = new BitmapImage(new Uri("ms-appx:///Assets/casilla.png", UriKind.RelativeOrAbsolute));
 
             timer = new DispatcherTimer();
             timer.Tick += timer_Tick;
@@ -145,14 +149,6 @@ namespace ProyectoGrupo02
             base.OnNavigatedTo(e);
         }
 
-        private void ListView_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
-        {
-            VMObject Item = e.Items[0] as VMObject;
-            string id = Item.Id.ToString();
-            e.Data.SetText(id);
-            e.Data.RequestedOperation = DataPackageOperation.Copy;
-        }
-
         private void a_DragStarting(object sender, DragStartingEventArgs e)
         {
             Image Item = sender as Image;
@@ -198,6 +194,7 @@ namespace ProyectoGrupo02
                 {
                     case "O0":
                         x = 0;
+                        
                         break;
                     case "O1":
                         x = 1;
@@ -218,6 +215,7 @@ namespace ProyectoGrupo02
                         x = 6;
                         break;
                 }
+                r.Name = "O" + x;
                 r.Source = Objects[x].Img.Source;
                 r.Visibility = Visibility.Visible;
 
@@ -269,8 +267,10 @@ namespace ProyectoGrupo02
                     x = 6;
                     break;
             }
-            //o.Source = "Assets/casilla.png";
+            o.Source = casilla.Source;
             o.Visibility = Visibility.Visible;
+            int num = Objects[x].Precio / 4; ;
+            Money.Text = (int.Parse(Money.Text) + num).ToString();
         }
         private void Papelera_DragOver(object sender, DragEventArgs e)
         {

@@ -71,7 +71,7 @@ namespace ProyectoGrupo02
             click.Volume = 1;
             click.Play();
         }
-        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
 
             PlayMusic();
