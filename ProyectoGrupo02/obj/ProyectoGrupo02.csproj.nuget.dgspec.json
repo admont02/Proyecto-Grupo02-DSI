@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Simona\\Desktop\\2ndo Carrera\\2ºCuatri\\DSI\\XAML PROYECTO FINAL\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj": {}
+    "C:\\Users\\ADRIAN\\Desktop\\2.Carrera\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Simona\\Desktop\\2ndo Carrera\\2ºCuatri\\DSI\\XAML PROYECTO FINAL\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj": {
+    "C:\\Users\\ADRIAN\\Desktop\\2.Carrera\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Simona\\Desktop\\2ndo Carrera\\2ºCuatri\\DSI\\XAML PROYECTO FINAL\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj",
+        "projectUniqueName": "C:\\Users\\ADRIAN\\Desktop\\2.Carrera\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj",
         "projectName": "ProyectoGrupo02",
-        "projectPath": "C:\\Users\\Simona\\Desktop\\2ndo Carrera\\2ºCuatri\\DSI\\XAML PROYECTO FINAL\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj",
-        "packagesPath": "C:\\Users\\Simona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Simona\\Desktop\\2ndo Carrera\\2ºCuatri\\DSI\\XAML PROYECTO FINAL\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\obj\\",
+        "projectPath": "C:\\Users\\ADRIAN\\Desktop\\2.Carrera\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj",
+        "packagesPath": "C:\\Users\\ADRIAN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADRIAN\\Desktop\\2.Carrera\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Simona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADRIAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

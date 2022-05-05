@@ -11,6 +11,7 @@
     <Grid>
         <Image Source="Assets/inGameFondo.jpg" Stretch="Fill"></Image>
         <!--Compras-->
+        
         <Ellipse Fill="Silver" Width="119" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,195,0"/>
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
             <Ellipse Fill="Silver" Width="300" Height="300" 

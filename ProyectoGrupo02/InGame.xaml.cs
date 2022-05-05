@@ -44,6 +44,7 @@ namespace ProyectoGrupo02
         DispatcherTimer GamePadTimer;
         MediaPlayer musica;
         MediaPlayer click;
+        MediaPlayer money;
 
         Image casilla;
 
@@ -61,6 +62,8 @@ namespace ProyectoGrupo02
             dragTranslation = new TranslateTransform();
             musica = new MediaPlayer();
             click = new MediaPlayer();
+            money = new MediaPlayer();
+            SonidoMonedas();
 
             casilla = new Image();
             casilla.Width = 50;
@@ -114,6 +117,7 @@ namespace ProyectoGrupo02
         }
         private void Coin_Clicker(object sender, RoutedEventArgs e)
         {
+            money.Play();
             Money.Text = (Int64.Parse(Money.Text) + clicks).ToString();
         }
         private void Lab_Click(object sender, RoutedEventArgs e)
@@ -194,7 +198,7 @@ namespace ProyectoGrupo02
                 {
                     case "O0":
                         x = 0;
-                        
+
                         break;
                     case "O1":
                         x = 1;
@@ -299,6 +303,15 @@ namespace ProyectoGrupo02
 
             click.Volume = 1;
             click.Play();
+        }
+        private async void SonidoMonedas()
+        {
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Music");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("moneda.mp3");
+            money.Source = MediaSource.CreateFromStorageFile(file);
+            money.Volume = 1;
+           
+            //click.Play();
         }
     }
 }

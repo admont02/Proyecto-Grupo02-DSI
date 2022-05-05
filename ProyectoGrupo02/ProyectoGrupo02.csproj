@@ -170,6 +170,7 @@
     <Content Include="Music\clicked.mp3" />
     <Content Include="Music\mainmusic.mp3" />
     <Content Include="Music\menumusic.mp3" />
+    <Content Include="Music\moneda.mp3" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
