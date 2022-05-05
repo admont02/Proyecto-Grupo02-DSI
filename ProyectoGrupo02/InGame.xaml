@@ -11,8 +11,10 @@
     <Grid>
         <Image Source="Assets/inGameFondo.jpg" Stretch="Fill"></Image>
         <!--Compras-->
-        
-        <Ellipse Fill="Silver" Width="119" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,195,0"/>
+
+        <Viewbox>
+            <Ellipse Fill="Silver" Width="83" Height="83" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="250,100,0,200"/>
+        </Viewbox>
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
             <Ellipse Fill="Silver" Width="300" Height="300" 
                      HorizontalAlignment="Left" VerticalAlignment="Center" Margin="65,180,0,230" 
@@ -298,8 +300,10 @@
 
                 <TextBlock Text="700" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
             </StackPanel >
-            <StackPanel Orientation="Vertical" Grid.Row="1" >
-                <Button  Width="40" Height="40"  Click="add_Click" >
+            
+                <StackPanel Orientation="Vertical" Grid.Row="1" >
+
+                <Button  Width="80" Height="80"  Click="add_Click" >
                     <Button.Template>
                         <ControlTemplate TargetType="Button" >
                             <Grid>
@@ -309,7 +313,9 @@
                     </Button.Template>
                 </Button>
                 <TextBlock Text="50" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
-            </StackPanel>
+                </StackPanel>
+            
+            
         </Grid>
     </Grid>
 </Page>
