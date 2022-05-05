@@ -10,80 +10,88 @@
 
     <Grid>
         <Image Source="Assets/inGameFondo.jpg" Stretch="Fill"></Image>
-        
+        <!--Compras-->
         <Ellipse Fill="Silver" Width="119" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,195,0"/>
+        <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Ellipse Fill="Silver" Width="300" Height="300" 
+                     HorizontalAlignment="Left" VerticalAlignment="Center" Margin="65,180,0,230" 
+                     />
+        </Viewbox>
+
         <!--Objetos-->
-        <Grid x:Name="Grid1" Height="50" HorizontalAlignment="Left" 
+        <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Grid x:Name="Grid1" Height="30" Margin ="60, 84, 0,168"
                   VerticalAlignment="Center" 
-                  Margin ="175,-220,0,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="40"/>
-                <ColumnDefinition Width="40"/>
-            </Grid.ColumnDefinitions>
-            <StackPanel Orientation="Vertical" >
-                <Image x:Name="O0" Width="40" Height="40" Source="/Assets/0.png"
+                  HorizontalAlignment="Left" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Vertical" >
+                    <Image x:Name="O0" Width="25" Height="25" Source="/Assets/0.png"
                     CanDrag="True"
                     DragStarting="a_DragStarting"
                     AllowDrop="True"
                     ></Image>
-                <TextBlock Text="2000" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
-            </StackPanel>
-            <StackPanel Orientation="Vertical" Grid.Column="1">
-                <Image x:Name="O1" Width="40" Height="40" Source="/Assets/1.png"></Image>
-                <TextBlock Text="700" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
-            </StackPanel>
+                    <TextBlock Text="2000" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Column="1">
+                    <Image x:Name="O1" Width="25" Height="25" Source="/Assets/1.png"></Image>
+                    <TextBlock Text="700" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
+                </StackPanel>
 
-        </Grid>
-        <!--Compras-->
-        <Ellipse Fill="Silver" Width="220" Height="220" 
-                     HorizontalAlignment="Left" VerticalAlignment="Center" Margin="200" 
-                     />
-        <Grid x:Name="Grid2" Height="50" 
+            </Grid>
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Grid x:Name="Grid2" Height="30" Margin ="42, 110, 0,125"
                   HorizontalAlignment="Left" 
                   VerticalAlignment="Center" 
-                  Margin ="155,-100,0,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="40"/>
-                <ColumnDefinition Width="40"/>
-                <ColumnDefinition Width="40"/>
-            </Grid.ColumnDefinitions>
-            
-            
-            <StackPanel Orientation="Vertical">
-                <Image x:Name="O2" Width="40" Height="40" Source="/Assets/2.png"></Image>
-                <TextBlock Text="300" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
-            </StackPanel>
-            <StackPanel Orientation="Vertical" Grid.Column="1">
-                <Image x:Name="O3" Width="40" Height="40" Source="/Assets/3.png"></Image>
-                <TextBlock Text="250" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
-            </StackPanel>
-            <StackPanel Orientation="Vertical" Grid.Column="2">
-                <Image x:Name="O4" Width="40" Height="40" Source="/Assets/4.png"></Image>
-                <TextBlock Text="150" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
-            </StackPanel>
+                  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
+                </Grid.ColumnDefinitions>
 
-        </Grid>
 
-        <Grid x:Name="Grid3" Height="50" 
+                <StackPanel Orientation="Vertical">
+                    <Image x:Name="O2" Width="25" Height="25" Source="/Assets/2.png"></Image>
+                    <TextBlock Text="300" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Column="1">
+                    <Image x:Name="O3" Width="25" Height="25" Source="/Assets/3.png"></Image>
+                    <TextBlock Text="250" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Column="2">
+                    <Image x:Name="O4" Width="25" Height="25" Source="/Assets/4.png"></Image>
+                    <TextBlock Text="150" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
+                </StackPanel>
+
+            </Grid>
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Grid x:Name="Grid3" Height="30" Margin ="58, 150, 0,95"
                   HorizontalAlignment="Left" 
                   VerticalAlignment="Center" 
-                   Margin ="175,20,0,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="40"/>
-                <ColumnDefinition Width="40"/>
-            </Grid.ColumnDefinitions>
-            <StackPanel Orientation="Vertical" >
-                <Image x:Name="O5" Width="40" Height="40" Source="/Assets/5.png"></Image>
-                <TextBlock Text="100" Width="40" Height="10" FontSize="9"  HorizontalTextAlignment="Center"></TextBlock>
-            </StackPanel>
-            <StackPanel Orientation="Vertical" Grid.Column="1">
-                <Image x:Name="O6" Width="40" Height="40" Source="/Assets/6.png"
+                   >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Vertical" >
+                    <Image x:Name="O5" Width="25" Height="25" Source="/Assets/5.png"></Image>
+                    <TextBlock Text="100" Width="25" Height="5" FontSize="4"  HorizontalTextAlignment="Center"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Column="1">
+                    <Image x:Name="O6" Width="25" Height="25" Source="/Assets/6.png"
                     CanDrag="True"
                     DragStarting="a_DragStarting"
                     AllowDrop="True"></Image>
-                <TextBlock Text="50" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
-            </StackPanel>
-        </Grid>
+                    <TextBlock Text="50" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Grid>
+        </Viewbox>
+
         <!--pontenciadores de click-->
 
         <!--pausa-->
@@ -110,149 +118,156 @@
         </Button>
 
         <!--Caminos-->
-        <Canvas x:Name="CanvasTop" Width="100" Height="200" Margin="129" VerticalAlignment="Top" >
-            <Image x:Name="MiddleBackground" Source="Assets/casillaTopFondo.png"
-                           Height="200" Width="100" />
-            <Grid  DragOver="Ellipse_DragOver">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition Width="50"/>
-                </Grid.ColumnDefinitions>
-                <!--Casillas-->
-                <Image x:Name="middleLeft0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="0"
+        <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Canvas x:Name="CanvasTop" Width="200" Height="400" Margin="340" VerticalAlignment="Bottom">
+                <Image x:Name="MiddleBackground" Source="Assets/casillaTopFondo.png"
+                           Height="400" Width="200" />
+                <Grid  DragOver="Ellipse_DragOver">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Casillas-->
+                    <Image x:Name="middleLeft0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="0" Grid.Row="0"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"
                            CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="middleLeft1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="1"
+                    <Image x:Name="middleLeft1" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="0" Grid.Row="1"
                            AllowDrop="True" Drop="Ellipse_Drop" CanDrag="True" DragStarting="RightUp0_DragStarting" DragOver="Ellipse_DragOver"/>
-                <Image x:Name="middleLeft2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="2"
+                    <Image x:Name="middleLeft2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="0" Grid.Row="2"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="middleLeft3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="3"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-
-                <Image x:Name="middleRight0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="0"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="middleRight1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="1"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="middleRight2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="2"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="middleRight3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="3"
+                    <Image x:Name="middleLeft3" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="0" Grid.Row="3"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
 
-            </Grid>
+                    <Image x:Name="middleRight0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="1" Grid.Row="0"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="middleRight1" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="1" Grid.Row="1"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="middleRight2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="1" Grid.Row="2"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="middleRight3" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="1" Grid.Row="3"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
 
-            <Image x:Name="Prueba" Source="Assets/0.png" Height="60" Canvas.Top="130"
+                </Grid>
+
+                <Image x:Name="Prueba" Source="Assets/0.png" Height="60" Canvas.Top="130"
                        Width="50" Canvas.Left="10" Drop="Ellipse_Drop" CanDrag="True" 
                        DragOver="Ellipse_DragOver" AllowDrop="True"
                        Visibility="Collapsed"/>
-        </Canvas>
-        <Canvas x:Name="CanvasLeft" Width="200" Height="100" Margin="400, 0, 0, 90" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-            <Image x:Name="LeftBackground" Source="Assets/casillaTumbao.png"
-                           Height="100" Width="200" />
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
+            </Canvas>
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Left" VerticalAlignment="Bottom">
+            <Canvas x:Name="CanvasLeft" Width="400" Height="200" Margin="160,340, 1100,  0" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                <Image x:Name="LeftBackground" Source="Assets/casillaTumbao.png"
+                           Height="200" Width="400" />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
 
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition Width="50"/>
-                </Grid.ColumnDefinitions>
-                <!--Casillas-->
-                <Image x:Name="leftUp0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="0"
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Casillas-->
+                    <Image x:Name="leftUp0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="0" Grid.Row="0"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="leftUp1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="0"
+                    <Image x:Name="leftUp1" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="1" Grid.Row="0"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="leftUp2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="2" Grid.Row="0"
+                    <Image x:Name="leftUp2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="2" Grid.Row="0"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="leftUp3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="3" Grid.Row="0"
+                    <Image x:Name="leftUp3" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="3" Grid.Row="0"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
 
-                <Image x:Name="leftDown0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="1"
+                    <Image x:Name="leftDown0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="0" Grid.Row="1"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True"/>
-                <Image x:Name="leftDown1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="1"
+                    <Image x:Name="leftDown1" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="1" Grid.Row="1"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
-                <Image x:Name="leftDown2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="2" Grid.Row="1"
+                    <Image x:Name="leftDown2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="2" Grid.Row="1"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
-                <Image x:Name="leftDown3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="3" Grid.Row="1"
+                    <Image x:Name="leftDown3" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="3" Grid.Row="1"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
 
-            </Grid>
+                </Grid>
 
-        </Canvas>
-        <Canvas x:Name="CanvasRight" Width="200" Height="100" Margin="550, 0, 0, 0" VerticalAlignment="Bottom" >
-            <Image x:Name="RightBackground" Source="Assets/casillaTumbao.png"
+            </Canvas>
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Canvas x:Name="CanvasRight" Width="200" Height="100" Margin=" 550, 0, 70,  0" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                <Image x:Name="RightBackground" Source="Assets/casillaTumbao.png"
                            Height="100" Width="200" />
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
 
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition Width="50"/>
-                </Grid.ColumnDefinitions>
-                <!--Casillas-->
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Casillas-->
 
-                <Image x:Name="RightUp0" Source="Assets/casilla.png" Stretch="Fill" 
+                    <Image x:Name="RightUp0" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="0"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="RightUp1" Source="Assets/casilla.png" Stretch="Fill" 
+                    <Image x:Name="RightUp1" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="0"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="RightUp2" Source="Assets/casilla.png" Stretch="Fill" 
+                    <Image x:Name="RightUp2" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="2" Grid.Row="0"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="RightUp3" Source="Assets/casilla.png" Stretch="Fill" 
+                    <Image x:Name="RightUp3" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="3" Grid.Row="0"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
 
-                <Image x:Name="RightDown0" Source="Assets/casilla.png" Stretch="Fill" 
+                    <Image x:Name="RightDown0" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="1"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="RightDown1" Source="Assets/casilla.png" Stretch="Fill" 
+                    <Image x:Name="RightDown1" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="1"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="RightDown2" Source="Assets/casilla.png" Stretch="Fill" 
+                    <Image x:Name="RightDown2" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="2" Grid.Row="1"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
-                <Image x:Name="RightDown3" Source="Assets/casilla.png" Stretch="Fill" 
+                    <Image x:Name="RightDown3" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="3" Grid.Row="1"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
 
-            </Grid>
-        </Canvas>
-
+                </Grid>
+            </Canvas>
+        </Viewbox>
         <!--Tierra-->
-        <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
-               Width="300" Height="300" />
+        <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+               Width="300" Height="300" Margin="0,650,0,0" />
+        </Viewbox>
         <!--Papelera-->
         <Image x:Name="Papelera" Height="100" Width="100" 
                    HorizontalAlignment="Right" Margin="50"

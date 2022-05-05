@@ -7,293 +7,302 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     >
-    <Viewbox Stretch="Uniform">
-        <Grid Background="Gray" Width="979" Height="653" >
-            <Image Source="Assets/inGameFondo.jpg" Stretch="Fill"></Image>
-            <!--Compras-->
-            <Ellipse Fill="Silver" Width="220" Height="220" 
-                     HorizontalAlignment="Left" VerticalAlignment="Top" 
-                     Margin="105,167,0,0" />
-            <Ellipse Fill="Silver" Width="119" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,195,0"/>
-            <!--Objetos-->
-            <Grid x:ConnectionId='2' x:Name="Grid1" Height="50" HorizontalAlignment="Left" 
+
+    <Grid>
+        <Image Source="Assets/inGameFondo.jpg" Stretch="Fill"></Image>
+        <!--Compras-->
+        <Ellipse Fill="Silver" Width="119" Height="125" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,195,0"/>
+        <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Ellipse Fill="Silver" Width="300" Height="300" 
+                     HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,170,0,230" 
+                     />
+        </Viewbox>
+
+        <!--Objetos-->
+        <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Grid x:ConnectionId='56' x:Name="Grid1" Height="30" Margin ="60, 84, 0,168"
                   VerticalAlignment="Center" 
-                  Margin ="175,-220,0,0">
+                  HorizontalAlignment="Left" >
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="40"/>
-                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Vertical" >
-                    <Image x:ConnectionId='58' x:Name="O0" Width="40" Height="40" Source="/Assets/0.png"
+                    <Image x:ConnectionId='58' x:Name="O0" Width="25" Height="25" Source="/Assets/0.png"
                     CanDrag="True"
                                                  
                     AllowDrop="True"
                     ></Image>
-                    <TextBlock Text="2000" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
+                    <TextBlock Text="2000" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Grid.Column="1">
-                    <Image x:ConnectionId='57' x:Name="O1" Width="40" Height="40" Source="/Assets/1.png"></Image>
-                    <TextBlock Text="700" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
+                    <Image x:ConnectionId='57' x:Name="O1" Width="25" Height="25" Source="/Assets/1.png"></Image>
+                    <TextBlock Text="700" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
 
             </Grid>
-
-            <Grid x:ConnectionId='3' x:Name="Grid2" Height="50" 
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Grid x:ConnectionId='52' x:Name="Grid2" Height="30" Margin ="42, 110, 0,125"
                   HorizontalAlignment="Left" 
                   VerticalAlignment="Center" 
-                  Margin ="155,-100,0,0">
+                  >
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="40"/>
-                    <ColumnDefinition Width="40"/>
-                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
                 </Grid.ColumnDefinitions>
+
+
                 <StackPanel Orientation="Vertical">
-                    <Image x:ConnectionId='56' x:Name="O2" Width="40" Height="40" Source="/Assets/2.png"></Image>
-                    <TextBlock Text="300" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
+                    <Image x:ConnectionId='55' x:Name="O2" Width="25" Height="25" Source="/Assets/2.png"></Image>
+                    <TextBlock Text="300" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Grid.Column="1">
-                    <Image x:ConnectionId='55' x:Name="O3" Width="40" Height="40" Source="/Assets/3.png"></Image>
-                    <TextBlock Text="250" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
+                    <Image x:ConnectionId='54' x:Name="O3" Width="25" Height="25" Source="/Assets/3.png"></Image>
+                    <TextBlock Text="250" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Grid.Column="2">
-                    <Image x:ConnectionId='54' x:Name="O4" Width="40" Height="40" Source="/Assets/4.png"></Image>
-                    <TextBlock Text="150" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
+                    <Image x:ConnectionId='53' x:Name="O4" Width="25" Height="25" Source="/Assets/4.png"></Image>
+                    <TextBlock Text="150" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
 
             </Grid>
-
-            <Grid x:ConnectionId='4' x:Name="Grid3" Height="50" 
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Grid x:ConnectionId='49' x:Name="Grid3" Height="30" Margin ="58, 150, 0,95"
                   HorizontalAlignment="Left" 
                   VerticalAlignment="Center" 
-                   Margin ="175,20,0,0">
+                   >
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="40"/>
-                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Vertical" >
-                    <Image x:ConnectionId='53' x:Name="O5" Width="40" Height="40" Source="/Assets/5.png"></Image>
-                    <TextBlock Text="100" Width="40" Height="10" FontSize="9"  HorizontalTextAlignment="Center"></TextBlock>
+                    <Image x:ConnectionId='51' x:Name="O5" Width="25" Height="25" Source="/Assets/5.png"></Image>
+                    <TextBlock Text="100" Width="25" Height="5" FontSize="4"  HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Grid.Column="1">
-                    <Image x:ConnectionId='52' x:Name="O6" Width="40" Height="40" Source="/Assets/6.png"
+                    <Image x:ConnectionId='50' x:Name="O6" Width="25" Height="25" Source="/Assets/6.png"
                     CanDrag="True"
                                                  
                     AllowDrop="True"></Image>
-                    <TextBlock Text="50" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
+                    <TextBlock Text="50" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
             </Grid>
-            <!--pontenciadores de click-->
+        </Viewbox>
 
-            <!--pausa-->
-            <Button x:ConnectionId='5' x:Name="Pause" Width="70" Height="70" VerticalAlignment="Top" HorizontalAlignment="Left"                     Margin="20" Background="Black">
-                <Viewbox MaxHeight="200" MaxWidth="200">
-                    <SymbolIcon  Symbol="Pause"/>
-                </Viewbox>
-            </Button>
+        <!--pontenciadores de click-->
 
-            <!--Dinero-->
-            <TextBlock x:ConnectionId='6' x:Name="Money" Text="0" Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS"/>
+        <!--pausa-->
+        <Button x:ConnectionId='2' x:Name="Pause" Width="70" Height="70" VerticalAlignment="Top" HorizontalAlignment="Left"                     Margin="20" Background="Black">
+            <Viewbox MaxHeight="200" MaxWidth="200">
+                <SymbolIcon  Symbol="Pause"/>
+            </Viewbox>
+        </Button>
 
-            <!--Clicker-->
-            <Button x:ConnectionId='7'  Width="100" Height="110"                        HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,40,50,0">
+        <!--Dinero-->
+        <TextBlock x:ConnectionId='3' x:Name="Money" Text="0" Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS"/>
 
-                <Button.Template>
-                    <ControlTemplate TargetType="Button" >
-                        <Grid>
-                            <Image Source="Assets/monedaV.png"></Image>
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Grid>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
+        <!--Clicker-->
+        <Button x:ConnectionId='4'  Width="100" Height="110"                        HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,40,50,0">
 
-            <!--Caminos-->
-            <Canvas x:ConnectionId='8' x:Name="CanvasTop" Width="100" Height="200" Margin="129" VerticalAlignment="Top" >
-                <Image x:ConnectionId='39' x:Name="MiddleBackground" Source="Assets/casillaTopFondo.png"
+            <Button.Template>
+                <ControlTemplate TargetType="Button" >
+                    <Grid>
+                        <Image Source="Assets/monedaV.png"></Image>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <!--Caminos-->
+        <Canvas x:ConnectionId='5' x:Name="CanvasTop" Width="100" Height="200" Margin="340" VerticalAlignment="Bottom"  >
+            <Image x:ConnectionId='36' x:Name="MiddleBackground" Source="Assets/casillaTopFondo.png"
                            Height="200" Width="100" />
-                <Grid x:ConnectionId='40'                             >
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="50"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="50"/>
-                    </Grid.ColumnDefinitions>
-                    <!--Casillas-->
-                    <Image x:ConnectionId='42' x:Name="middleLeft0" Source="Assets/casilla.png" Stretch="Fill" 
+            <Grid x:ConnectionId='37'                             >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <!--Casillas-->
+                <Image x:ConnectionId='39' x:Name="middleLeft0" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="0"
                            AllowDrop="True"                                                
                            CanDrag="True"                                     />
-                    <Image x:ConnectionId='43' x:Name="middleLeft1" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='40' x:Name="middleLeft1" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="1"
                            AllowDrop="True"                     CanDrag="True"                                                                 />
-                    <Image x:ConnectionId='44' x:Name="middleLeft2" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='41' x:Name="middleLeft2" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="2"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
-                    <Image x:ConnectionId='45' x:Name="middleLeft3" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='42' x:Name="middleLeft3" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="3"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
 
-                    <Image x:ConnectionId='46' x:Name="middleRight0" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='43' x:Name="middleRight0" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="0"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
-                    <Image x:ConnectionId='47' x:Name="middleRight1" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='44' x:Name="middleRight1" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="1"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
-                    <Image x:ConnectionId='48' x:Name="middleRight2" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='45' x:Name="middleRight2" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="2"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
-                    <Image x:ConnectionId='49' x:Name="middleRight3" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='46' x:Name="middleRight3" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="3"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
 
-                </Grid>
+            </Grid>
 
-                <Image x:ConnectionId='41' x:Name="Prueba" Source="Assets/0.png" Height="60" Canvas.Top="130"
+            <Image x:ConnectionId='38' x:Name="Prueba" Source="Assets/0.png" Height="60" Canvas.Top="130"
                        Width="50" Canvas.Left="10"                     CanDrag="True" 
                                                    AllowDrop="True"
                        Visibility="Collapsed"/>
-            </Canvas>
-            <Canvas x:ConnectionId='9' x:Name="CanvasLeft" Width="200" Height="100" Margin="-550, 450, 0, 0" VerticalAlignment="Top" >
-                <Image x:ConnectionId='30' x:Name="LeftBackground" Source="Assets/casillaTumbao.png"
+        </Canvas>
+        <Canvas x:ConnectionId='6' x:Name="CanvasLeft" Width="200" Height="100" Margin="-600, 0, 0, 90" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Image x:ConnectionId='27' x:Name="LeftBackground" Source="Assets/casillaTumbao.png"
                            Height="100" Width="200" />
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="50"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
 
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="50"/>
-                    </Grid.ColumnDefinitions>
-                    <!--Casillas-->
-                    <Image x:ConnectionId='31' x:Name="leftUp0" Source="Assets/casilla.png" Stretch="Fill" 
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <!--Casillas-->
+                <Image x:ConnectionId='28' x:Name="leftUp0" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="0"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
-                    <Image x:ConnectionId='32' x:Name="leftUp1" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='29' x:Name="leftUp1" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="0"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
-                    <Image x:ConnectionId='33' x:Name="leftUp2" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='30' x:Name="leftUp2" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="2" Grid.Row="0"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
-                    <Image x:ConnectionId='34' x:Name="leftUp3" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='31' x:Name="leftUp3" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="3" Grid.Row="0"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
 
-                    <Image x:ConnectionId='35' x:Name="leftDown0" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='32' x:Name="leftDown0" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="1"
                            AllowDrop="True"                                                 CanDrag="True"/>
-                    <Image x:ConnectionId='36' x:Name="leftDown1" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='33' x:Name="leftDown1" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="1"
                            AllowDrop="True"                                                />
-                    <Image x:ConnectionId='37' x:Name="leftDown2" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='34' x:Name="leftDown2" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="2" Grid.Row="1"
                            AllowDrop="True"                                                />
-                    <Image x:ConnectionId='38' x:Name="leftDown3" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='35' x:Name="leftDown3" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="3" Grid.Row="1"
                            AllowDrop="True"                                                />
 
-                </Grid>
+            </Grid>
 
-            </Canvas>
-            <Canvas x:ConnectionId='10' x:Name="CanvasRight" Width="200" Height="100" Margin="550, 450, 0, 0" VerticalAlignment="Top" >
-                <Image x:ConnectionId='21' x:Name="RightBackground" Source="Assets/casillaTumbao.png"
+        </Canvas>
+        <Canvas x:ConnectionId='7' x:Name="CanvasRight" Width="200" Height="100" Margin="600, 0, 0, 90" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Image x:ConnectionId='18' x:Name="RightBackground" Source="Assets/casillaTumbao.png"
                            Height="100" Width="200" />
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="50"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
 
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="50"/>
-                    </Grid.ColumnDefinitions>
-                    <!--Casillas-->
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <!--Casillas-->
 
-                    <Image x:ConnectionId='22' x:Name="RightUp0" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='19' x:Name="RightUp0" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="0"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
-                    <Image x:ConnectionId='23' x:Name="RightUp1" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='20' x:Name="RightUp1" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="0"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
-                    <Image x:ConnectionId='24' x:Name="RightUp2" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='21' x:Name="RightUp2" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="2" Grid.Row="0"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
-                    <Image x:ConnectionId='25' x:Name="RightUp3" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='22' x:Name="RightUp3" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="3" Grid.Row="0"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
 
-                    <Image x:ConnectionId='26' x:Name="RightDown0" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='23' x:Name="RightDown0" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="0" Grid.Row="1"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
-                    <Image x:ConnectionId='27' x:Name="RightDown1" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='24' x:Name="RightDown1" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="1" Grid.Row="1"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
-                    <Image x:ConnectionId='28' x:Name="RightDown2" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='25' x:Name="RightDown2" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="2" Grid.Row="1"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
-                    <Image x:ConnectionId='29' x:Name="RightDown3" Source="Assets/casilla.png" Stretch="Fill" 
+                <Image x:ConnectionId='26' x:Name="RightDown3" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="50" Width="50" Grid.Column="3" Grid.Row="1"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
 
-                </Grid>
-            </Canvas>
+            </Grid>
+        </Canvas>
 
-            <!--Tierra-->
-            <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+        <!--Tierra-->
+        <Image Source="Assets/Earth.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
                Width="300" Height="300" />
-            <!--Papelera-->
-            <Image x:ConnectionId='11' x:Name="Papelera" Height="100" Width="100" 
+        <!--Papelera-->
+        <Image x:ConnectionId='8' x:Name="Papelera" Height="100" Width="100" 
                    HorizontalAlignment="Right" Margin="50"
                    Source="Assets/trash.png" 
                    AllowDrop="True" 
                                        
                                               />
 
-            <Image HorizontalAlignment="Left" Height="100" Margin="1175,500,0,0" VerticalAlignment="Top" Width="100"/>
-            <Grid x:ConnectionId='12' x:Name="Pot1" Width="40" Height="100" HorizontalAlignment="Right" VerticalAlignment="Center"
+        <Image HorizontalAlignment="Left" Height="100" Margin="1175,500,0,0" VerticalAlignment="Top" Width="100"/>
+        <Grid x:ConnectionId='9' x:Name="Pot1" Width="40" Height="100" HorizontalAlignment="Right" VerticalAlignment="Center"
                   Margin="0,-230,235,0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
-                </Grid.RowDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
 
-                <StackPanel Orientation="Vertical" >
-                    <Button x:ConnectionId='17'  Width="40" Height="40"                    >
-                        <Button.Template>
-                            <ControlTemplate TargetType="Button" >
-                                <Grid>
-                                    <Image x:Name="PT0" Width="40" Height="40" Source="/Assets/7.png"></Image>
-                                </Grid>
-                            </ControlTemplate>
-                        </Button.Template>
-                    </Button>
-                    
-                    <TextBlock Text="700" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
-                </StackPanel >
-                <StackPanel Orientation="Vertical" Grid.Row="1" >
-                    <Button x:ConnectionId='13'  Width="40" Height="40"                    >
-                        <Button.Template>
-                            <ControlTemplate TargetType="Button" >
-                                <Grid>
-                                    <Image x:Name="PT1" Width="40" Height="40"  Source="/Assets/8.png"></Image>
-                                </Grid>
-                            </ControlTemplate>
-                        </Button.Template>
-                    </Button>
-                    <TextBlock Text="50" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
-                </StackPanel>
-            </Grid>
+            <StackPanel Orientation="Vertical" >
+                <Button x:ConnectionId='14'  Width="40" Height="40"                    >
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button" >
+                            <Grid>
+                                <Image x:Name="PT0" Width="40" Height="40" Source="/Assets/7.png"></Image>
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <TextBlock Text="700" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
+            </StackPanel >
+            <StackPanel Orientation="Vertical" Grid.Row="1" >
+                <Button x:ConnectionId='10'  Width="40" Height="40"                    >
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button" >
+                            <Grid>
+                                <Image x:Name="PT1" Width="40" Height="40"  Source="/Assets/8.png"></Image>
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <TextBlock Text="50" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
+            </StackPanel>
         </Grid>
-    </Viewbox>
+    </Grid>
 </Page>
 
