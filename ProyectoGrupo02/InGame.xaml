@@ -11,10 +11,7 @@
     <Grid>
         <Image Source="Assets/inGameFondo.jpg" Stretch="Fill"></Image>
         <!--Compras-->
-
-        <Viewbox>
-            <Ellipse Fill="Silver" Width="83" Height="83" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="250,100,0,200"/>
-        </Viewbox>
+        <Ellipse Fill="Silver" Width="192" Height="203" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,267,159,0"/>
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
             <Ellipse Fill="Silver" Width="300" Height="300" 
                      HorizontalAlignment="Left" VerticalAlignment="Center" Margin="65,180,0,230" 
@@ -31,15 +28,19 @@
                     <ColumnDefinition Width="25"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Vertical" >
-                    <Image x:Name="O0" Width="25" Height="25" Source="/Assets/0.png"
-                    CanDrag="True"
-                    DragStarting="a_DragStarting"
-                    AllowDrop="True"
-                    ></Image>
+                    <ContentControl x:Name="Sun" CanDrag="True" DragStarting="a_DragStarting" 
+                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
+                                    UseSystemFocusVisuals="True" TabIndex="0">
+                        <Image x:Name="O0" Width="25" Height="25" Source="/Assets/0.png"></Image>
+                    </ContentControl>
                     <TextBlock Text="2000" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Grid.Column="1">
-                    <Image x:Name="O1" Width="25" Height="25" Source="/Assets/1.png"></Image>
+                    <ContentControl x:Name="Potion" CanDrag="True" DragStarting="a_DragStarting" 
+                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
+                                    UseSystemFocusVisuals="True" TabIndex="0">
+                        <Image x:Name="O1" Width="25" Height="25" Source="/Assets/1.png"></Image>
+                    </ContentControl>
                     <TextBlock Text="700" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
 
@@ -58,15 +59,27 @@
 
 
                 <StackPanel Orientation="Vertical">
-                    <Image x:Name="O2" Width="25" Height="25" Source="/Assets/2.png"></Image>
+                    <ContentControl x:Name="Guillotine" CanDrag="True" DragStarting="a_DragStarting" 
+                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
+                                    UseSystemFocusVisuals="True" TabIndex="0">
+                        <Image x:Name="O2" Width="25" Height="25" Source="/Assets/2.png"></Image>
+                    </ContentControl>
                     <TextBlock Text="300" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Grid.Column="1">
-                    <Image x:Name="O3" Width="25" Height="25" Source="/Assets/3.png"></Image>
+                    <ContentControl x:Name="HolyWater" CanDrag="True" DragStarting="a_DragStarting" 
+                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
+                                    UseSystemFocusVisuals="True" TabIndex="0">
+                        <Image x:Name="O3" Width="25" Height="25" Source="/Assets/3.png"></Image>
+                    </ContentControl>
                     <TextBlock Text="250" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Grid.Column="2">
-                    <Image x:Name="O4" Width="25" Height="25" Source="/Assets/4.png"></Image>
+                    <ContentControl x:Name="Rice" CanDrag="True" DragStarting="a_DragStarting" 
+                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
+                                    UseSystemFocusVisuals="True" TabIndex="0">
+                        <Image x:Name="O4" Width="25" Height="25" Source="/Assets/4.png"></Image>
+                    </ContentControl>
                     <TextBlock Text="150" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
 
@@ -82,14 +95,19 @@
                     <ColumnDefinition Width="25"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Vertical" >
-                    <Image x:Name="O5" Width="25" Height="25" Source="/Assets/5.png"></Image>
+                    <ContentControl x:Name="Canyon" CanDrag="True" DragStarting="a_DragStarting" 
+                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
+                                    UseSystemFocusVisuals="True" TabIndex="0">
+                        <Image x:Name="O5" Width="25" Height="25" Source="/Assets/5.png"></Image>
+                    </ContentControl>
                     <TextBlock Text="100" Width="25" Height="5" FontSize="4"  HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Grid.Column="1">
-                    <Image x:Name="O6" Width="25" Height="25" Source="/Assets/6.png"
-                    CanDrag="True"
-                    DragStarting="a_DragStarting"
-                    AllowDrop="True"></Image>
+                    <ContentControl x:Name="Ajo" CanDrag="True" DragStarting="a_DragStarting" 
+                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
+                                    UseSystemFocusVisuals="True" TabIndex="0">
+                        <Image x:Name="O6" Width="25" Height="25" Source="/Assets/6.png"></Image>
+                    </ContentControl>
                     <TextBlock Text="50" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
             </Grid>
@@ -108,7 +126,7 @@
         <TextBlock x:Name="Money" Text="0" Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS"/>
 
         <!--Clicker-->
-        <Button  Width="100" Height="110"  Click="Coin_Clicker"  HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,40,50,0">
+        <Button  Width="200" Height="210"  Click="Coin_Clicker"  HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,40,50,0">
 
             <Button.Template>
                 <ControlTemplate TargetType="Button" >
@@ -280,6 +298,7 @@
                    DragOver="Ellipse_DragOver"/>
 
         <Image HorizontalAlignment="Left" Height="100" Margin="1175,500,0,0" VerticalAlignment="Top" Width="100"/>
+
         <Grid x:Name="Pot1" Width="40" Height="100" HorizontalAlignment="Right" VerticalAlignment="Center"
                   Margin="0,-230,235,0">
             <Grid.RowDefinitions>
@@ -300,10 +319,8 @@
 
                 <TextBlock Text="700" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
             </StackPanel >
-            
-                <StackPanel Orientation="Vertical" Grid.Row="1" >
-
-                <Button  Width="80" Height="80"  Click="add_Click" >
+            <StackPanel Orientation="Vertical" Grid.Row="1" >
+                <Button  Width="40" Height="40"  Click="add_Click" >
                     <Button.Template>
                         <ControlTemplate TargetType="Button" >
                             <Grid>
@@ -313,9 +330,7 @@
                     </Button.Template>
                 </Button>
                 <TextBlock Text="50" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
-                </StackPanel>
-            
-            
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>
