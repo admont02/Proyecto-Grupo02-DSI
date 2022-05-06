@@ -81,7 +81,6 @@
       <RootProperty Name="Child" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Stretch" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />

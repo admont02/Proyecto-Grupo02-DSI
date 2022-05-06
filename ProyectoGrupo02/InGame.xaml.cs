@@ -29,6 +29,19 @@ namespace ProyectoGrupo02
     /// </summary>
     public sealed partial class InGame : Page
     {
+        public struct Datos
+        {
+            public Datos(int m)
+            {
+                coins = m;
+            }
+            public Datos(Datos d)
+            {
+                coins = d.coins;
+            }
+            public int coins { get; set; }
+        }
+        int nCoins =0;
         public ObservableCollection<VMObject> Objects { get; } = new ObservableCollection<VMObject>();
         private TranslateTransform dragTranslation;
         private readonly object myLock = new object();
@@ -36,7 +49,7 @@ namespace ProyectoGrupo02
         private Gamepad mainGamepad = null;
         private GamepadReading reading, prereading;
         private GamepadVibration vibration;
-
+        
         private DispatcherTimer timer;
         int initialTime = 0;
         int clicks = 1, labclicks = 0;
@@ -107,18 +120,21 @@ namespace ProyectoGrupo02
         void timer_Tick(object sender, object e)
         {
             initialTime++;
-            Money.Text = (Int64.Parse(Money.Text) + labclicks).ToString();
+            Money.Text = (nCoins + labclicks).ToString();
         }
         private void Click_Pause(object sender, RoutedEventArgs e)
         {
             PlayClick();
+            Datos d;
+            d = new Datos(nCoins);
             musica.Pause();
-            Frame.Navigate(typeof(Pause));
+            Frame.Navigate(typeof(Pause),d);
         }
         private void Coin_Clicker(object sender, RoutedEventArgs e)
         {
             money.Play();
-            Money.Text = (Int64.Parse(Money.Text) + clicks).ToString();
+            nCoins += clicks;
+            Money.Text = (nCoins).ToString();
         }
         private void Lab_Click(object sender, RoutedEventArgs e)
         {
@@ -141,6 +157,10 @@ namespace ProyectoGrupo02
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             timer.Start();
+            if(e?.Parameter is Datos d)
+            {
+                nCoins = d.coins;
+            }
             //this.NavigationCacheMode = NavigationCacheMode.Required;
             if (Objects != null) // Carga la lista de ModelView
             {

@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADRIAN\\Desktop\\2.Carrera\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj": {}
+    "C:\\Users\\adrim\\OneDrive\\Escritorio\\2ºCARRERA\\ASIG.SEGUNDO\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADRIAN\\Desktop\\2.Carrera\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj": {
+    "C:\\Users\\adrim\\OneDrive\\Escritorio\\2ºCARRERA\\ASIG.SEGUNDO\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADRIAN\\Desktop\\2.Carrera\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj",
+        "projectUniqueName": "C:\\Users\\adrim\\OneDrive\\Escritorio\\2ºCARRERA\\ASIG.SEGUNDO\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj",
         "projectName": "ProyectoGrupo02",
-        "projectPath": "C:\\Users\\ADRIAN\\Desktop\\2.Carrera\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj",
-        "packagesPath": "C:\\Users\\ADRIAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADRIAN\\Desktop\\2.Carrera\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\obj\\",
+        "projectPath": "C:\\Users\\adrim\\OneDrive\\Escritorio\\2ºCARRERA\\ASIG.SEGUNDO\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\ProyectoGrupo02.csproj",
+        "packagesPath": "C:\\Users\\adrim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adrim\\OneDrive\\Escritorio\\2ºCARRERA\\ASIG.SEGUNDO\\2ºCUATRI\\Proyecto-Grupo02-DSI\\ProyectoGrupo02\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADRIAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\adrim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
