@@ -86,36 +86,7 @@ namespace ProyectoGrupo02
             timer = new DispatcherTimer();
             timer.Tick += timer_Tick;
             timer.Interval = new TimeSpan(0, 0, 1);
-            Gamepad.GamepadAdded += (object sender, Gamepad e) =>
-            {
-                lock (myLock)
-                {
-                    bool gamepadInList = myGamepads.Contains(e);
-
-                    if (!gamepadInList)
-                    {
-                        myGamepads.Add(e);
-                        mainGamepad = myGamepads[0];
-                    }
-                }
-            };
-            Gamepad.GamepadRemoved += (object sender, Gamepad e) =>
-            {
-                lock (myLock)
-                {
-                    int indexRemoved = myGamepads.IndexOf(e);
-
-                    if (indexRemoved > -1)
-                    {
-                        if (mainGamepad == myGamepads[indexRemoved])
-                        {
-                            mainGamepad = null;
-                        }
-
-                        myGamepads.RemoveAt(indexRemoved);
-                    }
-                }
-            };
+            
         }
         void timer_Tick(object sender, object e)
         {
@@ -184,67 +155,71 @@ namespace ProyectoGrupo02
         private async void Ellipse_Drop(object sender, DragEventArgs e)
         {
             var id = await e.DataView.GetTextAsync();
-            Image o = FindName(id) as Image;
-            int num = 999999999;
-            switch (o.Name)
-            {
-                case "O0":
-                    num = Objects[0].Precio;
-                    break;
-                case "O1":
-                    num = Objects[1].Precio;
-                    break;
-                case "O2":
-                    num = Objects[2].Precio;
-                    break;
-                case "O3":
-                    num = Objects[3].Precio;
-                    break;
-                case "O4":
-                    num = Objects[4].Precio;
-                    break;
-                case "O5":
-                    num = Objects[5].Precio;
-                    break;
-                case "O6":
-                    num = Objects[6].Precio;
-                    break;
-            }
-            if (num <= (int.Parse(Money.Text)))
-            {
-                Image r = sender as Image;
-                int x = -1;
-                switch (o.Name)
-                {
-                    case "O0":
-                        x = 0;
+            int aux = int.Parse(id);
+            Image i = sender as Image;
+            i.Source = Objects[aux].Img.Source;
+            i.Visibility = Visibility.Visible;
+            //Image o = FindName(id) as Image;
+            //int num = 999999999;
+            //switch (o.Name)
+            //{
+            //    case "O0":
+            //        num = Objects[0].Precio;
+            //        break;
+            //    case "O1":
+            //        num = Objects[1].Precio;
+            //        break;
+            //    case "O2":
+            //        num = Objects[2].Precio;
+            //        break;
+            //    case "O3":
+            //        num = Objects[3].Precio;
+            //        break;
+            //    case "O4":
+            //        num = Objects[4].Precio;
+            //        break;
+            //    case "O5":
+            //        num = Objects[5].Precio;
+            //        break;
+            //    case "O6":
+            //        num = Objects[6].Precio;
+            //        break;
+            //}
+            //if (num <= (int.Parse(Money.Text)))
+            //{
+            //    Image r = sender as Image;
+            //    int x = -1;
+            //    switch (o.Name)
+            //    {
+            //        case "O0":
+            //            x = 0;
 
-                        break;
-                    case "O1":
-                        x = 1;
-                        break;
-                    case "O2":
-                        x = 2;
-                        break;
-                    case "O3":
-                        x = 3;
-                        break;
-                    case "O4":
-                        x = 4;
-                        break;
-                    case "O5":
-                        x = 5;
-                        break;
-                    case "O6":
-                        x = 6;
-                        break;
-                }
-                r.Source = Objects[x].Img.Source;
-                r.Visibility = Visibility.Visible;
+            //            break;
+            //        case "O1":
+            //            x = 1;
+            //            break;
+            //        case "O2":
+            //            x = 2;
+            //            break;
+            //        case "O3":
+            //            x = 3;
+            //            break;
+            //        case "O4":
+            //            x = 4;
+            //            break;
+            //        case "O5":
+            //            x = 5;
+            //            break;
+            //        case "O6":
+            //            x = 6;
+            //            break;
+            //    }
+            //r.Source = Objects[x].Img.Source;
+            //r.Visibility = Visibility.Visible;
 
-                Money.Text = (int.Parse(Money.Text) - num).ToString();
-            }
+            //Money.Text = (int.Parse(Money.Text) - num).ToString();
         }
+        
         private void Ellipse_DragOver(object sender, DragEventArgs e)
         {
             e.AcceptedOperation = DataPackageOperation.Copy;
@@ -315,6 +290,23 @@ namespace ProyectoGrupo02
             musica.Play();
             click.Play();
         }
+
+        private void Grid3_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            
+           Object o= e.ClickedItem as Object;
+            string aux = "ms-appx:" + o.Imagen;
+           RightDown2.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+        }
+
+        private void Grid3_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
+        {
+            Object aux = e.Items[0] as Object;
+            string id = aux.Id.ToString();
+            e.Data.SetText(id);
+            e.Data.RequestedOperation = DataPackageOperation.Copy;
+        }
+
         private async void PlayClick()
         {
             Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Music");

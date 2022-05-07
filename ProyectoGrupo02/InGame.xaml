@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     >
-
+    
     <Grid>
         <Image Source="Assets/inGameFondo.jpg" Stretch="Fill"></Image>
         <!--Compras-->
@@ -23,7 +23,7 @@
 
         <!--Objetos-->
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Grid x:Name="Grid1" Height="30" Margin ="60, 84, 0,168"
+            <!--<Grid x:Name="Grid1" Height="30" Margin ="60, 84, 0,168"
                   VerticalAlignment="Center" 
                   HorizontalAlignment="Left" >
                 <Grid.ColumnDefinitions>
@@ -43,10 +43,10 @@
                     <TextBlock Text="700" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
 
-            </Grid>
+            </Grid>-->
         </Viewbox>
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Grid x:Name="Grid2" Height="30" Margin ="42, 110, 0,125"
+            <!--<Grid x:Name="Grid2" Height="30" Margin ="42, 110, 0,125"
                   HorizontalAlignment="Left" 
                   VerticalAlignment="Center" 
                   >
@@ -70,29 +70,51 @@
                     <TextBlock Text="150" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
 
-            </Grid>
+            </Grid>-->
         </Viewbox>
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Grid x:Name="Grid3" Height="30" Margin ="58, 150, 0,95"
-                  HorizontalAlignment="Left" 
-                  VerticalAlignment="Center" 
-                   >
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="25"/>
-                    <ColumnDefinition Width="25"/>
-                </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Vertical" >
-                    <Image x:Name="O5" Width="25" Height="25" Source="/Assets/5.png"></Image>
+            <GridView x:Name="Grid3" Height="300" Margin ="28, 120, 0,95"
+                  HorizontalAlignment="Left" IsItemClickEnabled="True" ItemClick="Grid3_ItemClick"
+                  VerticalAlignment="Top" Width="300" ItemsSource="{x:Bind Objects}" CanDragItems="True" DragItemsStarting="Grid3_DragItemsStarting" >
+                <GridView.ItemTemplate >
+                    <DataTemplate x:DataType="local:VMObject">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"
+                                                Spacing="15" Orientation="Horizontal">
+                            <Image Source="{x:Bind o.Imagen,Mode=OneTime}"  Width="50" Height="50"/>
+                            <TextBlock Text="{x:Bind Precio,Mode=OneWay}" FontSize="10" 
+                                                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+                <!--<GridView.ItemTemplate >
+                    <DataTemplate x:DataType="local:Object">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"
+                                                Spacing="5" Orientation="Horizontal">
+                            <Image Source="{x:Bind ficha_.img_.Source}" Height="115"/>
+                            <TextBlock Text="{x:Bind cantidad_,Mode=OneWay}" FontSize="48" 
+                                                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>-->
+                <!--<StackPanel Orientation="Vertical" Width="15" Height="15" >
+                    <Image x:Name="O5" Width="15" Height="15" Source="/Assets/5.png"></Image>
                     <TextBlock Text="100" Width="25" Height="5" FontSize="4"  HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
-                <StackPanel Orientation="Vertical" Grid.Column="1">
-                    <Image x:Name="O6" Width="25" Height="25" Source="/Assets/6.png"
-                    CanDrag="True"
+                <StackPanel Orientation="Vertical" Grid.Column="1" Width="15" Height="15">
+                    <Image x:Name="O6" Width="15" Height="15" Source="/Assets/6.png"
+                    CanDrag="True" 
                     DragStarting="a_DragStarting"
                     AllowDrop="True"></Image>
                     <TextBlock Text="50" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
-                </StackPanel>
-            </Grid>
+                </StackPanel>-->
+            </GridView>
+
+            <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
+                </Grid.ColumnDefinitions>-->
+
+
         </Viewbox>
 
         <!--pontenciadores de click-->
@@ -300,8 +322,8 @@
 
                 <TextBlock Text="700" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
             </StackPanel >
-            
-                <StackPanel Orientation="Vertical" Grid.Row="1" >
+
+            <StackPanel Orientation="Vertical" Grid.Row="1" >
 
                 <Button  Width="80" Height="80"  Click="add_Click" >
                     <Button.Template>
@@ -313,9 +335,9 @@
                     </Button.Template>
                 </Button>
                 <TextBlock Text="50" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
-                </StackPanel>
-            
-            
+            </StackPanel>
+
+
         </Grid>
     </Grid>
 </Page>

@@ -12,18 +12,20 @@ namespace ProyectoGrupo02
         public Image Img;
         public ContentControl CCImg;
         public int Zoom;
+        public Object o;
         public VMObject(Object obj)
         {
-            Id = obj.Id;
-            Nombre = obj.Nombre;
-            Imagen = obj.Imagen;
+            o = obj;
+            Id = o.Id;
+            Nombre = o.Nombre;
+            Imagen = o.Imagen;
             Explicacion = obj.Explicacion;
-            Estado = obj.Estado;
-            Precio = obj.Precio;
-            X = obj.X;
-            Y = obj.Y;
-            RX = obj.RX;
-            RY = obj.RY;
+            Estado = o.Estado;
+            Precio = o.Precio;
+            X = o.X;
+            Y = o.Y;
+            RX = o.RX;
+            RY = o.RY;
             Img = new Image();
             string s = System.IO.Directory.GetCurrentDirectory() + "\\" + obj.Imagen;
             Img.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
