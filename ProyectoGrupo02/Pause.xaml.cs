@@ -22,7 +22,7 @@ namespace ProyectoGrupo02
     /// </summary>
     public sealed partial class Pause : Page
     {
-        InGame.Datos d;
+        
         public Pause()
         {
             this.InitializeComponent();
@@ -30,7 +30,8 @@ namespace ProyectoGrupo02
 
         private void Return_Click_Pause(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(InGame), d);
+            string coins = Money.Text;
+            Frame.Navigate(typeof(InGame), coins);
         }
         private void Return_Menu(object sender, RoutedEventArgs e)
         {
@@ -38,11 +39,18 @@ namespace ProyectoGrupo02
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            if (e?.Parameter is InGame.Datos d)
-            {
-                d = new InGame.Datos(d);
-                base.OnNavigatedTo(e);
-            }
+            base.OnNavigatedTo(e);
+            VolumeSlider.Value = App.volumen * 10;
+        }
+
+        private void SoundVolumeChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            App.volumen = e.NewValue / 10;
+        }
+
+        private void VolumeSlider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            App.volumen = e.NewValue / 10;
         }
     }
 }

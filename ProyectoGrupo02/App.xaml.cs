@@ -26,6 +26,9 @@ namespace ProyectoGrupo02
         /// Inicializa el objeto de aplicación Singleton. Esta es la primera línea de código creado
         /// ejecutado y, como tal, es el equivalente lógico de main() o WinMain().
         /// </summary>
+        
+        static public int monedas = 100;
+        static public double volumen = 0.5f;
         public App()
         {
             this.InitializeComponent();

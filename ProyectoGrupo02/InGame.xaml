@@ -7,19 +7,23 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     >
-
+    
     <Grid>
         <Image Source="Assets/inGameFondo.jpg" Stretch="Fill"></Image>
         <!--Compras-->
-        <Ellipse Fill="Silver" Width="192" Height="203" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,267,159,0"/>
+
+        <Viewbox>
+            <Ellipse Fill="Silver" Width="83" Height="83" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="250,100,0,200"/>
+        </Viewbox>
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
             <Ellipse Fill="Silver" Width="300" Height="300" 
-                     HorizontalAlignment="Left" VerticalAlignment="Center" Margin="65,180,0,230" />
+                     HorizontalAlignment="Left" VerticalAlignment="Center" Margin="65,180,0,230" 
+                     />
         </Viewbox>
 
         <!--Objetos-->
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Grid x:Name="Grid1" Height="30" Margin ="60, 84, 0,168"
+            <!--<Grid x:Name="Grid1" Height="30" Margin ="60, 84, 0,168"
                   VerticalAlignment="Center" 
                   HorizontalAlignment="Left" >
                 <Grid.ColumnDefinitions>
@@ -27,26 +31,22 @@
                     <ColumnDefinition Width="25"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Vertical" >
-                    <ContentControl x:Name="O0" CanDrag="True" DragStarting="a_DragStarting" 
-                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
-                                    UseSystemFocusVisuals="True" TabIndex="0">
-                        <Image  x:Name="Sun" Width="25" Height="25" Source="/Assets/0.png"></Image>
-                    </ContentControl>
+                    <Image x:Name="O0" Width="25" Height="25" Source="/Assets/0.png"
+                    CanDrag="True"
+                    DragStarting="a_DragStarting"
+                    AllowDrop="True"
+                    ></Image>
                     <TextBlock Text="2000" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Grid.Column="1">
-                    <ContentControl x:Name="O1" CanDrag="True" DragStarting="a_DragStarting" 
-                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
-                                    UseSystemFocusVisuals="True" TabIndex="0">
-                        <Image x:Name="Potion" Width="25" Height="25" Source="/Assets/1.png"></Image>
-                    </ContentControl>
+                    <Image x:Name="O1" Width="25" Height="25" Source="/Assets/1.png"></Image>
                     <TextBlock Text="700" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
 
-            </Grid>
+            </Grid>-->
         </Viewbox>
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Grid x:Name="Grid2" Height="30" Margin ="42, 110, 0,125"
+            <!--<Grid x:Name="Grid2" Height="30" Margin ="42, 110, 0,125"
                   HorizontalAlignment="Left" 
                   VerticalAlignment="Center" 
                   >
@@ -58,58 +58,63 @@
 
 
                 <StackPanel Orientation="Vertical">
-                    <ContentControl x:Name="O2" CanDrag="True" DragStarting="a_DragStarting" 
-                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
-                                    UseSystemFocusVisuals="True" TabIndex="0">
-                        <Image x:Name="Guillotine" Width="25" Height="25" Source="/Assets/2.png"></Image>
-                    </ContentControl>
+                    <Image x:Name="O2" Width="25" Height="25" Source="/Assets/2.png"></Image>
                     <TextBlock Text="300" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Grid.Column="1">
-                    <ContentControl  x:Name="O3" CanDrag="True" DragStarting="a_DragStarting" 
-                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
-                                    UseSystemFocusVisuals="True" TabIndex="0">
-                        <Image x:Name="HolyWater" Width="25" Height="25" Source="/Assets/3.png"></Image>
-                    </ContentControl>
+                    <Image x:Name="O3" Width="25" Height="25" Source="/Assets/3.png"></Image>
                     <TextBlock Text="250" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Grid.Column="2">
-                    <ContentControl x:Name="O4" CanDrag="True" DragStarting="a_DragStarting" 
-                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
-                                    UseSystemFocusVisuals="True" TabIndex="0">
-                        <Image x:Name="Rice" Width="25" Height="25" Source="/Assets/4.png"></Image>
-                    </ContentControl>
+                    <Image x:Name="O4" Width="25" Height="25" Source="/Assets/4.png"></Image>
                     <TextBlock Text="150" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
 
-            </Grid>
+            </Grid>-->
         </Viewbox>
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Grid x:Name="Grid3" Height="30" Margin ="58, 150, 0,95"
-                  HorizontalAlignment="Left" 
-                  VerticalAlignment="Center" 
-                   >
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="25"/>
-                    <ColumnDefinition Width="25"/>
-                </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Vertical" >
-                    <ContentControl x:Name="O5" CanDrag="True" DragStarting="a_DragStarting" 
-                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
-                                    UseSystemFocusVisuals="True" TabIndex="0">
-                        <Image  x:Name="Canyon" Width="25" Height="25" Source="/Assets/5.png"></Image>
-                    </ContentControl>
+            <GridView x:Name="Grid3" Height="300" Margin ="28, 120, 0,95"
+                  HorizontalAlignment="Left" IsItemClickEnabled="True" ItemClick="Grid3_ItemClick"
+                  VerticalAlignment="Top" Width="300" ItemsSource="{x:Bind Objects}" CanDragItems="True" DragItemsStarting="Grid3_DragItemsStarting" >
+                <GridView.ItemTemplate >
+                    <DataTemplate x:DataType="local:VMObject">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"
+                                                Spacing="15" Orientation="Horizontal">
+                            <Image Source="{x:Bind o.Imagen,Mode=OneTime}"  Width="50" Height="50"/>
+                            <TextBlock Text="{x:Bind Precio,Mode=OneWay}" FontSize="10" 
+                                                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+                <!--<GridView.ItemTemplate >
+                    <DataTemplate x:DataType="local:Object">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"
+                                                Spacing="5" Orientation="Horizontal">
+                            <Image Source="{x:Bind ficha_.img_.Source}" Height="115"/>
+                            <TextBlock Text="{x:Bind cantidad_,Mode=OneWay}" FontSize="48" 
+                                                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>-->
+                <!--<StackPanel Orientation="Vertical" Width="15" Height="15" >
+                    <Image x:Name="O5" Width="15" Height="15" Source="/Assets/5.png"></Image>
                     <TextBlock Text="100" Width="25" Height="5" FontSize="4"  HorizontalTextAlignment="Center"></TextBlock>
                 </StackPanel>
-                <StackPanel Orientation="Vertical" Grid.Column="1">
-                    <ContentControl x:Name="O6" CanDrag="True" DragStarting="a_DragStarting" 
-                                    AllowDrop="True" DragOver="Ellipse_DragOver" IsTabStop="True" 
-                                    UseSystemFocusVisuals="True" TabIndex="0">
-                        <Image x:Name="Ajo" Width="25" Height="25" Source="/Assets/6.png"></Image>
-                    </ContentControl>
+                <StackPanel Orientation="Vertical" Grid.Column="1" Width="15" Height="15">
+                    <Image x:Name="O6" Width="15" Height="15" Source="/Assets/6.png"
+                    CanDrag="True" 
+                    DragStarting="a_DragStarting"
+                    AllowDrop="True"></Image>
                     <TextBlock Text="50" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
-                </StackPanel>
-            </Grid>
+                </StackPanel>-->
+            </GridView>
+
+            <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
+                </Grid.ColumnDefinitions>-->
+
+
         </Viewbox>
 
         <!--pontenciadores de click-->
@@ -122,10 +127,10 @@
         </Button>
 
         <!--Dinero-->
-        <TextBlock x:Name="Money" Text="0" Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS"/>
+        <TextBlock x:Name="Money" Text="{x:Bind local:App.monedas}" Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS"/>
 
         <!--Clicker-->
-        <Button  Width="200" Height="210"  Click="Coin_Clicker"  HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,40,50,0">
+        <Button  Width="100" Height="110"  Click="Coin_Clicker"  HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,40,50,0">
 
             <Button.Template>
                 <ControlTemplate TargetType="Button" >
@@ -154,79 +159,39 @@
                         <ColumnDefinition Width="100"/>
                     </Grid.ColumnDefinitions>
                     <!--Casillas-->
-                    <StackPanel>
-                        <ContentControl x:Name="ML0" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting" Grid.Column="0" Grid.Row="0">
-                            <Image x:Name="middleLeft0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100" />
-                        </ContentControl>
-                    </StackPanel>
-                    <StackPanel>
-                        <ContentControl x:Name="ML1" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting" Grid.Column="0" Grid.Row="1">
-                            <Image x:Name="middleLeft1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100" />
-                        </ContentControl>
-                    </StackPanel>
-                    <StackPanel>
-                        <ContentControl x:Name="ML2" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting" Grid.Column="0" Grid.Row="2">
-                            <Image x:Name="middleLeft2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100" />
-                        </ContentControl>
-                    </StackPanel>
-                    <StackPanel>
-                        <ContentControl x:Name="ML3" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting" Grid.Column="0" Grid.Row="3">
-                            <Image x:Name="middleLeft3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100"/>
-                        </ContentControl>
-                    </StackPanel>
-                    <StackPanel>
-                        <ContentControl x:Name="MR0" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting" Grid.Column="1" Grid.Row="0">
-                            <Image x:Name="middleRight0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100"/>
-                        </ContentControl>
-                    </StackPanel>
-                    <StackPanel>
-                        <ContentControl x:Name="MR1" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting" Grid.Column="1" Grid.Row="1">
-                            <Image x:Name="middleRight1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100"/>
-                        </ContentControl>
-                    </StackPanel>
-                    <StackPanel>
-                        <ContentControl x:Name="MR2" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting" Grid.Column="1" Grid.Row="2">
-                            <Image x:Name="middleRight2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100"/>
-                        </ContentControl>
-                    </StackPanel>
-                    <StackPanel>
-                        <ContentControl x:Name="MR3" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting" Grid.Column="1" Grid.Row="3">
-                            <Image x:Name="middleRight3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100"/>
-                        </ContentControl>
-                    </StackPanel>
+                    <Image x:Name="middleLeft0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="0" Grid.Row="0"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"
+                           CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="middleLeft1" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="0" Grid.Row="1"
+                           AllowDrop="True" Drop="Ellipse_Drop" CanDrag="True" DragStarting="RightUp0_DragStarting" DragOver="Ellipse_DragOver"/>
+                    <Image x:Name="middleLeft2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="0" Grid.Row="2"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="middleLeft3" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="0" Grid.Row="3"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+
+                    <Image x:Name="middleRight0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="1" Grid.Row="0"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="middleRight1" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="1" Grid.Row="1"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="middleRight2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="1" Grid.Row="2"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="middleRight3" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="1" Grid.Row="3"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+
                 </Grid>
+
+                <Image x:Name="Prueba" Source="Assets/0.png" Height="60" Canvas.Top="130"
+                       Width="50" Canvas.Left="10" Drop="Ellipse_Drop" CanDrag="True" 
+                       DragOver="Ellipse_DragOver" AllowDrop="True"
+                       Visibility="Collapsed"/>
             </Canvas>
         </Viewbox>
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Bottom">
@@ -246,63 +211,31 @@
                         <ColumnDefinition Width="100"/>
                     </Grid.ColumnDefinitions>
                     <!--Casillas-->
-                    <ContentControl x:Name="UL0" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting">
-                        <Image x:Name="leftUp0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100" Grid.Column="0" Grid.Row="0"/>
-                    </ContentControl>
-                    <ContentControl x:Name="UL1" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting">
-                        <Image x:Name="leftUp1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100" Grid.Column="1" Grid.Row="0" />
-                    </ContentControl>
-                    <ContentControl x:Name="UL2" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting">
-                        <Image x:Name="leftUp2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100" Grid.Column="2" Grid.Row="0" />
-                    </ContentControl>
-                    <ContentControl x:Name="UL3" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting">
-                        <Image x:Name="leftUp3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100" Grid.Column="3" Grid.Row="0"/>
-                    </ContentControl>
-                    <ContentControl x:Name="DL0" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting">
-                        <Image x:Name="leftDown0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100" Grid.Column="0" Grid.Row="1"/>
-                    </ContentControl>
-                    <ContentControl x:Name="DL1" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting">
-                        <Image x:Name="leftDown1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100" Grid.Column="1" Grid.Row="1"/>
-                    </ContentControl>
-                    <ContentControl x:Name="DL2" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting">
-                        <Image x:Name="leftDown2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="100" Width="100" Grid.Column="2" Grid.Row="1"/>
-                    </ContentControl>
-                    <ContentControl x:Name="DL3" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting">
-                        <Image x:Name="leftDown3" Source="Assets/casilla.png" Stretch="Fill" 
+                    <Image x:Name="leftUp0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="0" Grid.Row="0"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="leftUp1" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="1" Grid.Row="0"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="leftUp2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="2" Grid.Row="0"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="leftUp3" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="3" Grid.Row="0"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+
+                    <Image x:Name="leftDown0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="0" Grid.Row="1"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True"/>
+                    <Image x:Name="leftDown1" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="1" Grid.Row="1"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
+                    <Image x:Name="leftDown2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="100" Width="100" Grid.Column="2" Grid.Row="1"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
+                    <Image x:Name="leftDown3" Source="Assets/casilla.png" Stretch="Fill" 
                            Height="100" Width="100" Grid.Column="3" Grid.Row="1"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
-                    </ContentControl>
 
                 </Grid>
 
@@ -325,59 +258,33 @@
                         <ColumnDefinition Width="50"/>
                     </Grid.ColumnDefinitions>
                     <!--Casillas-->
-                    <ContentControl x:Name="UR0" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting">
-                        <Image x:Name="RightUp0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="0"/>
-                    </ContentControl>
-                    <ContentControl x:Name="UR1" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting">
-                        <Image x:Name="RightUp1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="0"/>
-                    </ContentControl>
-                    <ContentControl x:Name="UR2" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting">
-                        <Image x:Name="RightUp2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="2" Grid.Row="0"/>
-                    </ContentControl>
-                    <ContentControl x:Name="UR3" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting">
-                        <Image x:Name="RightUp3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="3" Grid.Row="0"/>
-                    </ContentControl>
-                    <ContentControl x:Name="DR0" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True"
-                                    DragStarting="RightUp0_DragStarting">
-                        <Image x:Name="RightDown0" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="0" Grid.Row="1"/>
-                    </ContentControl>
-                    <ContentControl x:Name="DR1" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True">
+
+                    <Image x:Name="RightUp0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="0" Grid.Row="0"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="RightUp1" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="1" Grid.Row="0"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="RightUp2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="2" Grid.Row="0"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="RightUp3" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="3" Grid.Row="0"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+
+                    <Image x:Name="RightDown0" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="0" Grid.Row="1"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
                     <Image x:Name="RightDown1" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="1" Grid.Row="1"/>
-                    </ContentControl>
-                    <ContentControl x:Name="DR2" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True">
-                        <Image x:Name="RightDown2" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="2" Grid.Row="1"/>
-                    </ContentControl>
-                    <ContentControl x:Name="DR3" IsTabStop="True" UseSystemFocusVisuals="True" 
-                                    TabIndex="0" AllowDrop="True" Drop="Ellipse_Drop"
-                                    DragOver="Ellipse_DragOver" CanDrag="True">
-                        <Image x:Name="RightDown3" Source="Assets/casilla.png" Stretch="Fill" 
-                           Height="50" Width="50" Grid.Column="3" Grid.Row="1"/>
-                    </ContentControl>
+                           Height="50" Width="50" Grid.Column="1" Grid.Row="1"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="RightDown2" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="2" Grid.Row="1"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                    <Image x:Name="RightDown3" Source="Assets/casilla.png" Stretch="Fill" 
+                           Height="50" Width="50" Grid.Column="3" Grid.Row="1"
+                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+
                 </Grid>
             </Canvas>
         </Viewbox>
@@ -395,7 +302,6 @@
                    DragOver="Ellipse_DragOver"/>
 
         <Image HorizontalAlignment="Left" Height="100" Margin="1175,500,0,0" VerticalAlignment="Top" Width="100"/>
-
         <Grid x:Name="Pot1" Width="40" Height="100" HorizontalAlignment="Right" VerticalAlignment="Center"
                   Margin="0,-230,235,0">
             <Grid.RowDefinitions>
@@ -416,8 +322,10 @@
 
                 <TextBlock Text="700" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
             </StackPanel >
+
             <StackPanel Orientation="Vertical" Grid.Row="1" >
-                <Button  Width="40" Height="40"  Click="add_Click" >
+
+                <Button  Width="80" Height="80"  Click="add_Click" >
                     <Button.Template>
                         <ControlTemplate TargetType="Button" >
                             <Grid>
@@ -428,6 +336,9 @@
                 </Button>
                 <TextBlock Text="50" Width="40" Height="10" FontSize="9" HorizontalTextAlignment="Center"></TextBlock>
             </StackPanel>
+
+
         </Grid>
     </Grid>
+    
 </Page>

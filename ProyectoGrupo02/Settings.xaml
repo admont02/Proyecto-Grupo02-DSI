@@ -19,7 +19,8 @@
             <!--slider-->
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
                 <SymbolIcon Width="25"  Symbol="Volume" Grid.Row="1" Margin="10"/>
-                <Slider x:Name="SecondNumberSlider" Minimum="-10" Maximum="10" StepFrequency="0.01" 
+                <Slider x:Name="SecondNumberSlider" Maximum="10" TickFrequency="10" IsTabStop="True" 
+                 TabIndex="0" UseSystemFocusVisuals="True" ValueChanged="SoundVolumeChanged"  
                 HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Grid.Row="1"
                 Background="Black" Foreground="White" Margin="10">
                     <Slider.Resources>

@@ -1,4 +1,4 @@
-﻿<Page
+﻿<Page x:ConnectionId='1'
     x:Class="ProyectoGrupo02.Pause"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -17,12 +17,15 @@
             </Grid.RowDefinitions>
             <TextBlock Text="Bloodsucker" FontSize="100" HorizontalAlignment="Center" VerticalAlignment="Top" 
                    FontFamily="Monserrat" FontWeight="Black" Foreground="Black" Margin="60"/>
+            <!--Dinero-->
+            <TextBlock x:ConnectionId='2' x:Name="Money"                                   Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS" Visibility="Collapsed"/>
             <!--SLider-->
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
                 <SymbolIcon Width="25"  Symbol="Volume" Grid.Row="1" Margin="10"/>
-                <Slider x:ConnectionId='4' x:Name="VolumeSlider" Minimum="-10" Maximum="10" StepFrequency="0.01" 
+                <Slider x:ConnectionId='5' x:Name="VolumeSlider"                                          Maximum="10" TickFrequency="10" IsTabStop="True" 
+                 TabIndex="0" UseSystemFocusVisuals="True" 
                 HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Grid.Row="1"
-                Background="Black" Foreground="White" Margin="10" FocusVisualPrimaryBrush="White">
+                Background="Black" Foreground="White" Margin="10" FocusVisualPrimaryBrush="White" >
                     <Slider.Resources>
                         <SolidColorBrush x:Key="SliderSelectionBackground" Color="Black" />
                         <SolidColorBrush x:Key="SliderSelectionBorder" Color="Black" />
@@ -39,13 +42,13 @@
             </StackPanel>
             <!--botones-->
             <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
-                <Button x:ConnectionId='2' x:Name="Resume"                            Width="100" Height="100"
+                <Button x:ConnectionId='3' x:Name="Resume"                            Width="100" Height="100"
                         Background="Black" Margin="20" >
                     <Viewbox Width="50" Height="50">
                         <SymbolIcon Symbol="Play"/>
                     </Viewbox>
                 </Button>
-                <Button x:ConnectionId='3' x:Name="Return"                     Width="100" Height="100" 
+                <Button x:ConnectionId='4' x:Name="Return"                     Width="100" Height="100" 
                         Background="Black" HorizontalAlignment="Right" Margin="20">
                     <Viewbox Width="50" Height="50">
                         <SymbolIcon Symbol="Back"/>
@@ -54,5 +57,6 @@
             </StackPanel>
         </Grid>
     </Viewbox>
+    
 </Page>
 
