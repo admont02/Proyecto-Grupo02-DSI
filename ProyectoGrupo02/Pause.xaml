@@ -17,6 +17,8 @@
             </Grid.RowDefinitions>
             <TextBlock Text="Bloodsucker" FontSize="100" HorizontalAlignment="Center" VerticalAlignment="Top" 
                    FontFamily="Monserrat" FontWeight="Black" Foreground="Black" Margin="60"/>
+            <!--Dinero-->
+            <TextBlock x:Name="Money" Text="{x:Bind local:App.monedas}" Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS" Visibility="Collapsed"/>
             <!--SLider-->
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
                 <SymbolIcon Width="25"  Symbol="Volume" Grid.Row="1" Margin="10"/>
@@ -54,4 +56,5 @@
             </StackPanel>
         </Grid>
     </Viewbox>
+    
 </Page>

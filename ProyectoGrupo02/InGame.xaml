@@ -127,7 +127,7 @@
         </Button>
 
         <!--Dinero-->
-        <TextBlock x:Name="Money" Text="0" Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS"/>
+        <TextBlock x:Name="Money" Text="{x:Bind local:App.monedas}" Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS"/>
 
         <!--Clicker-->
         <Button  Width="100" Height="110"  Click="Coin_Clicker"  HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,40,50,0">

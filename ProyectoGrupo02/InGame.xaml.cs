@@ -29,32 +29,15 @@ namespace ProyectoGrupo02
     /// </summary>
     public sealed partial class InGame : Page
     {
-        public struct Datos
-        {
-            public Datos(int m)
-            {
-                coins = m;
-            }
-            public Datos(Datos d)
-            {
-                coins = d.coins;
-            }
-            public int coins { get; set; }
-        }
-        int nCoins =0;
         public ObservableCollection<VMObject> Objects { get; } = new ObservableCollection<VMObject>();
         private TranslateTransform dragTranslation;
-        private readonly object myLock = new object();
-        private List<Gamepad> myGamepads = new List<Gamepad>();
-        private Gamepad mainGamepad = null;
-        private GamepadReading reading, prereading;
-        private GamepadVibration vibration;
+       
         
         private DispatcherTimer timer;
         int initialTime = 0;
         int clicks = 1, labclicks = 0;
 
-        DispatcherTimer GamePadTimer;
+       
         MediaPlayer musica;
         MediaPlayer click;
         MediaPlayer money;
@@ -91,21 +74,22 @@ namespace ProyectoGrupo02
         void timer_Tick(object sender, object e)
         {
             initialTime++;
-            Money.Text = (nCoins + labclicks).ToString();
+            App.monedas += labclicks;
+            Money.Text = App.monedas.ToString();
         }
         private void Click_Pause(object sender, RoutedEventArgs e)
         {
             PlayClick();
-            Datos d;
-            d = new Datos(nCoins);
             musica.Pause();
-            Frame.Navigate(typeof(Pause),d);
+            string coins = Money.Text;
+            Frame.Navigate(typeof(Pause),coins);
         }
         private void Coin_Clicker(object sender, RoutedEventArgs e)
         {
             money.Play();
-            nCoins += clicks;
-            Money.Text = (nCoins).ToString();
+            App.monedas += clicks;
+            Money.Text = App.monedas.ToString();
+
         }
         private void Lab_Click(object sender, RoutedEventArgs e)
         {
@@ -113,7 +97,8 @@ namespace ProyectoGrupo02
             if (num <= (int.Parse(Money.Text)))
             {
                 labclicks++;
-                Money.Text = (int.Parse(Money.Text) - num).ToString();
+                App.monedas -= num;
+                Money.Text = App.monedas.ToString();
             }
         }
         private void add_Click(object sender, RoutedEventArgs e)
@@ -122,16 +107,14 @@ namespace ProyectoGrupo02
             if (num <= (int.Parse(Money.Text)))
             {
                 clicks++;
-                Money.Text = (int.Parse(Money.Text) - num).ToString();
+                App.monedas -= num;
+                Money.Text = App.monedas.ToString();
             }
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             timer.Start();
-            if(e?.Parameter is Datos d)
-            {
-                nCoins = d.coins;
-            }
+           
             //this.NavigationCacheMode = NavigationCacheMode.Required;
             if (Objects != null) // Carga la lista de ModelView
             {
@@ -227,14 +210,7 @@ namespace ProyectoGrupo02
             e.DragUIOverride.IsContentVisible = true;
             e.DragUIOverride.IsGlyphVisible = true;
         }
-        private void LeeMando()
-        {
-            if (mainGamepad != null)
-            {
-                prereading = reading;
-                reading = mainGamepad.GetCurrentReading();
-            }
-        }
+       
 
         private async void Papelera_Drop(object sender, DragEventArgs e)
         {
@@ -258,27 +234,7 @@ namespace ProyectoGrupo02
             e.Data.RequestedOperation = DataPackageOperation.Copy;
         }
 
-        private void ZMMando()
-        {
-            //zona muerta joystick derecho
-            if (reading.RightThumbstickX < -0.1) reading.RightThumbstickX += 0.1;
-            else if (reading.RightThumbstickX > 0.1) reading.RightThumbstickX -= 0.1;
-
-            else reading.RightThumbstickX = 0;
-
-
-            if (reading.RightThumbstickY < -0.1) reading.RightThumbstickY += 0.1;
-            else if (reading.RightThumbstickY > 0.1) reading.RightThumbstickY -= 0.1;
-
-            else reading.RightThumbstickY = 0;
-        }
-        //public void GamepadTimerSetUp()
-        //{
-        //    GamePadTimer = new DispatcherTimer();
-        //    GamePadTimer.Tick += GamePad_Tick;
-        //    GamePadTimer.Interval = new TimeSpan(100000);
-        //    GamePadTimer.Start();
-        //}
+       
         private async void PlayMusic()
         {
             // played = true;
