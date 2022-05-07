@@ -59,8 +59,8 @@ namespace ProyectoGrupo02
         MediaPlayer click;
         MediaPlayer money;
 
-        Image casilla;
-
+        ContentControl casilla;
+        Image casillaImg;
         public void ChangeImage(object sender, ItemClickEventArgs e)
         {
             VMObject selected = e.ClickedItem as VMObject;
@@ -78,10 +78,10 @@ namespace ProyectoGrupo02
             money = new MediaPlayer();
             SonidoMonedas();
 
-            casilla = new Image();
-            casilla.Width = 50;
-            casilla.Height = 50;
-            casilla.Source = new BitmapImage(new Uri("ms-appx:///Assets/casilla.png", UriKind.RelativeOrAbsolute));
+            casillaImg = new Image();
+            casillaImg.Width = 50;
+            casillaImg.Height = 50;
+            casillaImg.Source = new BitmapImage(new Uri("ms-appx:///Assets/casilla.png", UriKind.RelativeOrAbsolute));
 
             timer = new DispatcherTimer();
             timer.Tick += timer_Tick;
@@ -175,7 +175,7 @@ namespace ProyectoGrupo02
 
         private void a_DragStarting(object sender, DragStartingEventArgs e)
         {
-            Image Item = sender as Image;
+            ContentControl Item = sender as ContentControl;
             string id = Item.Name;
             e.Data.SetText(id);
             e.Data.RequestedOperation = DataPackageOperation.Copy;
@@ -184,8 +184,10 @@ namespace ProyectoGrupo02
         private async void Ellipse_Drop(object sender, DragEventArgs e)
         {
             var id = await e.DataView.GetTextAsync();
-            Image o = FindName(id) as Image;
+            ContentControl o = FindName(id) as ContentControl;
+            casilla = sender as ContentControl;
             int num = 999999999;
+            // precio
             switch (o.Name)
             {
                 case "O0":
@@ -212,13 +214,11 @@ namespace ProyectoGrupo02
             }
             if (num <= (int.Parse(Money.Text)))
             {
-                Image r = sender as Image;
                 int x = -1;
                 switch (o.Name)
                 {
                     case "O0":
                         x = 0;
-
                         break;
                     case "O1":
                         x = 1;
@@ -239,12 +239,19 @@ namespace ProyectoGrupo02
                         x = 6;
                         break;
                 }
+                Image r = new Image();
                 r.Source = Objects[x].Img.Source;
-                r.Visibility = Visibility.Visible;
 
+                //StackPanel stackCasilla = casilla.Parent as StackPanel;
+                ////StackPanel stackObject = o.Parent as StackPanel;
+                //stackCasilla.Children.Remove(casilla);
+                ////stackObject.Children.Remove(o);
+                //stackCasilla.Children.Add(o);
+                //stackObject.Children.Add(casilla);
                 Money.Text = (int.Parse(Money.Text) - num).ToString();
             }
         }
+
         private void Ellipse_DragOver(object sender, DragEventArgs e)
         {
             e.AcceptedOperation = DataPackageOperation.Copy;
@@ -264,9 +271,10 @@ namespace ProyectoGrupo02
         private async void Papelera_Drop(object sender, DragEventArgs e)
         {
             var id = await e.DataView.GetTextAsync();
-            Image o = FindName(id) as Image;
-            o.Source = casilla.Source;
-            o.Visibility = Visibility.Visible;
+            ContentControl o = FindName(id) as ContentControl;
+            StackPanel stackObject = o.Parent as StackPanel;
+            stackObject.Children.Remove(o);
+            stackObject.Children.Add(casilla);
             int num = 20;
             Money.Text = (int.Parse(Money.Text) + num).ToString();
         }
