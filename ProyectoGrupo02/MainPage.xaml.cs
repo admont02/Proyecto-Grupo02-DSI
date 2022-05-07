@@ -44,6 +44,7 @@ namespace ProyectoGrupo02
         private void Settings_OnClick(object sender, RoutedEventArgs e)
         {
             PlayClick();
+            musica.Pause();
             Frame.Navigate(typeof(Settings));
         }
         private void Exit_OnClick(object sender, RoutedEventArgs e)
@@ -58,7 +59,7 @@ namespace ProyectoGrupo02
             Windows.Storage.StorageFile file = await folder.GetFileAsync("menumusic.mp3");
             musica.Source = MediaSource.CreateFromStorageFile(file);
             musica.IsLoopingEnabled = true;
-            musica.Volume = 0.05;
+            musica.Volume = App.volumen;
             musica.Play();
             click.Play();
         }

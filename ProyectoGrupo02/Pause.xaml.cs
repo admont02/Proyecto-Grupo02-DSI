@@ -40,6 +40,17 @@ namespace ProyectoGrupo02
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
+            VolumeSlider.Value = App.volumen * 10;
+        }
+
+        private void SoundVolumeChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            App.volumen = e.NewValue / 10;
+        }
+
+        private void VolumeSlider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            App.volumen = e.NewValue / 10;
         }
     }
 }

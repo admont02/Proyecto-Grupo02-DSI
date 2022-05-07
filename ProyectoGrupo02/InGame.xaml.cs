@@ -123,7 +123,8 @@ namespace ProyectoGrupo02
                     VMObject VMitem = new VMObject(obj); Objects.Add(VMitem);
                 }
             }
-            PlayMusic();
+           PlayMusic();
+
             base.OnNavigatedTo(e);
         }
 
@@ -242,9 +243,9 @@ namespace ProyectoGrupo02
             Windows.Storage.StorageFile file = await folder.GetFileAsync("mainmusic.mp3");
             musica.Source = MediaSource.CreateFromStorageFile(file);
             musica.IsLoopingEnabled = true;
-            musica.Volume = 0.05;
+            musica.Volume = App.volumen;
             musica.Play();
-            click.Play();
+           
         }
 
         private void Grid3_ItemClick(object sender, ItemClickEventArgs e)

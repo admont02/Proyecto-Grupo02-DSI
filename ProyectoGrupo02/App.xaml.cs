@@ -28,6 +28,7 @@ namespace ProyectoGrupo02
         /// </summary>
         
         static public int monedas = 100;
+        static public double volumen = 0.5f;
         public App()
         {
             this.InitializeComponent();

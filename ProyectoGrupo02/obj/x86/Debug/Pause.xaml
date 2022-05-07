@@ -22,9 +22,10 @@
             <!--SLider-->
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
                 <SymbolIcon Width="25"  Symbol="Volume" Grid.Row="1" Margin="10"/>
-                <Slider x:ConnectionId='5' x:Name="VolumeSlider" Minimum="-10" Maximum="10" StepFrequency="0.01" 
+                <Slider x:ConnectionId='5' x:Name="VolumeSlider"                                          Maximum="10" TickFrequency="10" IsTabStop="True" 
+                 TabIndex="0" UseSystemFocusVisuals="True" 
                 HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Grid.Row="1"
-                Background="Black" Foreground="White" Margin="10" FocusVisualPrimaryBrush="White">
+                Background="Black" Foreground="White" Margin="10" FocusVisualPrimaryBrush="White" >
                     <Slider.Resources>
                         <SolidColorBrush x:Key="SliderSelectionBackground" Color="Black" />
                         <SolidColorBrush x:Key="SliderSelectionBorder" Color="Black" />

@@ -32,5 +32,15 @@ namespace ProyectoGrupo02
             if (Frame.CanGoBack)
                 Frame.GoBack();
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            SecondNumberSlider.Value = App.volumen * 10;
+        }
+
+        private void SoundVolumeChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            App.volumen = e.NewValue / 10;
+        }
     }
 }
