@@ -166,7 +166,7 @@
     <Content Include="Assets\monedaV.png" />
     <Content Include="Assets\trash.png" />
     <Content Include="Assets\vampiro.png" />
-    <Content Include="Assets\vampiroFondo.jpg" />
+    <Content Include="Assets\vampiroFondo.png" />
     <Content Include="Music\clicked.mp3" />
     <Content Include="Music\mainmusic.mp3" />
     <Content Include="Music\menumusic.mp3" />
