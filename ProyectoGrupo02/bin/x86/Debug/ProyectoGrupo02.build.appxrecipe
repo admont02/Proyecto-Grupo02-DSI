@@ -88,6 +88,9 @@
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\fondomenu.png">
       <PackagePath>Assets\fondomenu.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\inGameFondo.jpg.png">
+      <PackagePath>Assets\inGameFondo.jpg.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\Assets\monedaV.png">
       <PackagePath>Assets\monedaV.png</PackagePath>
     </AppxPackagedFile>

@@ -31,13 +31,13 @@ namespace ProyectoGrupo02
     {
         public ObservableCollection<VMObject> Objects { get; } = new ObservableCollection<VMObject>();
         private TranslateTransform dragTranslation;
-       
-        
+
+
         private DispatcherTimer timer;
         int initialTime = 0;
         int clicks = 1, labclicks = 0;
 
-       
+
         MediaPlayer musica;
         MediaPlayer click;
         MediaPlayer money;
@@ -69,7 +69,7 @@ namespace ProyectoGrupo02
             timer = new DispatcherTimer();
             timer.Tick += timer_Tick;
             timer.Interval = new TimeSpan(0, 0, 1);
-            
+
         }
         void timer_Tick(object sender, object e)
         {
@@ -82,7 +82,7 @@ namespace ProyectoGrupo02
             PlayClick();
             musica.Pause();
             string coins = Money.Text;
-            Frame.Navigate(typeof(Pause),coins);
+            Frame.Navigate(typeof(Pause), coins);
         }
         private void Coin_Clicker(object sender, RoutedEventArgs e)
         {
@@ -114,7 +114,7 @@ namespace ProyectoGrupo02
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             timer.Start();
-           
+
             //this.NavigationCacheMode = NavigationCacheMode.Required;
             if (Objects != null) // Carga la lista de ModelView
             {
@@ -123,7 +123,7 @@ namespace ProyectoGrupo02
                     VMObject VMitem = new VMObject(obj); Objects.Add(VMitem);
                 }
             }
-           PlayMusic();
+            PlayMusic();
 
             base.OnNavigatedTo(e);
         }
@@ -141,8 +141,16 @@ namespace ProyectoGrupo02
             var id = await e.DataView.GetTextAsync();
             int aux = int.Parse(id);
             Image i = sender as Image;
-            i.Source = Objects[aux].Img.Source;
-            i.Visibility = Visibility.Visible;
+            int precio = Objects[aux].Precio;
+            if (App.monedas >= precio)
+            {
+                i.Source = Objects[aux].Img.Source;
+                i.Visibility = Visibility.Visible;
+                App.monedas -= precio;
+                Money.Text = App.monedas.ToString();
+            }
+
+
             //Image o = FindName(id) as Image;
             //int num = 999999999;
             //switch (o.Name)
@@ -203,7 +211,7 @@ namespace ProyectoGrupo02
 
             //Money.Text = (int.Parse(Money.Text) - num).ToString();
         }
-        
+
         private void Ellipse_DragOver(object sender, DragEventArgs e)
         {
             e.AcceptedOperation = DataPackageOperation.Copy;
@@ -211,7 +219,7 @@ namespace ProyectoGrupo02
             e.DragUIOverride.IsContentVisible = true;
             e.DragUIOverride.IsGlyphVisible = true;
         }
-       
+
 
         private async void Papelera_Drop(object sender, DragEventArgs e)
         {
@@ -235,7 +243,7 @@ namespace ProyectoGrupo02
             e.Data.RequestedOperation = DataPackageOperation.Copy;
         }
 
-       
+
         private async void PlayMusic()
         {
             // played = true;
@@ -245,15 +253,15 @@ namespace ProyectoGrupo02
             musica.IsLoopingEnabled = true;
             musica.Volume = App.volumen;
             musica.Play();
-           
+
         }
 
         private void Grid3_ItemClick(object sender, ItemClickEventArgs e)
         {
-            
-           Object o= e.ClickedItem as Object;
+
+            Object o = e.ClickedItem as Object;
             string aux = "ms-appx:" + o.Imagen;
-           RightDown2.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+            RightDown2.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
         }
 
         private void Grid3_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
@@ -279,7 +287,7 @@ namespace ProyectoGrupo02
             Windows.Storage.StorageFile file = await folder.GetFileAsync("moneda.mp3");
             money.Source = MediaSource.CreateFromStorageFile(file);
             money.Volume = 1;
-           
+
             //click.Play();
         }
     }

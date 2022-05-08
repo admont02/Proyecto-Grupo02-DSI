@@ -23,59 +23,15 @@
 
         <!--Objetos-->
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
-            <!--<Grid x:Name="Grid1" Height="30" Margin ="60, 84, 0,168"
-                  VerticalAlignment="Center" 
-                  HorizontalAlignment="Left" >
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="25"/>
-                    <ColumnDefinition Width="25"/>
-                </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Vertical" >
-                    <Image x:Name="O0" Width="25" Height="25" Source="/Assets/0.png"
-                    CanDrag="True"
-                    DragStarting="a_DragStarting"
-                    AllowDrop="True"
-                    ></Image>
-                    <TextBlock Text="2000" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Grid.Column="1">
-                    <Image x:Name="O1" Width="25" Height="25" Source="/Assets/1.png"></Image>
-                    <TextBlock Text="700" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
-                </StackPanel>
-
-            </Grid>-->
+            
         </Viewbox>
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
-            <!--<Grid x:Name="Grid2" Height="30" Margin ="42, 110, 0,125"
-                  HorizontalAlignment="Left" 
-                  VerticalAlignment="Center" 
-                  >
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="25"/>
-                    <ColumnDefinition Width="25"/>
-                    <ColumnDefinition Width="25"/>
-                </Grid.ColumnDefinitions>
-
-
-                <StackPanel Orientation="Vertical">
-                    <Image x:Name="O2" Width="25" Height="25" Source="/Assets/2.png"></Image>
-                    <TextBlock Text="300" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Grid.Column="1">
-                    <Image x:Name="O3" Width="25" Height="25" Source="/Assets/3.png"></Image>
-                    <TextBlock Text="250" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Grid.Column="2">
-                    <Image x:Name="O4" Width="25" Height="25" Source="/Assets/4.png"></Image>
-                    <TextBlock Text="150" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
-                </StackPanel>
-
-            </Grid>-->
+            
         </Viewbox>
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
-            <GridView x:Name="Grid3" Height="300" Margin ="28, 120, 0,95"
+            <GridView x:Name="Grid3" Height="250" Margin ="28, 120, 0,95"
                   HorizontalAlignment="Left" IsItemClickEnabled="True" ItemClick="Grid3_ItemClick"
-                  VerticalAlignment="Top" Width="300" ItemsSource="{x:Bind Objects}" CanDragItems="True" DragItemsStarting="Grid3_DragItemsStarting" >
+                  VerticalAlignment="Top" Width="250" ItemsSource="{x:Bind Objects}" CanDragItems="True" DragItemsStarting="Grid3_DragItemsStarting" >
                 <GridView.ItemTemplate >
                     <DataTemplate x:DataType="local:VMObject">
                         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"
