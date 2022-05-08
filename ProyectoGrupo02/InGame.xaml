@@ -9,7 +9,7 @@
     >
     
     <Grid>
-        <Image Source="Assets/inGameFondo.jpg" Stretch="Fill"></Image>
+        <Image Source="Assets/inGameFondo.jpg.png" Stretch="Fill"></Image>
         <!--Compras-->
 
         <Viewbox>

@@ -163,6 +163,7 @@
     <Content Include="Assets\7.png" />
     <Content Include="Assets\fondomenu.png" />
     <Content Include="Assets\inGameFondo.jpg" />
+    <Content Include="Assets\inGameFondo.jpg.png" />
     <Content Include="Assets\monedaV.png" />
     <Content Include="Assets\trash.png" />
     <Content Include="Assets\vampiro.png" />

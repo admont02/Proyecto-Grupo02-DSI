@@ -9,7 +9,7 @@
     Background="Gray">
 
     <Grid Background="Gray">
-        <Image Source="Assets/vampiroFondo.jpg" Stretch="Fill"></Image>
+        <Image Source="Assets/vampiroFondo.png" Stretch="Fill"></Image>
         <!--Back-->
         <Button x:Name="Back" Width="70" Height="70" VerticalAlignment="Top" Click="Click_Back" Margin="20" Background="Black">
             <Viewbox MaxHeight="200" MaxWidth="200">
