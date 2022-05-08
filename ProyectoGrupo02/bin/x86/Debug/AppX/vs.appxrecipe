@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-05-08T10:55:10.281</Modified>
+      <Modified>2022-05-08T11:12:12.630</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\ProyectoGrupo02.exe">
       <PackagePath>entrypoint\ProyectoGrupo02.exe</PackagePath>
-      <Modified>2022-05-08T10:55:09.747</Modified>
+      <Modified>2022-05-08T11:12:12.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -198,31 +198,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\ProyectoGrupo02.xr.xml">
       <PackagePath>ProyectoGrupo02.xr.xml</PackagePath>
-      <Modified>2022-05-08T10:55:09.632</Modified>
+      <Modified>2022-05-08T11:04:12.481</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-05-08T10:55:09.656</Modified>
+      <Modified>2022-05-08T11:12:12.233</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Levels.xbf">
       <PackagePath>Levels.xbf</PackagePath>
-      <Modified>2022-05-08T10:55:09.657</Modified>
+      <Modified>2022-05-08T11:12:12.233</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\InGame.xbf">
       <PackagePath>InGame.xbf</PackagePath>
-      <Modified>2022-05-08T10:55:09.652</Modified>
+      <Modified>2022-05-08T11:12:12.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-05-08T10:55:09.657</Modified>
+      <Modified>2022-05-08T11:12:12.233</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Pause.xbf">
       <PackagePath>Pause.xbf</PackagePath>
-      <Modified>2022-05-08T10:55:09.657</Modified>
+      <Modified>2022-05-08T11:12:12.233</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Settings.xbf">
       <PackagePath>Settings.xbf</PackagePath>
-      <Modified>2022-05-08T10:55:09.657</Modified>
+      <Modified>2022-05-08T11:12:12.233</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -234,7 +234,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADRIAN\Desktop\2.Carrera\2ºCUATRI\Proyecto-Grupo02-DSI\ProyectoGrupo02\bin\x86\Debug\Core\ProyectoGrupo02.exe">
       <PackagePath>ProyectoGrupo02.exe</PackagePath>
-      <Modified>2022-05-08T10:55:10.273</Modified>
+      <Modified>2022-05-08T11:12:12.627</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

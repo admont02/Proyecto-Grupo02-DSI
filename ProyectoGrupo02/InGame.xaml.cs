@@ -223,14 +223,17 @@ namespace ProyectoGrupo02
 
         private async void Papelera_Drop(object sender, DragEventArgs e)
         {
-            
+
             var id = await e.DataView.GetTextAsync();
             Image o = FindName(id) as Image;
-            o.Source = casilla.Source;
-            o.Visibility = Visibility.Visible;
-            int num = 25;
-            App.monedas += num;
-            Money.Text = App.monedas.ToString();
+            if (o != null)
+            {
+                o.Source = casilla.Source;
+                o.Visibility = Visibility.Visible;
+                int num = 25;
+                App.monedas += num;
+                Money.Text = App.monedas.ToString();
+            }
         }
         private void Papelera_DragOver(object sender, DragEventArgs e)
         {
