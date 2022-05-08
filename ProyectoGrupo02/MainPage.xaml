@@ -31,20 +31,20 @@
 
 
 
-            <StackPanel Width="200" Height="400" VerticalAlignment="Center" HorizontalAlignment="Center" Margin=" 0,150,0,0">
-                <Button x:Name="Play" Click="Play_Click"  Height="100" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <StackPanel Width="200" Height="400" VerticalAlignment="Center" HorizontalAlignment="Center" Margin=" 0,150,0,0" >
+                <Button x:Name="Play" Click="Play_Click"  Height="100" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" IsTabStop="True" TabIndex="0">
                     <Viewbox MaxHeight="100" MaxWidth="100">
                         <SymbolIcon Symbol="Play" />
                     </Viewbox>
 
                 </Button>
-                <Button x:Name="Settings" Click="Settings_OnClick"  Height="100" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+                <Button x:Name="Settings" Click="Settings_OnClick"  Height="100" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" TabIndex="1">
                     <Viewbox MaxHeight="100" MaxWidth="100">
                         <SymbolIcon Symbol="Setting" />
 
                     </Viewbox>
                 </Button>
-                <Button x:Name="Exit" Click="Exit_OnClick"  Height="100" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+                <Button x:Name="Exit" Click="Exit_OnClick"  Height="100" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" TabIndex="2">
                     <Viewbox MaxHeight="100" MaxWidth="100">
                         <SymbolIcon Symbol="Back" />
 

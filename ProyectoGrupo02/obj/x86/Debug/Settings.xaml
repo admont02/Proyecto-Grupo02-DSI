@@ -20,7 +20,7 @@
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
                 <SymbolIcon Width="25"  Symbol="Volume" Grid.Row="1" Margin="10"/>
                 <Slider x:ConnectionId='3' x:Name="SecondNumberSlider" Maximum="10" TickFrequency="10" IsTabStop="True" 
-                 TabIndex="0" UseSystemFocusVisuals="True"                                    
+                 TabIndex="1" UseSystemFocusVisuals="True"                                    
                 HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Grid.Row="1"
                 Background="Black" Foreground="White" Margin="10">
                     <Slider.Resources>
@@ -39,7 +39,7 @@
             </StackPanel>
             <!--boton-->
             <Button x:ConnectionId='2' x:Name="Return"                      Width="100" Height="100" 
-            HorizontalAlignment="Center" Background="Black" Grid.Row="2">
+            HorizontalAlignment="Center" Background="Black" Grid.Row="2" IsTabStop="True" TabIndex="0">
                 <Viewbox Width="50" Height="50">
                     <SymbolIcon Symbol="Back"/>
                 </Viewbox>

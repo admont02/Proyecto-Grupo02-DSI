@@ -24,9 +24,9 @@
             <!--SLider-->
             
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                <SymbolIcon Width="25"  Symbol="Volume" Grid.Row="1" Margin="10"/>
+                <SymbolIcon Width="25"  Symbol="Volume" Grid.Row="1" Margin="10" />
                 <Slider x:Name="VolumeSlider" ValueChanged="VolumeSlider_ValueChanged" Maximum="10" TickFrequency="10" IsTabStop="True" 
-                 TabIndex="0" UseSystemFocusVisuals="True" 
+                 TabIndex="2" UseSystemFocusVisuals="True" 
                 HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Grid.Row="1"
                 Background="Black" Foreground="White" Margin="10" FocusVisualPrimaryBrush="White" >
                     <Slider.Resources>
@@ -45,14 +45,14 @@
             </StackPanel>
             <!--botones-->
             <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
-                <Button x:Name="Resume" Click="Return_Click_Pause" Width="100" Height="100"
+                <Button x:Name="Resume" Click="Return_Click_Pause" Width="100" Height="100" TabIndex="0" IsFocusEngagementEnabled="True" IsTabStop="True"
                         Background="Black" Margin="20" >
                     <Viewbox Width="50" Height="50">
                         <SymbolIcon Symbol="Play"/>
                     </Viewbox>
                 </Button>
                 <Button x:Name="Return" Click="Return_Menu" Width="100" Height="100" 
-                        Background="Black" HorizontalAlignment="Right" Margin="20">
+                        Background="Black" HorizontalAlignment="Right" Margin="20" TabIndex="1" IsTabStop="True">
                     <Viewbox Width="50" Height="50">
                         <SymbolIcon Symbol="Back"/>
                     </Viewbox>

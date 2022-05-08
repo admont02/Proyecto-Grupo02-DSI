@@ -15,15 +15,18 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Bloodsucker" FontSize="100" HorizontalAlignment="Center" VerticalAlignment="Top" 
+            <Viewbox>
+                <TextBlock Text="Bloodsucker" FontSize="100" HorizontalAlignment="Center" VerticalAlignment="Top" 
                    FontFamily="Monserrat" FontWeight="Black" Foreground="Black" Margin="60"/>
-            <!--Dinero-->
+                </Viewbox>
+                <!--Dinero-->
             <TextBlock x:ConnectionId='2' x:Name="Money"                                   Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS" Visibility="Collapsed"/>
             <!--SLider-->
+            
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                <SymbolIcon Width="25"  Symbol="Volume" Grid.Row="1" Margin="10"/>
+                <SymbolIcon Width="25"  Symbol="Volume" Grid.Row="1" Margin="10" />
                 <Slider x:ConnectionId='5' x:Name="VolumeSlider"                                          Maximum="10" TickFrequency="10" IsTabStop="True" 
-                 TabIndex="0" UseSystemFocusVisuals="True" 
+                 TabIndex="2" UseSystemFocusVisuals="True" 
                 HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Grid.Row="1"
                 Background="Black" Foreground="White" Margin="10" FocusVisualPrimaryBrush="White" >
                     <Slider.Resources>
@@ -42,14 +45,14 @@
             </StackPanel>
             <!--botones-->
             <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
-                <Button x:ConnectionId='3' x:Name="Resume"                            Width="100" Height="100"
+                <Button x:ConnectionId='3' x:Name="Resume"                            Width="100" Height="100" TabIndex="0" IsFocusEngagementEnabled="True" IsTabStop="True"
                         Background="Black" Margin="20" >
                     <Viewbox Width="50" Height="50">
                         <SymbolIcon Symbol="Play"/>
                     </Viewbox>
                 </Button>
                 <Button x:ConnectionId='4' x:Name="Return"                     Width="100" Height="100" 
-                        Background="Black" HorizontalAlignment="Right" Margin="20">
+                        Background="Black" HorizontalAlignment="Right" Margin="20" TabIndex="1" IsTabStop="True">
                     <Viewbox Width="50" Height="50">
                         <SymbolIcon Symbol="Back"/>
                     </Viewbox>
