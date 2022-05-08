@@ -68,11 +68,12 @@
         <!--pontenciadores de click-->
 
         <!--pausa-->
-        <Button x:Name="Pause" Width="70" Height="70" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Click_Pause" Margin="20" Background="Black">
+        <Button x:Name="Pause" Width="100" Height="100" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Click_Pause" Margin="20" Background="Black">
             <Viewbox MaxHeight="200" MaxWidth="200">
                 <SymbolIcon  Symbol="Pause"/>
             </Viewbox>
         </Button>
+        
 
         <!--Dinero-->
         <TextBlock x:Name="Money" Text="{x:Bind local:App.monedas}" Margin="150, 40" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Comic Sans MS"/>
@@ -89,7 +90,8 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-
+        <ProgressBar Value="50" Height="50" Background="LawnGreen" Maximum="100" Minimum="0"
+                             Foreground="White" Width="700" x:Name="ProgressBar" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <!--Caminos-->
         <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
             <Canvas x:Name="CanvasTop" Width="200" Height="400" Margin="340" VerticalAlignment="Bottom">

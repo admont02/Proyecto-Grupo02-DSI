@@ -80,6 +80,7 @@ namespace ProyectoGrupo02
         }
         private void Click_Pause(object sender, RoutedEventArgs e)
         {
+
             PlayClick();
             musica.Pause();
             string coins = Money.Text;
