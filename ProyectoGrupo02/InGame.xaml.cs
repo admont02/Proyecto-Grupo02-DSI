@@ -38,6 +38,9 @@ namespace ProyectoGrupo02
         int initialTime = 0;
         int clicks = 1, labclicks = 0;
 
+        bool mu0, mu1, mu2, mu3, md0, md1, md2, md3 = false;
+        bool ru0,ru1,ru2,ru3,rd0,rd1,rd2,rd3 = false;
+        bool lu0, lu1, lu2, lu3, ld0, ld1, ld2, ld3 = false;
 
         MediaPlayer musica;
         MediaPlayer click;
@@ -70,6 +73,7 @@ namespace ProyectoGrupo02
             timer = new DispatcherTimer();
             timer.Tick += timer_Tick;
             timer.Interval = new TimeSpan(0, 0, 1);
+            
 
         }
         void timer_Tick(object sender, object e)
@@ -84,6 +88,7 @@ namespace ProyectoGrupo02
             PlayClick();
             musica.Pause();
             string coins = Money.Text;
+            this.NavigationCacheMode = NavigationCacheMode.Enabled;
             Frame.Navigate(typeof(Pause), coins);
         }
         private void Coin_Clicker(object sender, RoutedEventArgs e)
@@ -116,7 +121,7 @@ namespace ProyectoGrupo02
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             timer.Start();
-
+            this.NavigationCacheMode = NavigationCacheMode.Enabled;
             //this.NavigationCacheMode = NavigationCacheMode.Required;
             if (Objects != null) // Carga la lista de ModelView
             {
@@ -163,30 +168,7 @@ namespace ProyectoGrupo02
 
             //Image o = FindName(id) as Image;
             //int num = 999999999;
-            //switch (o.Name)
-            //{
-            //    case "O0":
-            //        num = Objects[0].Precio;
-            //        break;
-            //    case "O1":
-            //        num = Objects[1].Precio;
-            //        break;
-            //    case "O2":
-            //        num = Objects[2].Precio;
-            //        break;
-            //    case "O3":
-            //        num = Objects[3].Precio;
-            //        break;
-            //    case "O4":
-            //        num = Objects[4].Precio;
-            //        break;
-            //    case "O5":
-            //        num = Objects[5].Precio;
-            //        break;
-            //    case "O6":
-            //        num = Objects[6].Precio;
-            //        break;
-            //}
+            
             //if (num <= (int.Parse(Money.Text)))
             //{
             //    Image r = sender as Image;
@@ -276,7 +258,158 @@ namespace ProyectoGrupo02
 
             Object o = e.ClickedItem as Object;
             string aux = "ms-appx:" + o.Imagen;
-            RightDown2.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+            
+            int id = o.Id;
+            int num = Objects[id].Precio;
+            if (App.monedas >= num)
+            {
+                App.monedas -= num;
+                Money.Text = App.monedas.ToString();
+                bool puesto = false;
+                if (!puesto)
+                {
+                    if (!mu3 && !puesto)
+                    {
+                        middleLeft3.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        mu3 = true;
+                        puesto = true;
+                    }
+                    else if (!md3 && !puesto)
+                    {
+                        middleRight3.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        md3 = true; puesto = true;
+                    }
+                    else if (!md2 && !puesto)
+                    {
+                        middleRight2.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        md2 = true; puesto = true;
+                    }
+                    else if (!mu2 && !puesto)
+                    {
+                        middleLeft2.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        mu2 = true;
+                        puesto = true;
+                    }
+
+                    else if (!mu1 && !puesto)
+                    {
+                        middleLeft1.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        mu1 = true;
+                        puesto = true;
+                    }
+                    else if (!md1 && !puesto)
+                    {
+                        middleRight1.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        md1 = true; puesto = true;
+                    }
+
+
+                    else if (!md0 && !puesto)
+                    {
+                        middleRight0.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        md0 = true; puesto = true;
+                    }
+                    if (!mu0 && !puesto)
+                    {
+                        middleLeft0.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        mu0 = true;
+                        puesto = true;
+                    }
+
+
+
+                    else if (!ru0 && !puesto)
+                    {
+                        RightUp0.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        ru0 = true;
+                        puesto = true;
+                    }
+                    else if (!rd0 && !puesto)
+                    {
+                        RightDown0.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        rd0 = true; puesto = true;
+                    }
+                    else if (!rd1 && !puesto)
+                    {
+                        RightDown1.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        rd1 = true; puesto = true;
+                    }
+
+                    else if (!ru1 && !puesto)
+                    {
+                        RightUp1.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        ru1 = true; puesto = true;
+                    }
+                    else if (!ru2 && !puesto)
+                    {
+                        RightUp2.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        ru2 = true; puesto = true;
+
+                    }
+                    else if (!rd2 && !puesto)
+                    {
+                        RightDown2.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        rd2 = true; puesto = true;
+                    }
+                    else if (!rd3 && !puesto)
+                    {
+                        RightDown3.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        rd3 = true; puesto = true;
+                    }
+                    else if (!ru3 && !puesto)
+                    {
+                        RightUp3.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        ru3 = true; puesto = true;
+                    }
+
+
+
+                    if (!lu0 && !puesto)
+                    {
+                        leftUp0.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        lu0 = true; puesto = true;
+                    }
+                    else if (!ld0 && !puesto)
+                    {
+                        leftDown0.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        ld0 = true; puesto = true;
+                    }
+                    else if (!ld1 && !puesto)
+                    {
+                        leftDown1.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        ld1 = true; puesto = true;
+                    }
+                    else if (!lu1 && !puesto)
+                    {
+                        leftUp1.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        lu1 = true; puesto = true;
+                    }
+                    else if (!lu2 && !puesto)
+                    {
+                        leftUp2.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        lu2 = true; puesto = true;
+                    }
+                    else if (!ld2 && !puesto)
+                    {
+                        leftDown2.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        ld2 = true; puesto = true;
+                    }
+                    else if (!ld3 && !puesto)
+                    {
+                        leftDown3.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        ld3 = true; puesto = true;
+                    }
+                    else if (!lu3 && !puesto)
+                    {
+                        leftUp3.Source = new BitmapImage(new Uri(aux, UriKind.RelativeOrAbsolute));
+                        lu3 = true; puesto = true;
+                    }
+
+
+                }
+            }
+            
+           
         }
 
         private void Grid3_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
@@ -296,6 +429,12 @@ namespace ProyectoGrupo02
             click.Volume = 1;
             click.Play();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private async void SonidoMonedas()
         {
             Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Music");

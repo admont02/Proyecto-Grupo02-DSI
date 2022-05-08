@@ -90,6 +90,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        
         <ProgressBar Value="50" Height="50" Background="LawnGreen" Maximum="100" Minimum="0"
                              Foreground="White" Width="700" x:Name="ProgressBar" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <!--Caminos-->
@@ -112,7 +113,7 @@
                     <Image x:Name="middleLeft0" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="0" Grid.Row="0"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"
-                           CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           CanDrag="True" DragStarting="RightUp0_DragStarting" />
                     <Image x:Name="middleLeft1" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="0" Grid.Row="1"
                            AllowDrop="True" Drop="Ellipse_Drop" CanDrag="True" DragStarting="RightUp0_DragStarting" DragOver="Ellipse_DragOver"/>
@@ -161,6 +162,7 @@
                         <ColumnDefinition Width="100"/>
                     </Grid.ColumnDefinitions>
                     <!--Casillas-->
+                    
                     <Image x:Name="leftUp0" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="0" Grid.Row="0"
                            AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>

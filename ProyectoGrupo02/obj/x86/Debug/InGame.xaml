@@ -90,6 +90,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        
         <ProgressBar x:ConnectionId='5' Value="50" Height="50" Background="LawnGreen" Maximum="100" Minimum="0"
                              Foreground="White" Width="700" x:Name="ProgressBar" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <!--Caminos-->
@@ -112,7 +113,7 @@
                     <Image x:ConnectionId='40' x:Name="middleLeft0" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="0" Grid.Row="0"
                            AllowDrop="True"                                                
-                           CanDrag="True"                                     />
+                           CanDrag="True"                                      />
                     <Image x:ConnectionId='41' x:Name="middleLeft1" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="0" Grid.Row="1"
                            AllowDrop="True"                     CanDrag="True"                                                                 />
@@ -161,6 +162,7 @@
                         <ColumnDefinition Width="100"/>
                     </Grid.ColumnDefinitions>
                     <!--Casillas-->
+                    
                     <Image x:ConnectionId='28' x:Name="leftUp0" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="0" Grid.Row="0"
                            AllowDrop="True"                                                 CanDrag="True"                                     />
