@@ -23,7 +23,7 @@
         </Viewbox>
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
             <GridView x:ConnectionId='50' x:Name="Grid3" Height="250" Margin ="28, 120, 0,95"
-                  HorizontalAlignment="Left" IsItemClickEnabled="True"                        
+                  HorizontalAlignment="Left" IsItemClickEnabled="True"                         BorderBrush="Red" BorderThickness="5"
                   VerticalAlignment="Top" Width="250"                                CanDragItems="True"                                             >
                 <GridView.ItemTemplate >
                     <DataTemplate                            >
@@ -35,38 +35,12 @@
                         </StackPanel>
                     </DataTemplate>
                 </GridView.ItemTemplate>
-                <!--<GridView.ItemTemplate >
-                    <DataTemplate x:DataType="local:Object">
-                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"
-                                                Spacing="5" Orientation="Horizontal">
-                            <Image Source="{x:Bind ficha_.img_.Source}" Height="115"/>
-                            <TextBlock Text="{x:Bind cantidad_,Mode=OneWay}" FontSize="48"
-                                                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </GridView.ItemTemplate>-->
-                <!--<StackPanel Orientation="Vertical" Width="15" Height="15" >
-                    <Image x:Name="O5" Width="15" Height="15" Source="/Assets/5.png"></Image>
-                    <TextBlock Text="100" Width="25" Height="5" FontSize="4"  HorizontalTextAlignment="Center"></TextBlock>
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Grid.Column="1" Width="15" Height="15">
-                    <Image x:Name="O6" Width="15" Height="15" Source="/Assets/6.png"
-                    CanDrag="True"
-                    DragStarting="a_DragStarting"
-                    AllowDrop="True"></Image>
-                    <TextBlock Text="50" Width="25" Height="5" FontSize="4" HorizontalTextAlignment="Center"></TextBlock>
-                </StackPanel>-->
-            </GridView>
 
-            <!--<Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="25"/>
-                    <ColumnDefinition Width="25"/>
-                </Grid.ColumnDefinitions>-->
+            </GridView>
 
         </Viewbox>
 
-        <!--pontenciadores de click-->
-
+       
         <!--pausa-->
         <Button x:ConnectionId='2' x:Name="Pause" Width="100" Height="100" VerticalAlignment="Top" HorizontalAlignment="Left"                     Margin="20" Background="Black">
             <Viewbox MaxHeight="200" MaxWidth="200">
