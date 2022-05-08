@@ -30,6 +30,7 @@ namespace ProyectoGrupo02
     public sealed partial class InGame : Page
     {
         public ObservableCollection<VMObject> Objects { get; } = new ObservableCollection<VMObject>();
+        public ObservableCollection<VMObject> Pots { get; } = new ObservableCollection<VMObject>();
         private TranslateTransform dragTranslation;
 
 
@@ -93,7 +94,7 @@ namespace ProyectoGrupo02
         }
         private void Lab_Click(object sender, RoutedEventArgs e)
         {
-            int num = Objects[7].Precio;
+            int num = Pots[0].Precio;
             if (num <= (int.Parse(Money.Text)))
             {
                 labclicks++;
@@ -103,7 +104,7 @@ namespace ProyectoGrupo02
         }
         private void add_Click(object sender, RoutedEventArgs e)
         {
-            int num = Objects[8].Precio;
+            int num = Pots[1].Precio;
             if (num <= (int.Parse(Money.Text)))
             {
                 clicks++;
@@ -121,6 +122,14 @@ namespace ProyectoGrupo02
                 foreach (Object obj in Model.GetAllObjects())
                 {
                     VMObject VMitem = new VMObject(obj); Objects.Add(VMitem);
+                }
+                
+            }
+            if (Pots != null)
+            {
+                foreach (Object Pot in Model.GetAllPot())
+                {
+                    VMObject VMPot = new VMObject(Pot); Pots.Add(VMPot);
                 }
             }
             PlayMusic();
