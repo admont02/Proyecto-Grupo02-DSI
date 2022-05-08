@@ -161,6 +161,7 @@
     <Content Include="Assets\cursor.png" />
     <Content Include="Assets\Earth.png" />
     <Content Include="Assets\7.png" />
+    <Content Include="Assets\empty.png" />
     <Content Include="Assets\fondomenu.png" />
     <Content Include="Assets\inGameFondo.jpg" />
     <Content Include="Assets\inGameFondo.jpg.png" />

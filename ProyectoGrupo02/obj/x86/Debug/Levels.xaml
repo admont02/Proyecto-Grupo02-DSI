@@ -20,20 +20,23 @@
         <TextBlock Text="Bloodsucker" FontSize="100" HorizontalAlignment="Center" VerticalAlignment="Top" 
                    FontFamily="Monserrat" FontWeight="Black" Foreground="DarkRed" Margin="60"/>
         <!--Levels-->
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Center"  HorizontalAlignment="Center" Margin="0,60,0,0">
-            <Button x:ConnectionId='3' x:Name="one" Width="100" Height="100"                     Margin="20" Background="DarkRed" Content="1" FontFamily="Times New Roman" FontSize="64">
-            </Button>
-            <Button x:ConnectionId='4' x:Name="two" Width="100" Height="100"                     Margin="20" Background="DarkRed" Content="2" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
-            </Button>
-            <Button x:ConnectionId='5' x:Name="three" Width="100" Height="100"                     Margin="20" Background="DarkRed" Content="3" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
-            </Button>
-            <Button x:ConnectionId='6' x:Name="four" Width="100" Height="100"                     Margin="20" Background="DarkRed" Content="4" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
-            </Button>
-            <Button x:ConnectionId='7' x:Name="five" Width="100" Height="100"                     Margin="20" Background="DarkRed" Content="5" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
-            </Button>
-            <Button x:ConnectionId='8' x:Name="six" Width="100" Height="100"                     Margin="20" Background="DarkRed" Content="6" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
-            </Button>
-        </StackPanel>
+        <Viewbox>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center"  HorizontalAlignment="Center" Margin="0,60,0,0">
+                <Button x:ConnectionId='3' x:Name="one" Width="100" Height="100"                     Margin="20" Background="DarkRed" Content="1" FontFamily="Times New Roman" FontSize="64">
+                </Button>
+                <Button x:ConnectionId='4' x:Name="two" Width="100" Height="100"                     Margin="20" Background="DarkRed" Content="2" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
+                </Button>
+                <Button x:ConnectionId='5' x:Name="three" Width="100" Height="100"                     Margin="20" Background="DarkRed" Content="3" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
+                </Button>
+                <Button x:ConnectionId='6' x:Name="four" Width="100" Height="100"                     Margin="20" Background="DarkRed" Content="4" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
+                </Button>
+                <Button x:ConnectionId='7' x:Name="five" Width="100" Height="100"                     Margin="20" Background="DarkRed" Content="5" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
+                </Button>
+                <Button x:ConnectionId='8' x:Name="six" Width="100" Height="100"                     Margin="20" Background="DarkRed" Content="6" FontFamily="Times New Roman" FontSize="64" IsEnabled="False">
+                </Button>
+            </StackPanel>
+        </Viewbox>
+       
     </Grid>
 </Page>
 
