@@ -23,7 +23,7 @@
         </Viewbox>
         <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
             <GridView x:Name="Grid3" Height="250" Margin ="28, 120, 0,95"
-                  HorizontalAlignment="Left" IsItemClickEnabled="True" ItemClick="Grid3_ItemClick"
+                  HorizontalAlignment="Left" IsItemClickEnabled="True" ItemClick="MiItemClick"
                   VerticalAlignment="Top" Width="250" ItemsSource="{x:Bind Objects}" CanDragItems="True" DragItemsStarting="Grid3_DragItemsStarting" >
                 <GridView.ItemTemplate >
                     <DataTemplate x:DataType="local:VMObject">
@@ -106,7 +106,7 @@
             <Canvas x:Name="CanvasTop" Width="200" Height="400" Margin="340" VerticalAlignment="Bottom">
                 <Image x:Name="MiddleBackground" Source="Assets/casillaTopFondo.png"
                            Height="400" Width="200" />
-                <Grid  DragOver="Ellipse_DragOver">
+                <Grid  DragOver="MiDragOver">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="100"/>
                         <RowDefinition Height="100"/>
@@ -120,36 +120,36 @@
                     <!--Casillas-->
                     <Image x:Name="middleLeft0" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="0" Grid.Row="0"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"
-                           CanDrag="True" DragStarting="RightUp0_DragStarting" />
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver"
+                           CanDrag="True" DragStarting="MiDragStarting" />
                     <Image x:Name="middleLeft1" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="0" Grid.Row="1"
-                           AllowDrop="True" Drop="Ellipse_Drop" CanDrag="True" DragStarting="RightUp0_DragStarting" DragOver="Ellipse_DragOver"/>
+                           AllowDrop="True" Drop="MiDrop" CanDrag="True" DragStarting="MiDragStarting" DragOver="MiDragOver"/>
                     <Image x:Name="middleLeft2" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="0" Grid.Row="2"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
                     <Image x:Name="middleLeft3" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="0" Grid.Row="3"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
 
                     <Image x:Name="middleRight0" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="1" Grid.Row="0"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
                     <Image x:Name="middleRight1" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="1" Grid.Row="1"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
                     <Image x:Name="middleRight2" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="1" Grid.Row="2"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
                     <Image x:Name="middleRight3" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="1" Grid.Row="3"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
 
                 </Grid>
 
                 <Image x:Name="Prueba" Source="Assets/0.png" Height="60" Canvas.Top="130"
-                       Width="50" Canvas.Left="10" Drop="Ellipse_Drop" CanDrag="True"
-                       DragOver="Ellipse_DragOver" AllowDrop="True"
+                       Width="50" Canvas.Left="10" Drop="MiDrop" CanDrag="True"
+                       DragOver="MiDragOver" AllowDrop="True"
                        Visibility="Collapsed"/>
             </Canvas>
         </Viewbox>
@@ -173,29 +173,29 @@
 
                     <Image x:Name="leftUp0" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="0" Grid.Row="0"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
                     <Image x:Name="leftUp1" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="1" Grid.Row="0"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
                     <Image x:Name="leftUp2" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="2" Grid.Row="0"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
                     <Image x:Name="leftUp3" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="3" Grid.Row="0"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
 
                     <Image x:Name="leftDown0" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="0" Grid.Row="1"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True"/>
                     <Image x:Name="leftDown1" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="1" Grid.Row="1"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver"/>
                     <Image x:Name="leftDown2" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="2" Grid.Row="1"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver"/>
                     <Image x:Name="leftDown3" Source="Assets/casilla.png" Stretch="Fill"
                            Height="100" Width="100" Grid.Column="3" Grid.Row="1"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver"/>
 
                 </Grid>
 
@@ -221,29 +221,29 @@
 
                     <Image x:Name="RightUp0" Source="Assets/casilla.png" Stretch="Fill"
                            Height="50" Width="50" Grid.Column="0" Grid.Row="0"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
                     <Image x:Name="RightUp1" Source="Assets/casilla.png" Stretch="Fill"
                            Height="50" Width="50" Grid.Column="1" Grid.Row="0"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
                     <Image x:Name="RightUp2" Source="Assets/casilla.png" Stretch="Fill"
                            Height="50" Width="50" Grid.Column="2" Grid.Row="0"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
                     <Image x:Name="RightUp3" Source="Assets/casilla.png" Stretch="Fill"
                            Height="50" Width="50" Grid.Column="3" Grid.Row="0"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
 
                     <Image x:Name="RightDown0" Source="Assets/casilla.png" Stretch="Fill"
                            Height="50" Width="50" Grid.Column="0" Grid.Row="1"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
                     <Image x:Name="RightDown1" Source="Assets/casilla.png" Stretch="Fill"
                            Height="50" Width="50" Grid.Column="1" Grid.Row="1"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
                     <Image x:Name="RightDown2" Source="Assets/casilla.png" Stretch="Fill"
                            Height="50" Width="50" Grid.Column="2" Grid.Row="1"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
                     <Image x:Name="RightDown3" Source="Assets/casilla.png" Stretch="Fill"
                            Height="50" Width="50" Grid.Column="3" Grid.Row="1"
-                           AllowDrop="True" Drop="Ellipse_Drop" DragOver="Ellipse_DragOver" CanDrag="True" DragStarting="RightUp0_DragStarting"/>
+                           AllowDrop="True" Drop="MiDrop" DragOver="MiDragOver" CanDrag="True" DragStarting="MiDragStarting"/>
 
                 </Grid>
             </Canvas>
@@ -260,7 +260,7 @@
                    Source="Assets/trash.png"
                    AllowDrop="True"
                    Drop="Papelera_Drop"
-                   DragOver="Ellipse_DragOver"/>
+                   DragOver="MiDragOver"/>
         </Viewbox>
         <Image HorizontalAlignment="Left" Height="100" Margin="1175,500,0,0" VerticalAlignment="Top" Width="100"/>
         <Viewbox HorizontalAlignment="Right" VerticalAlignment="Center" >

@@ -45,6 +45,7 @@ namespace ProyectoGrupo02
         MediaPlayer musica;
         MediaPlayer click;
         MediaPlayer money;
+        MediaPlayer pop;
 
         Image casilla;
 
@@ -52,9 +53,6 @@ namespace ProyectoGrupo02
         {
             VMObject selected = e.ClickedItem as VMObject;
 
-            //perfil.Source = selected.Img.Source;
-            ////perfil.Margin = (selected.RX,selected.RY,0,0);
-            //perfil.Translation = new System.Numerics.Vector3(selected.RX, selected.RY, 0);
         }
         public InGame()
         {
@@ -63,7 +61,9 @@ namespace ProyectoGrupo02
             musica = new MediaPlayer();
             click = new MediaPlayer();
             money = new MediaPlayer();
+            pop= new MediaPlayer();
             SonidoMonedas();
+            PlayDrop();
 
             casilla = new Image();
             casilla.Width = 50;
@@ -116,6 +116,7 @@ namespace ProyectoGrupo02
                 clicks++;
                 App.monedas -= num;
                 Money.Text = App.monedas.ToString();
+                pop.Play();
             }
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -143,15 +144,7 @@ namespace ProyectoGrupo02
             base.OnNavigatedTo(e);
         }
 
-        private void a_DragStarting(object sender, DragStartingEventArgs e)
-        {
-            Image Item = sender as Image;
-            string id = Item.Name;
-            e.Data.SetText(id);
-            e.Data.RequestedOperation = DataPackageOperation.Copy;
-        }
-
-        private async void Ellipse_Drop(object sender, DragEventArgs e)
+        private async void MiDrop(object sender, DragEventArgs e)
         {
             var id = await e.DataView.GetTextAsync();
             int aux = int.Parse(id);
@@ -163,48 +156,11 @@ namespace ProyectoGrupo02
                 i.Visibility = Visibility.Visible;
                 App.monedas -= precio;
                 Money.Text = App.monedas.ToString();
+                pop.Play();
             }
-
-
-            //Image o = FindName(id) as Image;
-            //int num = 999999999;
-            
-            //if (num <= (int.Parse(Money.Text)))
-            //{
-            //    Image r = sender as Image;
-            //    int x = -1;
-            //    switch (o.Name)
-            //    {
-            //        case "O0":
-            //            x = 0;
-
-            //            break;
-            //        case "O1":
-            //            x = 1;
-            //            break;
-            //        case "O2":
-            //            x = 2;
-            //            break;
-            //        case "O3":
-            //            x = 3;
-            //            break;
-            //        case "O4":
-            //            x = 4;
-            //            break;
-            //        case "O5":
-            //            x = 5;
-            //            break;
-            //        case "O6":
-            //            x = 6;
-            //            break;
-            //    }
-            //r.Source = Objects[x].Img.Source;
-            //r.Visibility = Visibility.Visible;
-
-            //Money.Text = (int.Parse(Money.Text) - num).ToString();
         }
 
-        private void Ellipse_DragOver(object sender, DragEventArgs e)
+        private void MiDragOver(object sender, DragEventArgs e)
         {
             e.AcceptedOperation = DataPackageOperation.Copy;
             e.DragUIOverride.IsCaptionVisible = true;
@@ -225,14 +181,11 @@ namespace ProyectoGrupo02
                 int num = 25;
                 App.monedas += num;
                 Money.Text = App.monedas.ToString();
+                pop.Play();
             }
         }
-        private void Papelera_DragOver(object sender, DragEventArgs e)
-        {
-            e.AcceptedOperation = DataPackageOperation.Move;
-        }
 
-        private void RightUp0_DragStarting(object sender, DragStartingEventArgs e)
+        private void MiDragStarting(object sender, DragStartingEventArgs e)
         {
             Image Item = sender as Image;
             string id = Item.Name;
@@ -253,7 +206,7 @@ namespace ProyectoGrupo02
 
         }
 
-        private void Grid3_ItemClick(object sender, ItemClickEventArgs e)
+        private void MiItemClick(object sender, ItemClickEventArgs e)
         {
 
             Object o = e.ClickedItem as Object;
@@ -263,6 +216,7 @@ namespace ProyectoGrupo02
             int num = Objects[id].Precio;
             if (App.monedas >= num)
             {
+                pop.Play();
                 App.monedas -= num;
                 Money.Text = App.monedas.ToString();
                 bool puesto = false;
@@ -429,10 +383,14 @@ namespace ProyectoGrupo02
             click.Volume = 1;
             click.Play();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void PlayDrop()
         {
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Music");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("pop.mp3");
+            pop.Source = MediaSource.CreateFromStorageFile(file);
 
+            pop.Volume = 1;
+            pop.Play();
         }
 
         private async void SonidoMonedas()

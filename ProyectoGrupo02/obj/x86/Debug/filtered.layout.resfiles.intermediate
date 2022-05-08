@@ -20,7 +20,6 @@ Assets\empty.png
 Assets\fondomenu.png
 Assets\inGameFondo.jpg
 Assets\inGameFondo.jpg.png
-Assets\LockScreenLogo.scale-200.png
 Assets\monedaV.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -42,4 +41,5 @@ Music\clicked.mp3
 Music\mainmusic.mp3
 Music\menumusic.mp3
 Music\moneda.mp3
+Music\pop.mp3
 Properties\Default.rd.xml
